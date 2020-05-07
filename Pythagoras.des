@@ -1,0 +1,171 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -2.410215532964746,
+            "ymin": -1.579621741248254,
+            "xmax": 2.5495872169117044,
+            "ymax": 1.6571398460809676
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "363",
+                "text": "Lets take a triangle such that the angles are 90, a, and 90 - a. That's a right triangle. We will set the hypotenuse as a fixed value of 1."
+            },
+            {
+                "type": "expression",
+                "id": "364",
+                "color": "#2d70b3",
+                "latex": "a=0.52",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "\\frac{\\pi}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "366",
+                "color": "#388c46",
+                "latex": "\\left(x+1.5\\right)^2+y^2=\\frac{1}{2}^2",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "367",
+                "color": "#6042a6",
+                "latex": "p=\\frac{\\left[\\cos\\left(\\pi-2a\\right),\\sin\\left(\\pi-2a\\right)\\right]}{2}-\\left[1.5,0\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "365",
+                "color": "#388c46",
+                "latex": "\\left[\\left(-2,0\\right),\\left(p\\left[1\\right],\\ p\\left[2\\right]\\right),\\left(-1,0\\right),\\left(-2,0\\right)\\right]",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "372",
+                "color": "#fa7e19",
+                "latex": "l_p=\\sqrt{\\left(p\\left[1\\right]+2\\right)^2+\\left(p\\left[2\\right]\\right)^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "378",
+                "color": "#fa7e19",
+                "latex": "l_q=\\sqrt{\\left(p\\left[1\\right]+1\\right)^2+\\left(p\\left[2\\right]\\right)^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "368",
+                "color": "#2d70b3",
+                "latex": "\\left[\\left(-0.5,-0.5\\right),\\left(-0.5,0.5\\right),\\left(0.5,0.5\\right),\\left(0.5,-0.5\\right),\\left(-0.5,-0.5\\right)\\right]",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "370",
+                "color": "#2d70b3",
+                "latex": "R\\left(x,y,a_{lpha}\\right)=\\frac{\\left[x\\cdot\\cos\\left(a_{lpha}\\right)-y\\cdot\\sin\\left(a_{lpha}\\right),x\\cdot\\sin\\left(a_{lpha}\\right)+y\\cdot\\cos\\left(a_{lpha}\\right)\\right]}{\\sqrt{x^2+y^2}}\\cdot l_p",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "369",
+                "color": "#c74440",
+                "latex": "T\\left(x_1,y_1,x_2,y_2\\right)=\\left[\\left(x_1,y_1\\right),\\left(x_2,y_2\\right),\\left(R\\left(x_2-x_1,y_2-y_1,\\frac{\\pi}{2}-a\\right)\\left[1\\right]+x_1,R\\left(x_2-x_1,y_2-y_1,\\frac{\\pi}{2}-a\\right)\\left[2\\right]+y_1\\right),\\left(x_1,y_1\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "371",
+                "color": "#388c46",
+                "latex": "T\\left(-0.5,0.5,-0.5,-0.5\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "374",
+                "color": "#388c46",
+                "latex": "T\\left(-0.5,-0.5,0.5,-0.5\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "375",
+                "color": "#388c46",
+                "latex": "T\\left(0.5,-0.5,0.5,0.5\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "376",
+                "color": "#388c46",
+                "latex": "T\\left(0.5,0.5,-0.5,0.5\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "384",
+                "text": "The area of the big square is c^2 (1 for this example) and can be broken down into 5 pieces like the figure. The total area of the square is 4*Area_of_triangle + Area_of_little_square"
+            },
+            {
+                "type": "expression",
+                "id": "379",
+                "color": "#6042a6",
+                "latex": "A_{triangle}=\\frac{l_pl_q}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "386",
+                "text": "The area of the little square is the difference between the sides of the triangle squared. lp^2 - 2*lp*lq + lq^2"
+            },
+            {
+                "type": "expression",
+                "id": "381",
+                "color": "#c74440",
+                "latex": "A_{square}=\\left(l_p-l_q\\right)^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "391",
+                "color": "#c74440",
+                "latex": "\\left[\\left(1,0\\right),\\left(1+\\left|l_p-l_q\\right|,0\\right),\\left(1+\\left|l_p-l_q\\right|,\\left|l_p-l_q\\right|\\right),\\left(1,\\left|l_p-l_q\\right|\\right),\\left(1,0\\right)\\right]",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "388",
+                "text": "The term -2*lp*lq disappears with the term 4*(area of the triangle) (2*lp*lq) and there it is, C^2 = A^2 + B^2 (A = lp and B = lq)"
+            },
+            {
+                "type": "text",
+                "id": "390",
+                "text": "Now this is the error, the difference between areas"
+            },
+            {
+                "type": "expression",
+                "id": "380",
+                "color": "#000000",
+                "latex": "E_{rror}=\\left|4A_{triangle}+A_{square}-1^2\\right|",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

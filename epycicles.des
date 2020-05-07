@@ -1,0 +1,127 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -5.390417143193684,
+            "ymin": -4.6826633591394815,
+            "xmax": 8.510913185473655,
+            "ymax": 5.033692950549372
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "232",
+                "color": "#2d70b3",
+                "latex": "a_1=0",
+                "hidden": true,
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderAnimationPeriod": 80000,
+                "sliderLoopMode": "LOOP_FORWARD",
+                "sliderMin": "0",
+                "sliderMax": "50\\pi",
+                "sliderInterval": "0.001",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "234",
+                "color": "#fa7e19",
+                "latex": "r_1=3.7",
+                "sliderPlayDirection": -1,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "236",
+                "color": "#000000",
+                "latex": "r_2=2.1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "237",
+                "color": "#c74440",
+                "latex": "x^2+y^2=r_1^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "416",
+                "color": "#2d70b3",
+                "latex": "a_2=a_1\\left(1-\\frac{r_1}{r_2}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "249",
+                "color": "#c74440",
+                "latex": "c_1=\\left[\\cos\\left(a_1\\right),\\sin\\left(a_1\\right)\\right]\\cdot\\left(r_1-r_2\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "250",
+                "color": "#2d70b3",
+                "latex": "\\left(x-c_1\\left[1\\right]\\right)^2+\\left(y-c_1\\left[2\\right]\\right)^2=r_2^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "253",
+                "color": "#388c46",
+                "latex": "\\left[\\left(c_1\\left[1\\right],c_1\\left[2\\right]\\right),\\left(0,0\\right)\\right]",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "252",
+                "color": "#fa7e19",
+                "latex": "c_2=c_1+\\left[\\cos\\left(a_2\\right),\\sin\\left(a_2\\right)\\right]r_2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "254",
+                "color": "#388c46",
+                "latex": "\\left[\\left(c_1\\left[1\\right],c_1\\left[2\\right]\\right),\\left(c_2\\left[1\\right],c_2\\left[2\\right]\\right)\\right]",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "256",
+                "color": "#2d70b3",
+                "latex": "t=\\frac{\\left[0...\\operatorname{floor}\\left(15a_1\\right)\\right]}{\\operatorname{floor}\\left(15a_1\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "257",
+                "color": "#388c46",
+                "latex": "p_x=\\cos\\left(a_1t\\right)\\left(r_1-r_2\\right)+\\cos\\left(a_2t\\right)r_2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "259",
+                "color": "#6042a6",
+                "latex": "p_y=\\sin\\left(a_1t\\right)\\left(r_1-r_2\\right)+\\sin\\left(a_2t\\right)r_2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "260",
+                "color": "#6042a6",
+                "latex": "\\left(p_x,p_y\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

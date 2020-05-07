@@ -1,0 +1,261 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -1.1530986366917835,
+            "ymin": -1.457219278551782,
+            "xmax": 2.7386846635070086,
+            "ymax": 1.2629486716226177
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "224",
+                "text": "Yes, I know it can be r=1, but then r become a slider, and I don't want things moving if they are intended to be fixed"
+            },
+            {
+                "type": "expression",
+                "id": "182",
+                "color": "#000000",
+                "latex": "x^2+y^2=1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "231",
+                "color": "#2d70b3",
+                "latex": "\\left(0,0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "226",
+                "text": "Set up the points depending on the angles a1, a2, and a3"
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "a_1=2.3",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "2\\pi",
+                "sliderInterval": "0.01",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "184",
+                "color": "#2d70b3",
+                "latex": "a_2=5.02",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "2\\pi",
+                "sliderInterval": "0.01",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "186",
+                "color": "#fa7e19",
+                "latex": "a_3=0.27",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "2\\pi",
+                "sliderInterval": "0.01",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "228",
+                "text": "This guy here is the error. It's needed since we are dealing with real numbers, and it can lead to bad results since the computer doesn't have infinite precision."
+            },
+            {
+                "type": "expression",
+                "id": "212",
+                "color": "#fa7e19",
+                "latex": "E=0.001",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "179",
+                "color": "#388c46",
+                "latex": "p_{x1}=\\cos\\left(a_1\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "180",
+                "color": "#fa7e19",
+                "latex": "p_{y1}=\\sin\\left(a_1\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "187",
+                "color": "#6042a6",
+                "latex": "p_{x2}=\\cos\\left(a_2\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "183",
+                "color": "#c74440",
+                "latex": "p_{y2}=\\sin\\left(a_2\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "188",
+                "color": "#000000",
+                "latex": "p_{x3}=\\cos\\left(a_3\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "185",
+                "color": "#388c46",
+                "latex": "p_{y3}=\\sin\\left(a_3\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "181",
+                "color": "#2d70b3",
+                "latex": "\\left(p_{x1},p_{y1}\\right)",
+                "showLabel": true,
+                "label": "P1",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "190",
+                "color": "#2d70b3",
+                "latex": "\\left(p_{x2},p_{y2}\\right)",
+                "showLabel": true,
+                "label": "P2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "191",
+                "color": "#2d70b3",
+                "latex": "\\left(p_{x3},p_{y3}\\right)",
+                "showLabel": true,
+                "label": "P3",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "189",
+                "color": "#2d70b3",
+                "latex": "\\left[\\left(p_{x1},p_{y1}\\right),\\left(p_{x2},p_{y2}\\right),\\left(p_{x3},p_{y3}\\right),\\left(p_{x1},p_{y1}\\right)\\right]",
+                "hidden": true,
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "197",
+                "text": "Function that returns the area of the triangle"
+            },
+            {
+                "type": "expression",
+                "id": "192",
+                "color": "#fa7e19",
+                "latex": "A\\left(x_a,y_a,x_b,y_b,x_c,y_c\\right)=\\frac{\\left|\\left(x_a-x_c\\right)\\left(y_b-y_a\\right)-\\left(x_a-x_b\\right)\\left(y_c-y_a\\right)\\right|}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "199",
+                "text": "Get the difference between the total area of the three triangles formed by taking two points with (0,0), and the big triangle. If that difference is zero, then (0,0) is inside of the triangle."
+            },
+            {
+                "type": "expression",
+                "id": "194",
+                "color": "#000000",
+                "latex": "D=A\\left(0,0,p_{x2},p_{y2},p_{x3},p_{y3}\\right)+A\\left(p_{x1},p_{y1},0,0,p_{x3},p_{y3}\\right)+A\\left(p_{x1},p_{y1},p_{x2},p_{y2},0,0\\right)-A\\left(p_{x1},p_{y1},p_{x2},p_{y2},p_{x3},p_{y3}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "223",
+                "text": "Helper stuff"
+            },
+            {
+                "type": "expression",
+                "id": "207",
+                "color": "#6042a6",
+                "latex": "n\\left(x\\right)=\\frac{x^2+x}{2}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "221",
+                "text": "Parametric function to draw the segments between two points"
+            },
+            {
+                "type": "expression",
+                "id": "229",
+                "color": "#388c46",
+                "latex": "\\left(p_{x2},p_{y2}\\right),\\left(-p_{x2},-p_{y2}\\right)",
+                "points": false,
+                "lines": true,
+                "lineStyle": "DASHED",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "230",
+                "color": "#388c46",
+                "latex": "\\left(p_{x3},p_{y3}\\right),\\left(-p_{x3},-p_{y3}\\right)",
+                "points": false,
+                "lines": true,
+                "lineStyle": "DASHED",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "235",
+                "color": "#fa7e19",
+                "latex": "O_k=n\\left(\\operatorname{sign}\\left(D-E\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "237",
+                "color": "#000000",
+                "latex": "O_{k1}=1-O_k",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "232",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(p_{x1},p_{y1}\\right),\\left(p_{x2}+\\left(p_{x1}-p_{x2}\\right)\\cdot O_k,p_{y2}+\\left(p_{y1}-p_{y2}\\right)\\cdot O_k\\right),\\left(p_{x3}+\\left(p_{x1}-p_{x3}\\right)\\cdot O_k,p_{y3}+\\left(p_{y1}-p_{y3}\\right)\\cdot O_k\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "236",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(\\left(p_{x1},p_{y1}\\right),\\left(p_{x2}+\\left(p_{x1}-p_{x2}\\right)\\cdot O_{k1},p_{y2}+\\left(p_{y1}-p_{y2}\\right)\\cdot O_{k1}\\right),\\left(p_{x3}+\\left(p_{x1}-p_{x3}\\right)\\cdot O_{k1},p_{y3}+\\left(p_{y1}-p_{y3}\\right)\\cdot O_{k1}\\right)\\right)",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

@@ -1,0 +1,328 @@
+{
+    "version": 5,
+    "graph": {
+        "xAxisMinorSubdivisions": 1,
+        "yAxisMinorSubdivisions": 1,
+        "viewport": {
+            "xmin": 20.90220863789085,
+            "ymin": -4.323119155028429,
+            "xmax": 31.810095090638224,
+            "ymax": 3.300964932949778
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "N=2",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "1",
+                "sliderMax": "100",
+                "sliderInterval": "1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "136",
+                "color": "#fa7e19",
+                "latex": "r=10",
+                "hidden": true,
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderInterval": "0.1",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "955",
+                "text": "Geometrical Approach"
+            },
+            {
+                "type": "expression",
+                "id": "145",
+                "color": "#c74440",
+                "latex": "P_{i1}=\\left|N\\cdot\\frac{l}{2h}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "958",
+                "text": "Leibniz's formula"
+            },
+            {
+                "type": "expression",
+                "id": "932",
+                "color": "#c74440",
+                "latex": "P_{i2}=\\left|4\\sum_{n=0}^N\\frac{\\left(-1\\right)^n}{2n+1}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "960",
+                "text": "Wallis Product"
+            },
+            {
+                "type": "expression",
+                "id": "933",
+                "color": "#2d70b3",
+                "latex": "P_{i3}=\\left|2\\prod_{n=1}^N\\left(\\frac{2n}{2n-1}\\cdot\\frac{2n}{2n+1}\\right)-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "963",
+                "text": "Euler's Formula"
+            },
+            {
+                "type": "expression",
+                "id": "934",
+                "color": "#388c46",
+                "latex": "P_{i4}=\\left|2\\sum_{n=0}^N\\frac{2^n\\cdot n!}{\\prod_{k=n+1}^{2n+1}k}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "965",
+                "text": "Stirling's formula"
+            },
+            {
+                "type": "expression",
+                "id": "936",
+                "color": "#6042a6",
+                "latex": "P_{i5}=\\left|\\frac{\\left(\\frac{N!}{\\left(\\frac{N}{e}\\right)^N}\\right)^2}{2N}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "967",
+                "text": "Euler's formula for the Bazilea's Problem"
+            },
+            {
+                "type": "expression",
+                "id": "937",
+                "color": "#000000",
+                "latex": "P_{i6}=\\left|\\sqrt{6\\cdot\\sum_{n=1}^N\\frac{1}{n^2}}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "969",
+                "text": "Euler's formula"
+            },
+            {
+                "type": "expression",
+                "id": "939",
+                "color": "#2d70b3",
+                "latex": "P_{i7}=\\left|\\sqrt[4]{90\\cdot\\sum_{n=1}^N\\frac{1}{n^4}}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "971",
+                "text": "Unknown?"
+            },
+            {
+                "type": "expression",
+                "id": "950",
+                "color": "#c74440",
+                "latex": "P_{i8}=\\left|\\sum_{n=0}^N\\frac{2\\left(-1\\right)^n\\cdot3^{\\frac{1}{2}-n}}{2n+1}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "973",
+                "text": "Ramanujan's formula"
+            },
+            {
+                "type": "expression",
+                "id": "951",
+                "color": "#2d70b3",
+                "latex": "P_{i9}=\\left|\\frac{1}{2\\cdot\\frac{\\sqrt{2}}{9801}\\cdot\\sum_{n=0}^N\\frac{\\left(4n\\right)!\\cdot\\left(1103+26390\\cdot n\\right)}{\\left(n!\\right)^4\\cdot396^{4n}}}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "975",
+                "text": "K. Takano's formula"
+            },
+            {
+                "type": "expression",
+                "id": "976",
+                "color": "#fa7e19",
+                "latex": "\\left|4\\cdot\\left(12\\cdot\\arctan\\left(\\frac{1}{49}\\right)+32\\cdot\\arctan\\left(\\frac{1}{57}\\right)-5\\cdot\\arctan\\left(\\frac{1}{239}\\right)+12\\cdot\\arctan\\left(\\frac{1}{110443}\\right)\\right)-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "979",
+                "text": "F. C. W. Störmer's formula"
+            },
+            {
+                "type": "expression",
+                "id": "977",
+                "color": "#6042a6",
+                "latex": "\\left|4\\cdot\\left(44\\cdot\\arctan\\left(\\frac{1}{57}\\right)+7\\cdot\\arctan\\left(\\frac{1}{239}\\right)-12\\cdot\\arctan\\left(\\frac{1}{682}\\right)+24\\cdot\\arctan\\left(\\frac{1}{12943}\\right)\\right)-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "940",
+                "color": "#000000",
+                "latex": "x=\\left[21...29\\right]\\left\\{0\\le y\\le\\left[P_{i1},P_{i2},P_{i3},P_{i4},P_{i5},P_{i6},P_{i7},P_{i8},P_{i9}\\right]\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "943",
+                "color": "#c74440",
+                "latex": "\\left(21,P_{i1}\\right)",
+                "showLabel": true,
+                "label": "`${P_i1}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "944",
+                "color": "#2d70b3",
+                "latex": "\\left(22,P_{i2}\\right)",
+                "showLabel": true,
+                "label": "`${P_i2}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "945",
+                "color": "#388c46",
+                "latex": "\\left(23,P_{i3}\\right)",
+                "showLabel": true,
+                "label": "`${P_i3}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "946",
+                "color": "#fa7e19",
+                "latex": "\\left(24,P_{i4}\\right)",
+                "showLabel": true,
+                "label": "`${P_i4}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "947",
+                "color": "#6042a6",
+                "latex": "\\left(25,P_{i5}\\right)",
+                "showLabel": true,
+                "label": "`${P_i5}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "948",
+                "color": "#000000",
+                "latex": "\\left(26,P_{i6}\\right)",
+                "showLabel": true,
+                "label": "`${P_i6}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "949",
+                "color": "#c74440",
+                "latex": "\\left(27,P_{i7}\\right)",
+                "showLabel": true,
+                "label": "`${P_i7}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "952",
+                "color": "#2d70b3",
+                "latex": "\\left(28,P_{i8}\\right)",
+                "showLabel": true,
+                "label": "`${P_i8}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "953",
+                "color": "#388c46",
+                "latex": "\\left(29,P_{i9}\\right)",
+                "showLabel": true,
+                "label": "`${P_i9}`",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "134",
+                "color": "#2d70b3",
+                "latex": "a=\\frac{\\left[0...N\\right]}{N}\\cdot2\\pi",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "135",
+                "color": "#388c46",
+                "latex": "s_x=r\\cos\\left(a\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "137",
+                "color": "#6042a6",
+                "latex": "s_y=r\\sin\\left(a\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "138",
+                "color": "#2d70b3",
+                "latex": "\\left(s_x,s_y\\right)",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "140",
+                "color": "#2d70b3",
+                "latex": "\\left(s_x,s_y\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "139",
+                "color": "#c74440",
+                "latex": "x^2+y^2=r^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "141",
+                "color": "#388c46",
+                "latex": "A=\\frac{r^2}{2}\\sin\\left(2\\cdot\\frac{\\pi}{N}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "142",
+                "color": "#fa7e19",
+                "latex": "l=\\frac{r}{\\sin\\left(\\frac{\\pi}{2}-\\frac{\\pi}{N}\\right)}\\sin\\left(\\frac{2\\pi}{N}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "144",
+                "color": "#000000",
+                "latex": "h=\\frac{2A}{l}",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

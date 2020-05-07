@@ -1,0 +1,391 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": 0.12399424959839274,
+            "ymin": 0.002333521745318645,
+            "xmax": 4.015777549797179,
+            "ymax": 2.7225014719197134
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "52",
+                "text": "Points with coordinates as sliders to allow them to be draggable"
+            },
+            {
+                "type": "expression",
+                "id": "53",
+                "color": "#000000",
+                "latex": "a_x=1.54",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "54",
+                "color": "#c74440",
+                "latex": "a_y=2.22",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "55",
+                "color": "#2d70b3",
+                "latex": "b_x=0.78",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "56",
+                "color": "#388c46",
+                "latex": "b_y=0.525",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "57",
+                "color": "#fa7e19",
+                "latex": "c_x=2.94",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "58",
+                "color": "#6042a6",
+                "latex": "c_y=1.024",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "59",
+                "color": "#c74440",
+                "latex": "\\left(a_x,a_y\\right)",
+                "showLabel": true,
+                "label": "A",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "60",
+                "color": "#c74440",
+                "latex": "\\left(b_x,b_y\\right)",
+                "showLabel": true,
+                "label": "B",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "61",
+                "color": "#c74440",
+                "latex": "\\left(c_x,c_y\\right)",
+                "showLabel": true,
+                "label": "C",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "62",
+                "color": "#c74440",
+                "latex": "\\left[\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right),\\left(a_x,a_y\\right)\\right]",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "65",
+                "text": "Distance function"
+            },
+            {
+                "type": "expression",
+                "id": "66",
+                "color": "#000000",
+                "latex": "d\\left(x_1,y_1,x_2,y_2\\right)=\\sqrt{\\left(x_1-x_2\\right)^2+\\left(y_1-y_2\\right)^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "68",
+                "text": "Get the lengths of each side. The name of the side will be A if the side is the segment BC, B if the segment is AC and C if the segment is AB. Is the name of the oposite vertex."
+            },
+            {
+                "type": "expression",
+                "id": "69",
+                "color": "#2d70b3",
+                "latex": "A=d\\left(b_x,b_y,c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "70",
+                "color": "#388c46",
+                "latex": "B=d\\left(a_x,a_y,c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "71",
+                "color": "#fa7e19",
+                "latex": "C=d\\left(b_x,b_y,a_x,a_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "74",
+                "text": "Get all the angles using Cosine's Law"
+            },
+            {
+                "type": "expression",
+                "id": "75",
+                "color": "#c74440",
+                "latex": "a_a=\\cos^{-1}\\left(\\frac{B^2+C^2-A^2}{2BC}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "73",
+                "color": "#000000",
+                "latex": "a_b=\\cos^{-1}\\left(\\frac{A^2+C^2-B^2}{2AC}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "76",
+                "color": "#2d70b3",
+                "latex": "a_c=\\cos^{-1}\\left(\\frac{A^2+B^2-C^2}{2AB}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "122",
+                "text": "Get the angle"
+            },
+            {
+                "type": "expression",
+                "id": "77",
+                "color": "#388c46",
+                "latex": "w=\\tan^{-1}\\left(\\frac{1}{\\cot\\left(a_a\\right)+\\cot\\left(a_b\\right)+\\cot\\left(a_c\\right)}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "123",
+                "text": "Get the vector coordinates of AB, BC and CA in order to compute the rotated version of those lines with center in A, B and C and angle w."
+            },
+            {
+                "type": "expression",
+                "id": "78",
+                "color": "#fa7e19",
+                "latex": "v=\\left[\\cos\\left(w\\right),\\sin\\left(w\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "93",
+                "color": "#c74440",
+                "latex": "a_{vec}=\\frac{\\left[b_x-a_x,b_y-a_y\\right]}{d\\left(b_x,b_y,a_x,a_y\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "94",
+                "color": "#2d70b3",
+                "latex": "a_{res}=\\left[a_x,a_y\\right]+\\left[a_{vec}\\left[1\\right]\\cdot v\\left[1\\right]-a_{vec}\\left[2\\right]\\cdot v\\left[2\\right],\\ a_{vec}\\left[1\\right]\\cdot v\\left[2\\right]+a_{vec}\\left[2\\right]\\cdot v\\left[1\\right]\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "79",
+                "color": "#6042a6",
+                "latex": "b_{vec}=\\frac{\\left[c_x-b_x,c_y-b_y\\right]}{d\\left(b_x,b_y,c_x,c_y\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "81",
+                "color": "#c74440",
+                "latex": "b_{res}=\\left[b_x,b_y\\right]+\\left[b_{vec}\\left[1\\right]\\cdot v\\left[1\\right]-b_{vec}\\left[2\\right]\\cdot v\\left[2\\right],\\ b_{vec}\\left[1\\right]\\cdot v\\left[2\\right]+b_{vec}\\left[2\\right]\\cdot v\\left[1\\right]\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "83",
+                "color": "#388c46",
+                "latex": "c_{vec}=\\frac{\\left[a_x-c_x,a_y-c_y\\right]}{d\\left(a_x,a_y,c_x,c_y\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "84",
+                "color": "#fa7e19",
+                "latex": "c_{res}=\\left[c_x,c_y\\right]+\\left[c_{vec}\\left[1\\right]\\cdot v\\left[1\\right]-c_{vec}\\left[2\\right]\\cdot v\\left[2\\right],\\ c_{vec}\\left[1\\right]\\cdot v\\left[2\\right]+c_{vec}\\left[2\\right]\\cdot v\\left[1\\right]\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "124",
+                "text": "Calc all the parameters of the three lines"
+            },
+            {
+                "type": "expression",
+                "id": "95",
+                "color": "#388c46",
+                "latex": "m_1=\\frac{a_y-a_{res}\\left[2\\right]}{a_x-a_{res}\\left[1\\right]}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "96",
+                "color": "#fa7e19",
+                "latex": "n_1=-a_xm_1+a_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "91",
+                "color": "#6042a6",
+                "latex": "m_2=\\frac{b_y-b_{res}\\left[2\\right]}{b_x-b_{res}\\left[1\\right]}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "92",
+                "color": "#000000",
+                "latex": "n_2=-b_xm_2+b_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "88",
+                "color": "#2d70b3",
+                "latex": "m_3=\\frac{c_y-c_{res}\\left[2\\right]}{c_x-c_{res}\\left[1\\right]}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "89",
+                "color": "#388c46",
+                "latex": "n_3=-c_xm_3+c_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "90",
+                "color": "#2d70b3",
+                "latex": "y=\\left[m_1,m_2,m_3\\right]x+\\left[n_1,n_2,n_3\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "118",
+                "color": "#2d70b3",
+                "latex": "n\\left(x\\right)=\\frac{x^2-x}{2}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "125",
+                "text": "Helper function to obtain the ACTUAL angle instead of the -pi -> pi version"
+            },
+            {
+                "type": "expression",
+                "id": "114",
+                "color": "#fa7e19",
+                "latex": "f\\left(x,y\\right)=\\tan^{-1}\\left(\\frac{y}{x}\\right)+\\pi n\\left(\\operatorname{sign}\\left(x\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "126",
+                "text": "Compute the arc to show up that angle W"
+            },
+            {
+                "type": "expression",
+                "id": "111",
+                "color": "#c74440",
+                "latex": "s_x\\left(a,x,y\\right)=a+\\frac{\\cos\\left(\\frac{\\left[0...10\\right]}{10}w+f\\left(x,y\\right)\\right)}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "112",
+                "color": "#2d70b3",
+                "latex": "s_y\\left(a,x,y\\right)=a+\\frac{\\sin\\left(\\frac{\\left[0...10\\right]}{10}w+f\\left(x,y\\right)\\right)}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "119",
+                "color": "#000000",
+                "latex": "\\left(s_x\\left(a_x,a_{vec}\\left[1\\right],a_{vec}\\left[2\\right]\\right),s_y\\left(a_y,a_{vec}\\left[1\\right],a_{vec}\\left[2\\right]\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "120",
+                "color": "#000000",
+                "latex": "\\left(s_x\\left(b_x,b_{vec}\\left[1\\right],b_{vec}\\left[2\\right]\\right),s_y\\left(b_y,b_{vec}\\left[1\\right],b_{vec}\\left[2\\right]\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "labelSize": "small",
+                "labelOrientation": "right",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "121",
+                "color": "#000000",
+                "latex": "\\left(s_x\\left(c_x,c_{vec}\\left[1\\right],c_{vec}\\left[2\\right]\\right),s_y\\left(c_y,c_{vec}\\left[1\\right],c_{vec}\\left[2\\right]\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "128",
+                "text": "Get the intersection point"
+            },
+            {
+                "type": "expression",
+                "id": "129",
+                "color": "#c74440",
+                "latex": "D=m_2-m_1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "131",
+                "color": "#388c46",
+                "latex": "p_x=\\frac{n_1-n_2}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "132",
+                "color": "#fa7e19",
+                "latex": "p_y=\\frac{m_2n_1-m_1n_2}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "133",
+                "color": "#6042a6",
+                "latex": "\\left(p_x,p_y\\right)",
+                "showLabel": true,
+                "label": "P",
+                "pointStyle": "OPEN",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

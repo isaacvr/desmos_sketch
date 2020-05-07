@@ -1,0 +1,104 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -2.7708920488580517,
+            "ymin": -2.0823302391474297,
+            "xmax": 3.945083381660403,
+            "ymax": 2.61181116366959
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "x^2+y^2=1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "53",
+                "color": "#2d70b3",
+                "latex": "a=0.157",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderAnimationPeriod": 8000,
+                "sliderLoopMode": "LOOP_FORWARD",
+                "sliderIsPlaying": true,
+                "sliderMin": "0",
+                "sliderMax": "2\\pi",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "54",
+                "color": "#388c46",
+                "latex": "\\left(\\cos\\left(a\\right),\\sin\\left(a\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "56",
+                "text": "Cosine of (a)"
+            },
+            {
+                "type": "expression",
+                "id": "57",
+                "color": "#2d70b3",
+                "latex": "y=\\sin\\left(a\\right)\\left\\{x\\left(x-\\cos\\left(a\\right)\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "59",
+                "text": "Sine of (a)"
+            },
+            {
+                "type": "expression",
+                "id": "60",
+                "color": "#388c46",
+                "latex": "x=\\cos\\left(a\\right)\\left\\{y\\left(y-\\sin\\left(a\\right)\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "70",
+                "text": "Tangent line to the circle at the point p"
+            },
+            {
+                "type": "expression",
+                "id": "63",
+                "color": "#fa7e19",
+                "latex": "f\\left(x\\right)=-\\frac{1}{\\tan\\left(a\\right)}\\left(x-\\cos\\left(a\\right)\\right)+\\sin\\left(a\\right)",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "62",
+                "text": "Tangent of (a)"
+            },
+            {
+                "type": "expression",
+                "id": "67",
+                "color": "#fa7e19",
+                "latex": "y=f\\left(x\\right)\\left\\{\\left(x-\\cos\\left(a\\right)\\right)\\left(x-\\sin\\left(a\\right)\\tan\\left(a\\right)-\\cos\\left(a\\right)\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "71",
+                "text": "Cotangent of (a)"
+            },
+            {
+                "type": "expression",
+                "id": "68",
+                "color": "#6042a6",
+                "latex": "y=f\\left(x\\right)\\left\\{x\\left(x-\\cos\\left(a\\right)\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

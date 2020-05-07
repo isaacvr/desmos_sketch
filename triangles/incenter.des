@@ -1,0 +1,315 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -0.33031370863860493,
+            "ymin": 0.12348696817475924,
+            "xmax": 2.914291297999746,
+            "ymax": 2.3913086502253025
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "68",
+                "text": "Define the coordinates of the 3 points. It's made like this to allow the points to be draggable."
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "a_x=0.97",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "58",
+                "color": "#2d70b3",
+                "latex": "a_y=1.115",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "59",
+                "color": "#388c46",
+                "latex": "b_x=1.42",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "60",
+                "color": "#fa7e19",
+                "latex": "b_y=2.005",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "61",
+                "color": "#6042a6",
+                "latex": "c_x=2.24",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "62",
+                "color": "#000000",
+                "latex": "c_y=1.38",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "64",
+                "color": "#c74440",
+                "latex": "\\left(a_x,a_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "65",
+                "color": "#c74440",
+                "latex": "\\left(b_x,b_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "66",
+                "color": "#c74440",
+                "latex": "\\left(c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "69",
+                "text": "Show the triangle ABC"
+            },
+            {
+                "type": "expression",
+                "id": "63",
+                "color": "#c74440",
+                "latex": "\\left[\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right),\\left(a_x,a_y\\right)\\right]",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "70",
+                "text": "Helper functions"
+            },
+            {
+                "type": "expression",
+                "id": "71",
+                "color": "#000000",
+                "latex": "d\\left(x_1,y_1,x_2,y_2\\right)=\\sqrt{\\left(x_1-x_2\\right)^2+\\left(y_1-y_2\\right)^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "72",
+                "color": "#c74440",
+                "latex": "m_x\\left(p_{x1},p_{y1},p_{x2},p_{y2},p_{x3},p_{y3}\\right)=\\frac{\\frac{\\left(p_{x2}-p_{x1}\\right)}{d\\left(p_{x1},p_{y1},p_{x2},p_{y2}\\right)}+\\frac{\\left(p_{x3}-p_{x1}\\right)}{d\\left(p_{x1},p_{y1},p_{x3},p_{y3}\\right)}}{2}+p_{x1}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "74",
+                "color": "#388c46",
+                "latex": "m_y\\left(p_{x1},p_{y1},p_{x2},p_{y2},p_{x3},p_{y3}\\right)=\\frac{\\frac{\\left(p_{y2}-p_{y1}\\right)}{d\\left(p_{x1},p_{y1},p_{x2},p_{y2}\\right)}+\\frac{\\left(p_{y3}-p_{y1}\\right)}{d\\left(p_{x1},p_{y1},p_{x3},p_{y3}\\right)}}{2}+p_{y1}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "83",
+                "text": "Get 3 points to construct the line that divides in two equal parts the angle"
+            },
+            {
+                "type": "expression",
+                "id": "76",
+                "color": "#6042a6",
+                "latex": "A_x=m_x\\left(a_x,a_y,b_x,b_y,c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "77",
+                "color": "#000000",
+                "latex": "A_y=m_y\\left(a_x,a_y,b_x,b_y,c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "80",
+                "color": "#388c46",
+                "latex": "B_x=m_x\\left(b_x,b_y,c_x,c_y,a_x,a_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "81",
+                "color": "#fa7e19",
+                "latex": "B_y=m_y\\left(b_x,b_y,c_x,c_y,a_x,a_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "82",
+                "color": "#6042a6",
+                "latex": "C_x=m_x\\left(c_x,c_y,a_x,a_y,b_x,b_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "84",
+                "color": "#000000",
+                "latex": "C_y=m_y\\left(c_x,c_y,a_x,a_y,b_x,b_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "86",
+                "text": "Draw the lines"
+            },
+            {
+                "type": "expression",
+                "id": "91",
+                "color": "#000000",
+                "latex": "m_1=\\frac{A_y-a_y}{A_x-a_x}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "97",
+                "color": "#6042a6",
+                "latex": "n_1=-m_1a_x+a_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "92",
+                "color": "#c74440",
+                "latex": "m_2=\\frac{B_y-b_y}{B_x-b_x}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "98",
+                "color": "#000000",
+                "latex": "n_2=-m_2b_x+b_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "93",
+                "color": "#2d70b3",
+                "latex": "m_3=\\frac{C_y-c_y}{C_x-c_x}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "99",
+                "color": "#c74440",
+                "latex": "n_3=-m_3c_x+c_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "87",
+                "color": "#2d70b3",
+                "latex": "y=\\left[m_1,m_2,m_3\\right]\\left(x-\\left[a_x,b_x,c_x\\right]\\right)+\\left[a_y,b_y,c_y\\right]",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "94",
+                "text": "Get the intersection point using Cramer's Rule"
+            },
+            {
+                "type": "expression",
+                "id": "95",
+                "color": "#388c46",
+                "latex": "D=m_2-m_1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "96",
+                "color": "#fa7e19",
+                "latex": "p_x=\\frac{n_1-n_2}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "100",
+                "color": "#2d70b3",
+                "latex": "p_y=\\frac{m_2n_1-m_1n_2}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "101",
+                "color": "#388c46",
+                "latex": "\\left(p_x,p_y\\right)",
+                "pointStyle": "OPEN",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "103",
+                "text": "Radii of the inscribed circumference"
+            },
+            {
+                "type": "expression",
+                "id": "102",
+                "color": "#fa7e19",
+                "latex": "A=d\\left(a_x,a_y,b_x,b_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "104",
+                "color": "#6042a6",
+                "latex": "B=d\\left(b_x,b_y,c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "105",
+                "color": "#000000",
+                "latex": "C=d\\left(a_x,a_y,c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "106",
+                "color": "#c74440",
+                "latex": "p=\\frac{\\left(A+B+C\\right)}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "108",
+                "color": "#388c46",
+                "latex": "A_t=\\sqrt{p\\left(p-A\\right)\\left(p-B\\right)\\left(p-C\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "109",
+                "color": "#fa7e19",
+                "latex": "r_x=\\frac{A_t}{p}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "110",
+                "color": "#6042a6",
+                "latex": "\\left(x-p_x\\right)^2+\\left(y-p_y\\right)^2=r_x^2",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

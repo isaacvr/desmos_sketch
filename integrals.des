@@ -1,0 +1,121 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -12.652057546129832,
+            "ymin": -24.78789487865476,
+            "xmax": 78.39238973783756,
+            "ymax": 38.847762207016444
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "f\\left(x\\right)=-0.3\\left(\\frac{x}{8}-2\\right)^3+30",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "163",
+                "color": "#000000",
+                "latex": "a=3.4",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "25",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "162",
+                "color": "#6042a6",
+                "latex": "b=65",
+                "hidden": true,
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "80",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "159",
+                "color": "#2d70b3",
+                "latex": "N=60",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderAnimationPeriod": 20000,
+                "sliderMin": "1",
+                "sliderMax": "1000",
+                "sliderInterval": "1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "169",
+                "color": "#000000",
+                "latex": "I_a=\\frac{b-a}{N}\\sum_{n=0}^{N-1}f\\left(\\frac{n\\left(b-a\\right)}{N}+a\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "170",
+                "color": "#c74440",
+                "latex": "I_e=\\int_a^bf\\left(x\\right)dx",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "171",
+                "color": "#2d70b3",
+                "latex": "E=\\left|I_a-I_e\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "160",
+                "color": "#388c46",
+                "latex": "X=\\frac{\\left[0...N-1\\right]}{N}\\left(b-a\\right)+a",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "164",
+                "color": "#c74440",
+                "latex": "X_1=\\frac{\\left[0...N-1\\right]}{N}\\left(b-a\\right)+a",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "167",
+                "color": "#fa7e19",
+                "latex": "X_2=\\frac{\\left[1...N\\right]}{N}\\left(b-a\\right)+a",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "157",
+                "color": "#2d70b3",
+                "latex": "x=X\\left\\{y\\left(y-f\\left(X\\right)\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "172",
+                "color": "#2d70b3",
+                "latex": "x=X+\\frac{\\left(b-a\\right)}{N}\\left\\{y\\left(y-f\\left(X\\right)\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "158",
+                "color": "#2d70b3",
+                "latex": "y=f\\left(X_1\\right)\\left\\{\\left(x-X_1\\right)\\left(x-X_2\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

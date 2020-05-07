@@ -1,0 +1,217 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": 0.0457470142751103,
+            "ymin": 0.6950524720300661,
+            "xmax": 3.9375303144739053,
+            "ymax": 3.415220422204461
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "44",
+                "text": "Coordinates of the 3 points. "
+            },
+            {
+                "type": "expression",
+                "id": "22",
+                "color": "#2d70b3",
+                "latex": "a_x=2.865",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "23",
+                "color": "#388c46",
+                "latex": "a_y=1.987",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "24",
+                "color": "#fa7e19",
+                "latex": "b_x=1.8",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "25",
+                "color": "#6042a6",
+                "latex": "b_y=1.57",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "26",
+                "color": "#000000",
+                "latex": "c_x=2.08",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "27",
+                "color": "#c74440",
+                "latex": "c_y=2.737",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "45",
+                "text": "They are defined explicitly as a point in order to be draggable"
+            },
+            {
+                "type": "expression",
+                "id": "18",
+                "color": "#c74440",
+                "latex": "\\left(a_x,a_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "19",
+                "color": "#c74440",
+                "latex": "\\left(b_x,b_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "20",
+                "color": "#c74440",
+                "latex": "\\left(c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "46",
+                "text": "Draw the triangle based on a, b and c"
+            },
+            {
+                "type": "expression",
+                "id": "21",
+                "color": "#c74440",
+                "latex": "\\left[\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right),\\left(a_x,a_y\\right)\\right]",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "47",
+                "text": "Get the parameters of the perpendicular line that goes through the midpoint between AB, BC and CA"
+            },
+            {
+                "type": "expression",
+                "id": "28",
+                "color": "#2d70b3",
+                "latex": "m_1=\\frac{a_x-b_x}{b_y-a_y}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "29",
+                "color": "#388c46",
+                "latex": "n_1=\\frac{a_y+b_y}{2}-m_1\\frac{a_x+b_x}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "31",
+                "color": "#6042a6",
+                "latex": "m_2=\\frac{b_x-c_x}{c_y-b_y}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "32",
+                "color": "#000000",
+                "latex": "n_2=\\frac{b_y+c_y}{2}-m_2\\frac{b_x+c_x}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "52",
+                "color": "#c74440",
+                "latex": "m_3=\\frac{c_x-a_x}{a_y-c_y}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "53",
+                "color": "#2d70b3",
+                "latex": "n_3=\\frac{a_y+c_y}{2}-m_3\\frac{a_x+c_x}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "50",
+                "text": "Get the intersection between those lines using Cramer's Rule"
+            },
+            {
+                "type": "expression",
+                "id": "35",
+                "color": "#388c46",
+                "latex": "D=m_2-m_1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "36",
+                "color": "#fa7e19",
+                "latex": "x_1=\\frac{n_1-n_2}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "38",
+                "color": "#000000",
+                "latex": "y_1=\\frac{-m_1n_2+m_2n_1}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "51",
+                "text": "This is the radii of the circunscribed circunference that's equal to the distance between the previous intersection point and one of the points a, b or c."
+            },
+            {
+                "type": "expression",
+                "id": "42",
+                "color": "#fa7e19",
+                "latex": "r_1=\\sqrt{\\left(a_x-x_1\\right)^2+\\left(a_y-y_1\\right)^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "40",
+                "color": "#2d70b3",
+                "latex": "\\left(x_1,y_1\\right)",
+                "pointStyle": "OPEN",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "41",
+                "color": "#388c46",
+                "latex": "\\left(x-x_1\\right)^2+\\left(y-y_1\\right)^2=r_1^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "55",
+                "text": "Draw the three lines"
+            },
+            {
+                "type": "expression",
+                "id": "56",
+                "color": "#6042a6",
+                "latex": "y=\\left[m_1,m_2,m_3\\right]x+\\left[n_1,n_2,n_3\\right]",
+                "hidden": true,
+                "style": "SOLID"
+            }
+        ]
+    }
+}

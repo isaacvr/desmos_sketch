@@ -1,0 +1,226 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -1.5958872197919836,
+            "ymin": -2.6461934801045803,
+            "xmax": 4.893322793484728,
+            "ymax": 1.8894498839965073
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "292",
+                "text": "Center and radii of the circumference"
+            },
+            {
+                "type": "expression",
+                "id": "264",
+                "color": "#6042a6",
+                "latex": "c_x=0",
+                "sliderMax": "14.64",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "265",
+                "color": "#000000",
+                "latex": "c_y=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "267",
+                "color": "#2d70b3",
+                "latex": "r_1=1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "268",
+                "color": "#388c46",
+                "latex": "\\left(x-c_x\\right)^2+\\left(y-c_y\\right)^2=r_1^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "266",
+                "color": "#388c46",
+                "latex": "\\left(c_x,c_y\\right)",
+                "showLabel": true,
+                "label": "C",
+                "dragMode": "XY",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "294",
+                "text": "Coordinates of the point"
+            },
+            {
+                "type": "expression",
+                "id": "269",
+                "color": "#fa7e19",
+                "latex": "p_x=2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "270",
+                "color": "#6042a6",
+                "latex": "p_y=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "271",
+                "color": "#c74440",
+                "latex": "\\left(p_x,p_y\\right)",
+                "showLabel": true,
+                "label": "P",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "296",
+                "text": "Vector from P to C"
+            },
+            {
+                "type": "expression",
+                "id": "277",
+                "color": "#000000",
+                "latex": "V_{pc}=\\left[c_x,c_y\\right]-\\left[p_x,p_y\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "298",
+                "text": "Length of a vector"
+            },
+            {
+                "type": "expression",
+                "id": "275",
+                "color": "#fa7e19",
+                "latex": "d\\left(v\\right)=\\sqrt{v\\left[1\\right]^2+v\\left[2\\right]^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "300",
+                "text": "Length of the segment PA (Aplying Pythagoras' theorem on PA, PC and AC)"
+            },
+            {
+                "type": "expression",
+                "id": "276",
+                "color": "#6042a6",
+                "latex": "b=\\sqrt{d\\left(V_{pc}\\right)^2-r_1^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "302",
+                "text": "Helper function to get the rotated version of a vector"
+            },
+            {
+                "type": "expression",
+                "id": "278",
+                "color": "#c74440",
+                "latex": "R_{otate}\\left(v,a\\right)=\\left[v\\left[1\\right]\\cdot\\cos\\left(a\\right)-v\\left[2\\right]\\cdot\\sin\\left(a\\right),v\\left[1\\right]\\cdot\\sin\\left(a\\right)+v\\left[2\\right]\\cdot\\cos\\left(a\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "304",
+                "text": "alpha = <APC"
+            },
+            {
+                "type": "expression",
+                "id": "280",
+                "color": "#388c46",
+                "latex": "a_{lpha}=\\sin^{-1}\\left(\\frac{r_1}{d\\left(V_{pc}\\right)}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "306",
+                "text": "Vectors PA and PB"
+            },
+            {
+                "type": "expression",
+                "id": "282",
+                "color": "#6042a6",
+                "latex": "V_{pa}=R_{otate}\\left(V_{pc},-a_{lpha}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "287",
+                "color": "#fa7e19",
+                "latex": "V_{pb}=R_{otate}\\left(V_{pc},a_{lpha}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "307",
+                "text": "Get the actual points A and B"
+            },
+            {
+                "type": "expression",
+                "id": "285",
+                "color": "#2d70b3",
+                "latex": "A=\\frac{V_{pa}}{d\\left(V_{pa}\\right)}b+\\left[p_x,p_y\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "286",
+                "color": "#388c46",
+                "latex": "B=\\frac{V_{pb}}{d\\left(V_{pb}\\right)}b+\\left[p_x,p_y\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "283",
+                "color": "#c74440",
+                "latex": "\\left(A\\left[1\\right],A\\left[2\\right]\\right)",
+                "showLabel": true,
+                "label": "A",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "288",
+                "color": "#c74440",
+                "latex": "\\left(B\\left[1\\right],B\\left[2\\right]\\right)",
+                "showLabel": true,
+                "label": "B",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "308",
+                "text": "Draw the tangent lines that goes from P to A and B"
+            },
+            {
+                "type": "expression",
+                "id": "284",
+                "color": "#c74440",
+                "latex": "\\left(y-p_y\\right)=\\frac{V_{pa}\\left[2\\right]}{V_{pa}\\left[1\\right]}\\left(x-p_x\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "289",
+                "color": "#c74440",
+                "latex": "\\left(y-p_y\\right)=\\frac{V_{pb}\\left[2\\right]}{V_{pb}\\left[1\\right]}\\left(x-p_x\\right)",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

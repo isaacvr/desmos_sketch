@@ -1,0 +1,320 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -2.6207220133204947,
+            "ymin": -2.3095205097187574,
+            "xmax": 4.149683756029931,
+            "ymax": 2.422665062520044
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "109",
+                "text": "Set up the coordinates of the basis vectors"
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "i_x=1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "58",
+                "color": "#2d70b3",
+                "latex": "i_y=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "59",
+                "color": "#388c46",
+                "latex": "j_x=0.36",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "60",
+                "color": "#fa7e19",
+                "latex": "j_y=1.25",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "110",
+                "text": "Coordinates of the point that is going to be transformed"
+            },
+            {
+                "type": "expression",
+                "id": "86",
+                "color": "#000000",
+                "latex": "p_x=0.95",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "87",
+                "color": "#c74440",
+                "latex": "p_y=0.713",
+                "sliderMin": "-2.067",
+                "sliderMax": "2.96",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "111",
+                "text": "Show the point in this way in order to get them draggable"
+            },
+            {
+                "type": "expression",
+                "id": "80",
+                "color": "#000000",
+                "latex": "\\left(i_x,i_y\\right)",
+                "showLabel": true,
+                "label": "i",
+                "dragMode": "XY",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "81",
+                "color": "#000000",
+                "latex": "\\left(j_x,j_y\\right)",
+                "showLabel": true,
+                "label": "j",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "89",
+                "color": "#388c46",
+                "latex": "\\left(p_x,p_y\\right)",
+                "showLabel": true,
+                "label": "P",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "113",
+                "text": "Length of a vector from origin to (x,y)"
+            },
+            {
+                "type": "expression",
+                "id": "63",
+                "color": "#c74440",
+                "latex": "N\\left(x,y\\right)=\\sqrt{x^2+y^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "115",
+                "text": "X and Y coordinates of the rotated and scaled version of (x,y) with 'a' as the angle. The next functions until V(x,y) are intended to be used to draw a vector"
+            },
+            {
+                "type": "expression",
+                "id": "64",
+                "color": "#2d70b3",
+                "latex": "P_x\\left(x,y,a\\right)=\\frac{x\\cos\\left(a\\right)-y\\sin\\left(a\\right)}{15}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "66",
+                "color": "#fa7e19",
+                "latex": "P_y\\left(x,y,a\\right)=\\frac{x\\sin\\left(a\\right)+y\\cos\\left(a\\right)}{15}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "70",
+                "color": "#2d70b3",
+                "latex": "t_x\\left(x,y,a\\right)=x+P_x\\left(x,y,a\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "72",
+                "color": "#fa7e19",
+                "latex": "t_y\\left(x,y,a\\right)=y+P_y\\left(x,y,a\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "61",
+                "color": "#6042a6",
+                "latex": "V\\left(x,y\\right)=\\left(\\left[0,x,t_x\\left(x,y,-\\frac{8\\pi}{7}\\right),x,t_x\\left(x,y,\\frac{8\\pi}{7}\\right)\\right],\\left[0,y,t_y\\left(x,y,-\\frac{8\\pi}{7}\\right),y,t_y\\left(x,y,\\frac{8\\pi}{7}\\right)\\right]\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "117",
+                "text": "Matrix multiplication"
+            },
+            {
+                "type": "expression",
+                "id": "103",
+                "color": "#c74440",
+                "latex": "M\\left(m_{11},m_{12},m_{21},m_{22},x,y\\right)=\\left[m_{11}x+m_{12}y,m_{21}x+m_{22}y\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "119",
+                "text": "This is the transformed version of vector (x,y) by aplying a matrix "
+            },
+            {
+                "type": "expression",
+                "id": "98",
+                "color": "#2d70b3",
+                "latex": "V_t\\left(x,y\\right)=V\\left(M\\left(i_x,j_x,i_y,j_y,x,y\\right)\\left[1\\right],M\\left(i_x,j_x,i_y,j_y,x,y\\right)\\left[2\\right]\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "120",
+                "text": "Show the basis vectors and the transformed vector (Px,Py)'"
+            },
+            {
+                "type": "expression",
+                "id": "62",
+                "color": "#000000",
+                "latex": "V\\left(i_x,i_y\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "74",
+                "color": "#000000",
+                "latex": "V\\left(j_x,j_y\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "88",
+                "color": "#c74440",
+                "latex": "V_t\\left(p_x,p_y\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "90",
+                "color": "#c74440",
+                "latex": "\\left(M\\left(i_x,j_x,i_y,j_y,p_x,p_y\\right)\\left[1\\right],M\\left(i_x,j_x,i_y,j_y,p_x,p_y\\right)\\left[2\\right]\\right)",
+                "showLabel": true,
+                "label": "P'",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "121",
+                "text": "Draw the grid"
+            },
+            {
+                "type": "expression",
+                "id": "82",
+                "color": "#2d70b3",
+                "latex": "R=\\left[-10...10\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "914",
+                "color": "#2d70b3",
+                "latex": "\\left(i_x\\cdot R+10j_xt,i_y\\cdot R+10j_yt\\right)",
+                "domain": {
+                    "min": "-1",
+                    "max": "1"
+                },
+                "fill": false,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "83",
+                "color": "#2d70b3",
+                "latex": "\\left(j_x\\cdot R+10i_xt,j_y\\cdot R+10i_yt\\right)",
+                "domain": {
+                    "min": "-1",
+                    "max": "1"
+                },
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "123",
+                "text": "Calc the eingenvalues a1 and a2"
+            },
+            {
+                "type": "expression",
+                "id": "84",
+                "color": "#fa7e19",
+                "latex": "m=\\frac{i_x+j_y}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "91",
+                "color": "#c74440",
+                "latex": "d=\\sqrt{m^2-\\left(i_xj_y-i_yj_x\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "92",
+                "color": "#2d70b3",
+                "latex": "a_1=m+d",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "93",
+                "color": "#388c46",
+                "latex": "a_2=m-d",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "125",
+                "text": "Draw the lines where all the eingenvectors are. You can test this for yourself by placing the point P on top of one of those lines and to see that P' gets placed in the same line as well."
+            },
+            {
+                "type": "expression",
+                "id": "917",
+                "color": "#388c46",
+                "latex": "\\left(j_xt,\\left(j_y-a_2\\right)t\\right)",
+                "domain": {
+                    "min": "-10^3",
+                    "max": "10^3"
+                },
+                "lineStyle": "DASHED",
+                "fill": false,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "918",
+                "color": "#388c46",
+                "latex": "\\left(\\left(i_x-a_1\\right)t,i_yt\\right)",
+                "domain": {
+                    "min": "-10^3",
+                    "max": "10^3"
+                },
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

@@ -1,0 +1,200 @@
+{
+    "version": 5,
+    "graph": {
+        "squareAxes": false,
+        "viewport": {
+            "xmin": -12.605341019927927,
+            "ymin": -7.444113279445303,
+            "xmax": 17.214759753441456,
+            "ymax": 6.991833429526779
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "f\\left(P,N,t\\right)=\\sum_{i=0}^N\\operatorname{nCr}\\left(N,i\\right)\\cdot P\\left[i+1\\right]\\cdot\\left(1-t\\right)^{N-i}t^i",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "433",
+                "color": "#2d70b3",
+                "latex": "d_{1x}=\\left[1.282,0.77,6.56,4.475\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "434",
+                "color": "#388c46",
+                "latex": "d_{1y}=[5.086,-0.1,0.61,4.584]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "457",
+                "color": "#c74440",
+                "latex": "d_{2x}=[4.475,11,13.12,6.2]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "458",
+                "color": "#2d70b3",
+                "latex": "d_{2y}=[4.584,2.97,-2.71,-4.7607]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "459",
+                "color": "#388c46",
+                "latex": "d_{3x}=[6.2,7.99,5.235,3.656]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "460",
+                "color": "#fa7e19",
+                "latex": "d_{3y}=[-4.7607,-2.225,-1.68,-3.316]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "461",
+                "color": "#6042a6",
+                "latex": "d_{4x}=[3.656,3.055,1.693,0]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "462",
+                "color": "#000000",
+                "latex": "d_{4y}=[-3.316,-1.935,-1.842,-4.96]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "466",
+                "color": "#fa7e19",
+                "latex": "d_{5x}=[0,1.027,0.266,1.282]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "467",
+                "color": "#6042a6",
+                "latex": "d_{5y}=[3.928,3.937,4.145,5.086]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "451",
+                "color": "#c74440",
+                "latex": "t_0=\\frac{\\left[0...100\\right]}{100}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "452",
+                "color": "#000000",
+                "latex": "\\left(f\\left(d_{1x},3,t_0\\right),f\\left(d_{1y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "463",
+                "color": "#000000",
+                "latex": "\\left(f\\left(d_{2x},3,t_0\\right),f\\left(d_{2y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "464",
+                "color": "#000000",
+                "latex": "\\left(f\\left(d_{3x},3,t_0\\right),f\\left(d_{3y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "465",
+                "color": "#000000",
+                "latex": "\\left(f\\left(d_{4x},3,t_0\\right),f\\left(d_{4y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "468",
+                "color": "#000000",
+                "latex": "\\left(f\\left(d_{5x},3,t_0\\right),f\\left(d_{5y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "453",
+                "color": "#000000",
+                "latex": "\\left(f\\left(-d_{1x},3,t_0\\right),f\\left(d_{1y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "469",
+                "color": "#000000",
+                "latex": "\\left(f\\left(-d_{2x},3,t_0\\right),f\\left(d_{2y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "470",
+                "color": "#000000",
+                "latex": "\\left(f\\left(-d_{3x},3,t_0\\right),f\\left(d_{3y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "471",
+                "color": "#000000",
+                "latex": "\\left(f\\left(-d_{4x},3,t_0\\right),f\\left(d_{4y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "472",
+                "color": "#000000",
+                "latex": "\\left(f\\left(-d_{5x},3,t_0\\right),f\\left(d_{5y},3,t_0\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

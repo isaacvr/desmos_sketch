@@ -1,0 +1,167 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": 0.15608739521739134,
+            "ymin": 0.21213994137935077,
+            "xmax": 1.9256765450600883,
+            "ymax": 1.4489970115654935
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#2d70b3",
+                "latex": "f\\left(x\\right)=x^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "145",
+                "text": "Center point"
+            },
+            {
+                "type": "expression",
+                "id": "126",
+                "color": "#2d70b3",
+                "latex": "x_0=1",
+                "sliderMin": "-38.07572643",
+                "sliderMax": "20.3723334",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "127",
+                "color": "#388c46",
+                "latex": "\\left(x_0,f\\left(x_0\\right)\\right)",
+                "showLabel": true,
+                "label": "X0",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "147",
+                "text": "Epsilon is a fixed value. If we can find a value of \"d\" (delta) that places both (x0, f(x0+d)) and (x0, f(x0-d)) within the section formed by the lines y=f(x0)+eps and y=f(x0)-eps, for every value of eps, as eps approaches to zero, then, the resulting value of f(x0+d) and f(x0-d) will approach to L (the limit of the function at that point)."
+            },
+            {
+                "type": "expression",
+                "id": "131",
+                "color": "#c74440",
+                "latex": "e_{ps}=130",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "1000",
+                "sliderInterval": "1",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "148",
+                "text": "f1, f2 and f3 are adjustment factors to get eps closer and closer to zero. (fine tuning)"
+            },
+            {
+                "type": "expression",
+                "id": "142",
+                "color": "#000000",
+                "latex": "f_1=1",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "1",
+                "sliderMax": "100",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "143",
+                "color": "#c74440",
+                "latex": "f_2=1",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "1",
+                "sliderMax": "1000",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "144",
+                "color": "#2d70b3",
+                "latex": "f_3=1000",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "1",
+                "sliderMax": "10000",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "150",
+                "text": "This is delta"
+            },
+            {
+                "type": "expression",
+                "id": "135",
+                "color": "#6042a6",
+                "latex": "d=0.102",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "9.7",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "133",
+                "color": "#388c46",
+                "latex": "y=f\\left(x_0\\right)+\\frac{e_{ps}}{f_1f_2f_3}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "134",
+                "color": "#388c46",
+                "latex": "y=f\\left(x_0\\right)-\\frac{e_{ps}}{f_1f_2f_3}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "137",
+                "color": "#c74440",
+                "latex": "x=x_0+d",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "138",
+                "color": "#c74440",
+                "latex": "x=x_0-d",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "139",
+                "color": "#388c46",
+                "latex": "\\left(x_0+d,f\\left(x_0+d\\right)\\right)",
+                "showLabel": true,
+                "label": "f(x0+d)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "140",
+                "color": "#388c46",
+                "latex": "\\left(x_0-d,f\\left(x_0-d\\right)\\right)",
+                "showLabel": true,
+                "label": "f(x0-d)",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

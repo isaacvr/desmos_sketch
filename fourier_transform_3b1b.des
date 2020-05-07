@@ -1,0 +1,115 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -16.481350750577363,
+            "ymin": -12.858922396438988,
+            "xmax": 33.17377390573541,
+            "ymax": 21.84760369537017
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "31",
+                "color": "#388c46",
+                "latex": "f_1=\\left[-4...5\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "32",
+                "color": "#fa7e19",
+                "latex": "a_1=\\frac{\\left[4.86,12.73,26.82,19.73,23.24,183.14,23.97,17.34,18.77,11.75\\right]}{20}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "33",
+                "color": "#6042a6",
+                "latex": "p_1=\\left[-1.74,-1.56,1.79,-1.3,-0.39,0.66,-1.81,-0.69,0.18,-2.18\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "41",
+                "color": "#c74440",
+                "latex": "f_x\\left(n,\\ t\\right)=\\sum_{m=1}^na_1\\left[m\\right]\\cdot\\cos\\left(f_1\\left[m\\right]\\cdot t+p_1\\left[m\\right]\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "45",
+                "color": "#6042a6",
+                "latex": "f_y\\left(n,\\ t\\right)=\\sum_{m=1}^na_1\\left[m\\right]\\cdot\\sin\\left(f_1\\left[m\\right]\\cdot t+p_1\\left[m\\right]\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "47",
+                "color": "#c74440",
+                "latex": "i=\\left[1...10\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "46",
+                "color": "#2d70b3",
+                "latex": "\\left(f_x\\left(i,t_0\\right),\\ f_y\\left(i,t_0\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "48",
+                "color": "#2d70b3",
+                "latex": "t_0=0",
+                "hidden": true,
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderAnimationPeriod": 26666.666666666668,
+                "sliderLoopMode": "LOOP_FORWARD",
+                "sliderMin": "0",
+                "sliderMax": "2\\cdot\\pi",
+                "sliderInterval": "0.01",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "49",
+                "color": "#388c46",
+                "latex": "\\left(x-f_x\\left(i,t_0\\right)\\right)^2+\\left(y-f_y\\left(i,t_0\\right)\\right)^2=a_1^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "57",
+                "color": "#6042a6",
+                "latex": "A=30",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "1",
+                "sliderMax": "30",
+                "sliderInterval": "1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "53",
+                "color": "#c74440",
+                "latex": "a_n=\\frac{\\left[0...\\operatorname{floor}\\left(At_0\\right)\\right]}{\\operatorname{floor}\\left(At_0\\right)}\\cdot t_0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "54",
+                "color": "#2d70b3",
+                "latex": "\\left(f_x\\left(10,\\ a_n\\right),f_y\\left(10,a_n\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

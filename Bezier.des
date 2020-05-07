@@ -1,0 +1,161 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -9.34631435597518,
+            "ymin": -5.863517000404274,
+            "xmax": 18.256508371853414,
+            "ymax": 13.429518589411204
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "340",
+                "color": "#fa7e19",
+                "latex": "a_x=-1.46",
+                "sliderMax": "11.24",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "342",
+                "color": "#000000",
+                "latex": "a_y=2.34",
+                "sliderMax": "15.42",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "343",
+                "color": "#c74440",
+                "latex": "b_x=1.17",
+                "sliderMax": "10.56",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "344",
+                "color": "#2d70b3",
+                "latex": "b_y=3.71",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "347",
+                "color": "#2d70b3",
+                "latex": "c_x=4.54",
+                "sliderMax": "10.92",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "348",
+                "color": "#388c46",
+                "latex": "c_y=2.95",
+                "sliderMax": "14.47",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "351",
+                "color": "#000000",
+                "latex": "d_x=8.83",
+                "sliderMax": "18.42",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "352",
+                "color": "#c74440",
+                "latex": "d_y=4.36",
+                "sliderMax": "14.37",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "361",
+                "color": "#388c46",
+                "latex": "\\left(0,0\\right)",
+                "showLabel": true,
+                "label": "A",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "345",
+                "color": "#388c46",
+                "latex": "\\left(a_x,a_y\\right)",
+                "showLabel": true,
+                "label": "B",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "346",
+                "color": "#388c46",
+                "latex": "\\left(b_x,b_y\\right)",
+                "showLabel": true,
+                "label": "C",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "349",
+                "color": "#388c46",
+                "latex": "\\left(c_x,c_y\\right)",
+                "showLabel": true,
+                "label": "D",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "353",
+                "color": "#388c46",
+                "latex": "\\left(d_x,d_y\\right)",
+                "showLabel": true,
+                "label": "E",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "362",
+                "color": "#388c46",
+                "latex": "\\left(10,10\\right)",
+                "showLabel": true,
+                "label": "F",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "356",
+                "color": "#6042a6",
+                "latex": "C_x=\\left[0,a_x,b_x,c_x,d_x,10\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "357",
+                "color": "#000000",
+                "latex": "C_y=\\left[0,a_y,b_y,c_y,d_y,10\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "354",
+                "color": "#388c46",
+                "latex": "f\\left(P_x,P_y,N\\right)=\\left(\\sum_{n=0}^N\\operatorname{nCr}\\left(N,\\ n\\right)\\cdot P_x\\left[n+1\\right]\\cdot\\left(1-t\\right)^{N-n}\\cdot t^n,\\sum_{n=0}^N\\operatorname{nCr}\\left(N,\\ n\\right)\\cdot P_y\\left[n+1\\right]\\cdot\\left(1-t\\right)^{N-n}\\cdot t^n\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "355",
+                "color": "#388c46",
+                "latex": "f\\left(C_x,C_y,5\\right)",
+                "fill": false,
+                "style": "SOLID"
+            }
+        ]
+    }
+}

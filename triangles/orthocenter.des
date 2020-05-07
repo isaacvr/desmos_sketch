@@ -1,0 +1,177 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -8.27674274211608,
+            "ymin": -2.4479247221885885,
+            "xmax": 10.058614970532988,
+            "ymax": 10.367601877759387
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "111",
+                "text": "Create points with sliders to allow them to be draggable"
+            },
+            {
+                "type": "expression",
+                "id": "112",
+                "color": "#2d70b3",
+                "latex": "a_x=5.8",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "115",
+                "color": "#6042a6",
+                "latex": "a_y=-0.93",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "113",
+                "color": "#388c46",
+                "latex": "b_x=0.62",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "116",
+                "color": "#000000",
+                "latex": "b_y=2.58",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "117",
+                "color": "#c74440",
+                "latex": "c_x=4.06",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "118",
+                "color": "#2d70b3",
+                "latex": "c_y=6.65",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "114",
+                "color": "#c74440",
+                "latex": "\\left(a_x,a_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "119",
+                "color": "#c74440",
+                "latex": "\\left(b_x,b_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "120",
+                "color": "#c74440",
+                "latex": "\\left(c_x,c_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "121",
+                "color": "#c74440",
+                "latex": "\\left[\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right),\\left(a_x,a_y\\right)\\right]",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "124",
+                "text": "Get the components of the 3 lines"
+            },
+            {
+                "type": "expression",
+                "id": "122",
+                "color": "#000000",
+                "latex": "m_1=\\frac{c_x-b_x}{b_y-c_y}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "125",
+                "color": "#2d70b3",
+                "latex": "n_1=-m_1a_x+a_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "127",
+                "color": "#fa7e19",
+                "latex": "m_2=\\frac{c_x-a_x}{a_y-c_y}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "129",
+                "color": "#000000",
+                "latex": "n_2=-m_2b_x+b_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "130",
+                "color": "#c74440",
+                "latex": "m_3=\\frac{b_x-a_x}{a_y-b_y}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "128",
+                "color": "#6042a6",
+                "latex": "n_3=-m_3c_x+c_y",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "131",
+                "color": "#2d70b3",
+                "latex": "y=\\left[m_1,m_2,m_3\\right]x+\\left[n_1,n_2,n_3\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "133",
+                "color": "#fa7e19",
+                "latex": "D=m_2-m_1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "134",
+                "color": "#6042a6",
+                "latex": "p_x=\\frac{n_1-n_2}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "135",
+                "color": "#000000",
+                "latex": "p_y=\\frac{m_2n_1-m_1n_2}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "136",
+                "color": "#388c46",
+                "latex": "\\left(p_x,p_y\\right)",
+                "pointStyle": "OPEN",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

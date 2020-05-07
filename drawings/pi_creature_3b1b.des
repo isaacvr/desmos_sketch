@@ -1,0 +1,241 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -5.363174091473326,
+            "ymin": -3.8098530925836647,
+            "xmax": 6.950807099269811,
+            "ymax": 4.226236912450948
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "552",
+                "text": "3blue1brown PI creature"
+            },
+            {
+                "type": "text",
+                "id": "554",
+                "text": "Helper functions. Function A() draws a circumference arc with center, radii and angles specified. Function L is a second order Lagrange's Interpolator function that draws a polynomial function with degree equals to 2 and pass through points (x1, y1), (x2, y2) and (x3, y3)."
+            },
+            {
+                "type": "expression",
+                "id": "492",
+                "color": "#fa7e19",
+                "latex": "t_0\\left(N\\right)=\\frac{\\left[0...\\operatorname{floor}\\left(40N\\right)\\right]}{\\operatorname{floor}\\left(40N\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "491",
+                "color": "#388c46",
+                "latex": "A\\left(c_x,c_y,r,a_1,a_2\\right)=\\left(c_x+r\\cdot\\cos\\left(a_1+\\left(a_2-a_1\\right)\\cdot t_0\\left(\\left|a_1-a_2\\right|\\cdot r\\right)\\right),c_y+r\\cdot\\sin\\left(a_1+\\left(a_2-a_1\\right)\\cdot t_0\\left(\\left|a_1-a_2\\right|\\cdot r\\right)\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "524",
+                "color": "#000000",
+                "latex": "L\\left(x_1,y_1,x_2,y_2,x_3,y_3,x\\right)=\\frac{y_1\\left(x-x_2\\right)\\left(x-x_3\\right)}{\\left(x_1-x_2\\right)\\left(x_1-x_3\\right)}+\\frac{y_2\\left(x-x_1\\right)\\left(x-x_3\\right)}{\\left(x_2-x_1\\right)\\left(x_2-x_3\\right)}+\\frac{y_3\\left(x-x_1\\right)\\left(x-x_2\\right)}{\\left(x_3-x_1\\right)\\left(x_3-x_2\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "556",
+                "text": "BODY"
+            },
+            {
+                "type": "expression",
+                "id": "484",
+                "color": "#2d70b3",
+                "latex": "y=2.33\\left\\{-1.4\\le x\\le3.07\\right\\}",
+                "sliderInterval": "0.01",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "496",
+                "color": "#2d70b3",
+                "latex": "A\\left(2.9478364,2.056,0.3,\\frac{3\\pi}{2},2\\pi+1.15139676725\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "497",
+                "color": "#2d70b3",
+                "latex": "y=1.756\\left\\{1.34\\le x\\le2.9478364\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "501",
+                "color": "#2d70b3",
+                "latex": "A\\left(8.28778,0,7.16624,2.89403438775,3.47332111368\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "504",
+                "color": "#2d70b3",
+                "latex": "A\\left(1.1053465,-2.438,0.42,4.2,6.53369016474\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "511",
+                "color": "#2d70b3",
+                "latex": "A\\left(2.235,-1.9023,1.611,3.198,3.735\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "507",
+                "color": "#2d70b3",
+                "latex": "A\\left(10.11,-1.44,9.5,2.7985,3.2\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "512",
+                "color": "#2d70b3",
+                "latex": "y=1.756\\left\\{-0.25\\le x\\le1.163671413\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "513",
+                "color": "#2d70b3",
+                "latex": "y=4x+2.756\\left\\{-1\\le x\\le-0.25\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "525",
+                "color": "#2d70b3",
+                "latex": "L\\left(-1.733,-2.85,-1.552,-2.724,-1,-1.244,x\\right)\\left\\{-1.771\\le x\\le-1\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "532",
+                "color": "#2d70b3",
+                "latex": "A\\left(-1.8,-2.546,0.30931,2.81984209919,4.80657204737\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "527",
+                "color": "#2d70b3",
+                "latex": "L\\left(-1.65,-1.56,-0.48,1.756,-2.094,-2.448,x\\right)\\left\\{-2.094\\le x\\le-0.48\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "533",
+                "color": "#2d70b3",
+                "latex": "y=1.756\\left\\{-1.45\\le x\\le-0.48\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "534",
+                "color": "#2d70b3",
+                "latex": "L\\left(-2.83,0.693,-2.307,1.32,-1.45,1.756,x\\right)\\left\\{-2.83\\le x\\le-1.45\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "535",
+                "color": "#2d70b3",
+                "latex": "L\\left(-2.975,0.79,-1.97,2.114,-1.4,2.33,x\\right)\\left\\{-2.975\\le x\\le-1.4\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "540",
+                "color": "#2d70b3",
+                "latex": "\\left(x+2.9025\\right)^2+\\left(y-0.7415\\right)^2=0.0872^2\\left\\{y+0.669x<-1.2\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "558",
+                "text": "EYES"
+            },
+            {
+                "type": "expression",
+                "id": "542",
+                "color": "#000000",
+                "latex": "\\left(x-0.011\\right)^2+\\left(y-2.783\\right)^2\\le0.139^2\\left\\{\\left(x+0.041\\right)^2+\\left(y-2.8524\\right)^2\\ge0.048^2\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "550",
+                "color": "#000000",
+                "latex": "\\left(x+0.041\\right)^2+\\left(y-2.8524\\right)^2=0.048^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "544",
+                "color": "#000000",
+                "latex": "\\left(x-1.157\\right)^2+\\left(y-2.783\\right)^2\\le0.139^2\\left\\{\\left(x-1.105\\right)^2+\\left(y-2.8524\\right)^2\\ge0.048^2\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "551",
+                "color": "#000000",
+                "latex": "\\left(x-1.105\\right)^2+\\left(y-2.8524\\right)^2=0.048^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "560",
+                "text": "MOUTH"
+            },
+            {
+                "type": "expression",
+                "id": "547",
+                "color": "#000000",
+                "latex": "y=\\left[1.88,1.94\\right]\\left\\{0.17\\le x\\le0.7\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "548",
+                "color": "#000000",
+                "latex": "\\left(x-0.7\\right)^2+\\left(y-1.91\\right)^2=0.03^2\\left\\{x>0.7\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "549",
+                "color": "#000000",
+                "latex": "\\left(x-0.17\\right)^2+\\left(y-1.91\\right)^2=0.03^2\\left\\{x<0.17\\right\\}",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

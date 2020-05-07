@@ -1,0 +1,239 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -2.9232607606300145,
+            "ymin": -0.7369651790582648,
+            "xmax": 12.770037930717073,
+            "ymax": 10.231890186176397
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "881",
+                "color": "#000000",
+                "latex": "t_0=0",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderAnimationPeriod": 5333.333333333333,
+                "sliderMin": "0",
+                "sliderMax": "1",
+                "sliderInterval": "0.001",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "F\\left(P_x,P_y,N,t\\right)=\\left(\\sum_{n=0}^N\\operatorname{nCr}\\left(N,\\ n\\right)\\cdot P_x\\left[n+1\\right]\\cdot\\left(1-t\\right)^{N-n}\\cdot t^n,\\sum_{n=0}^N\\operatorname{nCr}\\left(N,\\ n\\right)\\cdot P_y\\left[n+1\\right]\\cdot\\left(1-t\\right)^{N-n}\\cdot t^n\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "882",
+                "color": "#c74440",
+                "latex": "I\\left(p_1,\\ p_2,\\ \\alpha\\right)=p_1\\cdot\\left(1-\\alpha\\right)+p_2\\cdot\\alpha",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "865",
+                "color": "#2d70b3",
+                "latex": "a_x=-2.42",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "866",
+                "color": "#388c46",
+                "latex": "a_y=7.57",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "867",
+                "color": "#fa7e19",
+                "latex": "b_x=5.1",
+                "sliderMax": "16.34",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "868",
+                "color": "#6042a6",
+                "latex": "b_y=10.16",
+                "sliderMax": "11.26",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "869",
+                "color": "#000000",
+                "latex": "c_x=9.7",
+                "sliderMax": "11.21",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "870",
+                "color": "#c74440",
+                "latex": "c_y=2.64",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "875",
+                "color": "#c74440",
+                "latex": "\\left(a_x,a_y\\right)",
+                "showLabel": true,
+                "label": "A",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "876",
+                "color": "#c74440",
+                "latex": "\\left(b_x,b_y\\right)",
+                "showLabel": true,
+                "label": "B",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "877",
+                "color": "#c74440",
+                "latex": "\\left(c_x,c_y\\right)",
+                "showLabel": true,
+                "label": "C",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "878",
+                "color": "#c74440",
+                "latex": "\\left(0,0\\right),\\left(10,10\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "872",
+                "color": "#388c46",
+                "latex": "A_x=\\left[0,\\ a_x,b_x,c_x,10\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "873",
+                "color": "#fa7e19",
+                "latex": "A_y=\\left[0,\\ a_y,b_y,c_y,10\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "874",
+                "color": "#6042a6",
+                "latex": "F\\left(A_x,A_y,4,t\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "880",
+                "color": "#6042a6",
+                "latex": "B_x=\\left[I\\left(A_x\\left[1\\right],\\ A_x\\left[2\\right],t_0\\right),I\\left(A_x\\left[2\\right],\\ A_x\\left[3\\right],t_0\\right),I\\left(A_x\\left[3\\right],\\ A_x\\left[4\\right],t_0\\right),I\\left(A_x\\left[4\\right],\\ A_x\\left[5\\right],t_0\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "883",
+                "color": "#2d70b3",
+                "latex": "B_y=\\left[I\\left(A_y\\left[1\\right],\\ A_y\\left[2\\right],t_0\\right),I\\left(A_y\\left[2\\right],\\ A_y\\left[3\\right],t_0\\right),I\\left(A_y\\left[3\\right],\\ A_y\\left[4\\right],t_0\\right),I\\left(A_y\\left[4\\right],\\ A_y\\left[5\\right],t_0\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "885",
+                "color": "#fa7e19",
+                "latex": "C_x=\\left[I\\left(B_x\\left[1\\right],\\ B_x\\left[2\\right],t_0\\right),I\\left(B_x\\left[2\\right],\\ B_x\\left[3\\right],t_0\\right),I\\left(B_x\\left[3\\right],\\ B_x\\left[4\\right],t_0\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "886",
+                "color": "#6042a6",
+                "latex": "C_y=\\left[I\\left(B_y\\left[1\\right],\\ B_y\\left[2\\right],t_0\\right),I\\left(B_y\\left[2\\right],\\ B_y\\left[3\\right],t_0\\right),I\\left(B_y\\left[3\\right],\\ B_y\\left[4\\right],t_0\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "888",
+                "color": "#c74440",
+                "latex": "D_x=\\left[I\\left(C_x\\left[1\\right],\\ C_x\\left[2\\right],t_0\\right),I\\left(C_x\\left[2\\right],\\ C_x\\left[3\\right],t_0\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "890",
+                "color": "#388c46",
+                "latex": "D_y=\\left[I\\left(C_y\\left[1\\right],\\ C_y\\left[2\\right],t_0\\right),I\\left(C_y\\left[2\\right],\\ C_y\\left[3\\right],t_0\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "892",
+                "color": "#6042a6",
+                "latex": "E_x=I\\left(D_x\\left[1\\right],D_x\\left[2\\right],t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "893",
+                "color": "#000000",
+                "latex": "E_y=I\\left(D_y\\left[1\\right],D_y\\left[2\\right],t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "879",
+                "color": "#2d70b3",
+                "latex": "\\left(A_x,A_y\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "884",
+                "color": "#388c46",
+                "latex": "\\left(B_x,B_y\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "887",
+                "color": "#fa7e19",
+                "latex": "\\left(C_x,C_y\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "891",
+                "color": "#6042a6",
+                "latex": "\\left(D_x,D_y\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "894",
+                "color": "#c74440",
+                "latex": "\\left(E_x,E_y\\right)",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            }
+        ]
+    }
+}
