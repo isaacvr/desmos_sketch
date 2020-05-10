@@ -1,0 +1,113 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -8.90390137398054,
+            "ymin": -4.190727224261263,
+            "xmax": 12.346098626019467,
+            "ymax": 10.661993105324761
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "54",
+                "text": "Parabolic antennas are not that way randomly. Parabolas have the property that all the rays parallel to their reflection axis, pass through the focus. In that point is commonly placed the sensor of the signal."
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "f\\left(x\\right)=\\frac{x^2}{5}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "37",
+                "color": "#2d70b3",
+                "latex": "g\\left(x\\right)=f'\\left(x\\right)",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "47",
+                "color": "#000000",
+                "latex": "A\\left(\\alpha\\right)=\\left\\{\\alpha<0:\\tan^{-1}\\left(\\alpha\\right)+\\pi,\\ \\alpha\\ge0:\\tan^{-1}\\left(\\alpha\\right)\\right\\}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "38",
+                "color": "#388c46",
+                "latex": "a_x=3.46",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "39",
+                "color": "#fa7e19",
+                "latex": "a_y=5.08",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "40",
+                "color": "#6042a6",
+                "latex": "b_x=-5.3",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "41",
+                "color": "#000000",
+                "latex": "b_y=6.48",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "42",
+                "color": "#c74440",
+                "latex": "\\left(a_x,a_y\\right)",
+                "showLabel": true,
+                "label": "A",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "43",
+                "color": "#c74440",
+                "latex": "\\left(b_x,b_y\\right)",
+                "showLabel": true,
+                "label": "B",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "44",
+                "color": "#2d70b3",
+                "latex": "x=\\left[a_x,b_x\\right]\\left\\{y\\ge f\\left(\\left[a_x,b_x\\right]\\right)\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "45",
+                "color": "#2d70b3",
+                "latex": "y=\\tan\\left(2A\\left(g\\left(a_x\\right)\\right)-\\frac{\\pi}{2}\\right)\\cdot\\left(x-a_x\\right)+f\\left(a_x\\right)\\left\\{y\\ge f\\left(x\\right)\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "50",
+                "color": "#2d70b3",
+                "latex": "y=\\tan\\left(2A\\left(g\\left(b_x\\right)\\right)-\\frac{\\pi}{2}\\right)\\cdot\\left(x-b_x\\right)+f\\left(b_x\\right)\\left\\{y\\ge f\\left(x\\right)\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

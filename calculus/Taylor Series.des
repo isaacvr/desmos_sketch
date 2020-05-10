@@ -1,0 +1,69 @@
+{
+    "version": 5,
+    "graph": {
+        "squareAxes": false,
+        "viewport": {
+            "xmin": -11.62805353201308,
+            "ymin": -57.563197633762755,
+            "xmax": 18.80519767642866,
+            "ymax": 59.1150559607612
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "988",
+                "text": "Taylor Series decomposition"
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "f\\left(x\\right)=x\\cdot\\cos\\left(x\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "980",
+                "color": "#2d70b3",
+                "latex": "x_0=-0.5",
+                "sliderMax": "16.05",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "986",
+                "color": "#2d70b3",
+                "latex": "N=5",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "1",
+                "sliderMax": "27",
+                "sliderInterval": "1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "987",
+                "color": "#388c46",
+                "latex": "L=\\left[f\\left(x_0\\right),f'\\left(x_0\\right),f''\\left(x_0\\right),f'''\\left(x_0\\right),f''''\\left(x_0\\right),f'''''\\left(x_0\\right),f''''''\\left(x_0\\right),f'''''''\\left(x_0\\right),f''''''''\\left(x_0\\right),f'''''''''\\left(x_0\\right),f''''''''''\\left(x_0\\right),f'''''''''''\\left(x_0\\right),f''''''''''''\\left(x_0\\right),f'''''''''''''\\left(x_0\\right),f''''''''''''''\\left(x_0\\right),f'''''''''''''''\\left(x_0\\right),f''''''''''''''''\\left(x_0\\right),f'''''''''''''''''\\left(x_0\\right),f''''''''''''''''''\\left(x_0\\right),f'''''''''''''''''''\\left(x_0\\right),f''''''''''''''''''''\\left(x_0\\right),f'''''''''''''''''''''\\left(x_0\\right),f''''''''''''''''''''''\\left(x_0\\right),f'''''''''''''''''''''''\\left(x_0\\right),f''''''''''''''''''''''''\\left(x_0\\right),f'''''''''''''''''''''''''\\left(x_0\\right),f''''''''''''''''''''''''''\\left(x_0\\right)\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "981",
+                "color": "#388c46",
+                "latex": "\\sum_{n=0}^NL\\left[n+1\\right]\\cdot\\frac{\\left(x-x_0\\right)^n}{\\left(n\\right)!}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "982",
+                "color": "#fa7e19",
+                "latex": "\\left(x_0,f\\left(x_0\\right)\\right)",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

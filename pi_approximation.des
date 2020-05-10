@@ -4,10 +4,10 @@
         "xAxisMinorSubdivisions": 1,
         "yAxisMinorSubdivisions": 1,
         "viewport": {
-            "xmin": 20.90220863789085,
-            "ymin": -4.323119155028429,
-            "xmax": 31.810095090638224,
-            "ymax": 3.300964932949778
+            "xmin": -24.457243276173585,
+            "ymin": -26.878461472557927,
+            "xmax": 56.19112525221766,
+            "ymax": 29.49084030577541
         }
     },
     "expressions": {
@@ -16,7 +16,7 @@
                 "type": "expression",
                 "id": "1",
                 "color": "#c74440",
-                "latex": "N=2",
+                "latex": "N=5",
                 "sliderHardMin": true,
                 "sliderHardMax": true,
                 "sliderMin": "1",
@@ -74,18 +74,6 @@
             },
             {
                 "type": "text",
-                "id": "963",
-                "text": "Euler's Formula"
-            },
-            {
-                "type": "expression",
-                "id": "934",
-                "color": "#388c46",
-                "latex": "P_{i4}=\\left|2\\sum_{n=0}^N\\frac{2^n\\cdot n!}{\\prod_{k=n+1}^{2n+1}k}-\\pi\\right|",
-                "style": "SOLID"
-            },
-            {
-                "type": "text",
                 "id": "965",
                 "text": "Stirling's formula"
             },
@@ -106,6 +94,18 @@
                 "id": "937",
                 "color": "#000000",
                 "latex": "P_{i6}=\\left|\\sqrt{6\\cdot\\sum_{n=1}^N\\frac{1}{n^2}}-\\pi\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "963",
+                "text": "Euler's Formula"
+            },
+            {
+                "type": "expression",
+                "id": "934",
+                "color": "#388c46",
+                "latex": "P_{i4}=\\left|2\\sum_{n=0}^N\\frac{2^n\\cdot n!}{\\prod_{k=n+1}^{2n+1}k}-\\pi\\right|",
                 "style": "SOLID"
             },
             {

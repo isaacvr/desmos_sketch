@@ -92,9 +92,8 @@
                 "type": "expression",
                 "id": "21",
                 "color": "#c74440",
-                "latex": "\\left[\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right),\\left(a_x,a_y\\right)\\right]",
-                "points": false,
-                "lines": true,
+                "latex": "\\operatorname{polygon}\\left(\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right)\\right)",
+                "fill": false,
                 "dragMode": "NONE",
                 "style": "SOLID"
             },

@@ -1,0 +1,160 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -3.2138346626641114,
+            "ymin": -2.844161590392644,
+            "xmax": 4.8417286405920335,
+            "ymax": 2.786286825632751
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "34",
+                "text": "This is an example of how we can get a 3d shape by showing the proyection of that shape on the XY plane. You are looking right now a square, but this is because of the angle. Move the sliders and enjoy the party :)"
+            },
+            {
+                "type": "expression",
+                "id": "32",
+                "color": "#388c46",
+                "latex": "a_y=0",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "2\\pi",
+                "sliderInterval": "0.001",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "33",
+                "color": "#fa7e19",
+                "latex": "a_z=0",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "2\\pi",
+                "sliderInterval": "0.001",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "36",
+                "text": "This big vectorial function, takes a vector and 3 angles and returns the rotated version of the original vector. You can obtain it by composing the different matrices for all the axes (Take a look at Wikipedia: Rotation Matrix)"
+            },
+            {
+                "type": "expression",
+                "id": "31",
+                "color": "#2d70b3",
+                "latex": "R\\left(V,a_1,a_2,a_3\\right)=\\left[V\\left[1\\right]\\cdot\\cos\\left(a_2\\right)\\cdot\\cos\\left(a_3\\right)-V\\left[2\\right]\\cdot\\cos\\left(a_2)\\cdot\\sin\\left(a_3\\right)+V\\left[3\\right]\\cdot\\sin\\left(a_2\\right),V\\left[1\\right]\\cdot\\left(\\sin\\left(a_1\\right)\\cdot\\sin\\left(a_2\\right)\\cdot\\sin\\left(a_3\\right)+\\cos\\left(a_1\\right)\\cdot\\sin\\left(a_3\\right)\\right)+V\\left[2\\right]\\cdot\\left(-\\sin\\left(a_1\\right)\\cdot\\sin\\left(a_2\\right)\\cdot\\sin\\left(a_3\\right)+\\cos\\left(a_1\\right)\\cdot\\cos\\left(a_3\\right)\\right)-V\\left[3\\right]\\cdot\\sin\\left(a_1\\right)\\cdot\\cos\\left(a_2\\right),V\\left[3\\right]\\right]\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "8",
+                "color": "#388c46",
+                "latex": "P_1=R\\left(\\left[1,-1,1\\right],0,a_y,a_z\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "11",
+                "color": "#000000",
+                "latex": "P_2=R\\left(\\left[1,1,1\\right],0,a_y,a_z\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "12",
+                "color": "#c74440",
+                "latex": "P_3=R\\left(\\left[-1,1,1\\right],0,a_y,a_z\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "13",
+                "color": "#2d70b3",
+                "latex": "P_4=R\\left(\\left[-1,-1,1\\right],0,a_y,a_z\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "18",
+                "color": "#c74440",
+                "latex": "P_5=R\\left(\\left[1,-1,-1\\right],0,a_y,a_z\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "19",
+                "color": "#2d70b3",
+                "latex": "P_6=R\\left(\\left[1,1,-1\\right],0,a_y,a_z\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "20",
+                "color": "#388c46",
+                "latex": "P_7=R\\left(\\left[-1,1,-1\\right],0,a_y,a_z\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "21",
+                "color": "#fa7e19",
+                "latex": "P_8=R\\left(\\left[-1,-1,-1\\right],0,a_y,a_z\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "5",
+                "color": "rgb(240,48,49)",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_1\\left[1\\right],P_1\\left[2\\right]\\right),\\left(P_2\\left[1\\right],P_2\\left[2\\right]\\right),\\left(P_3\\left[1\\right],P_3\\left[2\\right]\\right),\\left(P_4\\left[1\\right],P_4\\left[2\\right]\\right)\\right)",
+                "fillOpacity": 0.6,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "23",
+                "color": "rgb(53, 94, 229)",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_1\\left[1\\right],P_1\\left[2\\right]\\right),\\left(P_2\\left[1\\right],P_2\\left[2\\right]\\right),\\left(P_6\\left[1\\right],P_6\\left[2\\right]\\right),\\left(P_5\\left[1\\right],P_5\\left[2\\right]\\right)\\right)",
+                "fillOpacity": 0.6,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "6",
+                "color": "rgb(247, 120, 36)",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_5\\left[1\\right],P_5\\left[2\\right]\\right),\\left(P_6\\left[1\\right],P_6\\left[2\\right]\\right),\\left(P_7\\left[1\\right],P_7\\left[2\\right]\\right),\\left(P_8\\left[1\\right],P_8\\left[2\\right]\\right)\\right)",
+                "fillOpacity": 0.6,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "28",
+                "color": "rgb(42, 196, 75)",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_7\\left[1\\right],P_7\\left[2\\right]\\right),\\left(P_8\\left[1\\right],P_8\\left[2\\right]\\right),\\left(P_4\\left[1\\right],P_4\\left[2\\right]\\right),\\left(P_3\\left[1\\right],P_3\\left[2\\right]\\right)\\right)",
+                "fillOpacity": 0.6,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "29",
+                "color": "rgb(230, 230, 230)",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_2\\left[1\\right],P_2\\left[2\\right]\\right),\\left(P_3\\left[1\\right],P_3\\left[2\\right]\\right),\\left(P_7\\left[1\\right],P_7\\left[2\\right]\\right),\\left(P_6\\left[1\\right],P_6\\left[2\\right]\\right)\\right)",
+                "fillOpacity": 0.6,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "30",
+                "color": "rgb(255, 255, 37)",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_1\\left[1\\right],P_1\\left[2\\right]\\right),\\left(P_5\\left[1\\right],P_5\\left[2\\right]\\right),\\left(P_8\\left[1\\right],P_8\\left[2\\right]\\right),\\left(P_4\\left[1\\right],P_4\\left[2\\right]\\right)\\right)",
+                "fillOpacity": 0.6,
+                "style": "SOLID"
+            }
+        ]
+    }
+}

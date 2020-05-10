@@ -2,10 +2,10 @@
     "version": 5,
     "graph": {
         "viewport": {
-            "xmin": -1.9182738375614334,
-            "ymin": -2.4399753633544004,
-            "xmax": 5.663432800797303,
-            "ymax": 2.859270204669512
+            "xmin": -1.8463743539940243,
+            "ymin": -4.130578806958317,
+            "xmax": 10.467606836797813,
+            "ymax": 4.476297370482335
         }
     },
     "expressions": {
@@ -21,7 +21,7 @@
                 "type": "expression",
                 "id": "3",
                 "color": "#fa7e19",
-                "latex": "a=2.36",
+                "latex": "a=2.6",
                 "sliderHardMin": true,
                 "sliderHardMax": true,
                 "sliderAnimationPeriod": 20000,

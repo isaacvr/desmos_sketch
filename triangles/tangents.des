@@ -63,14 +63,14 @@
                 "type": "expression",
                 "id": "269",
                 "color": "#fa7e19",
-                "latex": "p_x=2",
+                "latex": "p_x=2.5",
                 "style": "SOLID"
             },
             {
                 "type": "expression",
                 "id": "270",
                 "color": "#6042a6",
-                "latex": "p_y=0",
+                "latex": "p_y=-0.275",
                 "style": "SOLID"
             },
             {

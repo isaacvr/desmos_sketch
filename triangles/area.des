@@ -1,0 +1,130 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": 0.5714589806805483,
+            "ymin": -1.147959717809449,
+            "xmax": 6.025402207052018,
+            "ymax": 2.6640823261780975
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1035",
+                "text": "This is a visual demonstration of the area's formula b*h/2 where b is one side of the triangle and h its relative height."
+            },
+            {
+                "type": "expression",
+                "id": "1017",
+                "color": "#2d70b3",
+                "latex": "p_x=2.03",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1018",
+                "color": "#388c46",
+                "latex": "p_y=1.21",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(\\left(1,0\\right),\\left(4,0\\right),\\left(p_x,p_y\\right)\\right)",
+                "fill": false,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1020",
+                "color": "#c74440",
+                "latex": "\\left(1,0\\right),\\left(4,0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1019",
+                "color": "#c74440",
+                "latex": "\\left(p_x,p_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1037",
+                "text": "Asuming that the base of the triangle lies on the x-axis, if the height lies inside the base, then we can add some auxiliar lines to see that the area of the triangle, is half of the area of the rectangle. The area of the rectangle is b*h and we can clearly see that it can be decomposed into two small rectangles where half of their areas forms the whole triangle."
+            },
+            {
+                "type": "expression",
+                "id": "1021",
+                "color": "#388c46",
+                "latex": "y=\\left[0,p_y\\right]\\left\\{1\\le x\\le4\\right\\}\\left\\{\\left(p_x-1\\right)\\cdot\\left(p_x-4\\right)<0\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1022",
+                "color": "#388c46",
+                "latex": "x=\\left[1,4\\right]\\left\\{y\\cdot\\left(y-p_y\\right)<0\\right\\}\\left\\{\\left(p_x-1\\right)\\cdot\\left(p_x-4\\right)<0\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1023",
+                "color": "#388c46",
+                "latex": "x=p_x\\left\\{y\\cdot\\left(y-p_y\\right)<0\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1026",
+                "text": "When the height lies outside the base, the area of the triangle is now half of the area of the rectangle subtracting the little triangle. This little triangle belongs to the case when the height lies on the base, so that area can be computed as b*h/2. Joining all together, there is B (the base of the rectangle) that's equal to b1+b2 (where b1 is our triangle's base and b2 is the little triangle's base). Our triangle's area is the difference between half of the rectangle's area (B*h/2 = (b1+b2)/2) and the little triangle's area (b2*h/2) and thats (b1+b2)*h/2 - b2*h/2 = b1*h/2 and this matches with the previous result."
+            },
+            {
+                "type": "expression",
+                "id": "1027",
+                "color": "#6042a6",
+                "latex": "P=\\left[B,0\\right]+\\left[p_x,p_y\\right]-\\left[5-B,0\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1033",
+                "color": "#6042a6",
+                "latex": "B=5-\\max\\left(1,\\min\\left(4,p_x\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1029",
+                "color": "#388c46",
+                "latex": "x=B\\left\\{y\\cdot\\left(y-p_y\\right)<0\\right\\}\\left\\{\\left(p_x-1\\right)\\cdot\\left(p_x-4\\right)>0\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1030",
+                "color": "#388c46",
+                "latex": "y=\\left[0,p_y\\right]\\left\\{\\left(x-\\min\\left(p_x,1\\right)\\right)\\cdot\\left(x-\\max\\left(p_x,4\\right)\\right)<0\\right\\}\\left\\{\\left(p_x-1\\right)\\cdot\\left(p_x-4\\right)>0\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1032",
+                "color": "#388c46",
+                "latex": "y=\\frac{P\\left[2\\right]}{P\\left[1\\right]-B}\\cdot\\left(x-B\\right)\\left\\{y\\cdot\\left(y-p_y\\right)<0\\right\\}\\left\\{\\left(p_x-1\\right)\\cdot\\left(p_x-4\\right)>0\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

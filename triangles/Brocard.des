@@ -33,14 +33,14 @@
                 "type": "expression",
                 "id": "55",
                 "color": "#2d70b3",
-                "latex": "b_x=0.78",
+                "latex": "b_x=0.753",
                 "style": "SOLID"
             },
             {
                 "type": "expression",
                 "id": "56",
                 "color": "#388c46",
-                "latex": "b_y=0.525",
+                "latex": "b_y=0.608",
                 "style": "SOLID"
             },
             {
@@ -88,9 +88,8 @@
                 "type": "expression",
                 "id": "62",
                 "color": "#c74440",
-                "latex": "\\left[\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right),\\left(a_x,a_y\\right)\\right]",
-                "points": false,
-                "lines": true,
+                "latex": "\\operatorname{polygon}\\left(\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right),\\left(a_x,a_y\\right)\\right)",
+                "fill": false,
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -307,23 +306,21 @@
                 "type": "expression",
                 "id": "111",
                 "color": "#c74440",
-                "latex": "s_x\\left(a,x,y\\right)=a+\\frac{\\cos\\left(\\frac{\\left[0...10\\right]}{10}w+f\\left(x,y\\right)\\right)}{2}",
+                "latex": "s_x\\left(a,x,y,t\\right)=a+\\frac{\\cos\\left(tw+f\\left(x,y\\right)\\right)}{2}",
                 "style": "SOLID"
             },
             {
                 "type": "expression",
                 "id": "112",
                 "color": "#2d70b3",
-                "latex": "s_y\\left(a,x,y\\right)=a+\\frac{\\sin\\left(\\frac{\\left[0...10\\right]}{10}w+f\\left(x,y\\right)\\right)}{2}",
+                "latex": "s_y\\left(a,x,y,t\\right)=a+\\frac{\\sin\\left(tw+f\\left(x,y\\right)\\right)}{2}",
                 "style": "SOLID"
             },
             {
                 "type": "expression",
                 "id": "119",
                 "color": "#000000",
-                "latex": "\\left(s_x\\left(a_x,a_{vec}\\left[1\\right],a_{vec}\\left[2\\right]\\right),s_y\\left(a_y,a_{vec}\\left[1\\right],a_{vec}\\left[2\\right]\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(s_x\\left(a_x,a_{vec}\\left[1\\right],a_{vec}\\left[2\\right],t\\right),s_y\\left(a_y,a_{vec}\\left[1\\right],a_{vec}\\left[2\\right],t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -331,9 +328,7 @@
                 "type": "expression",
                 "id": "120",
                 "color": "#000000",
-                "latex": "\\left(s_x\\left(b_x,b_{vec}\\left[1\\right],b_{vec}\\left[2\\right]\\right),s_y\\left(b_y,b_{vec}\\left[1\\right],b_{vec}\\left[2\\right]\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(s_x\\left(b_x,b_{vec}\\left[1\\right],b_{vec}\\left[2\\right],t\\right),s_y\\left(b_y,b_{vec}\\left[1\\right],b_{vec}\\left[2\\right],t\\right)\\right)",
                 "dragMode": "NONE",
                 "labelSize": "small",
                 "labelOrientation": "right",
@@ -343,9 +338,7 @@
                 "type": "expression",
                 "id": "121",
                 "color": "#000000",
-                "latex": "\\left(s_x\\left(c_x,c_{vec}\\left[1\\right],c_{vec}\\left[2\\right]\\right),s_y\\left(c_y,c_{vec}\\left[1\\right],c_{vec}\\left[2\\right]\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(s_x\\left(c_x,c_{vec}\\left[1\\right],c_{vec}\\left[2\\right],t\\right),s_y\\left(c_y,c_{vec}\\left[1\\right],c_{vec}\\left[2\\right],t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },

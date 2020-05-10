@@ -2,10 +2,10 @@
     "version": 5,
     "graph": {
         "viewport": {
-            "xmin": -8.27674274211608,
-            "ymin": -2.4479247221885885,
-            "xmax": 10.058614970532988,
-            "ymax": 10.367601877759387
+            "xmin": -8.53519499778768,
+            "ymin": -3.145750317299491,
+            "xmax": 12.163704920007557,
+            "ymax": 11.32177775842303
         }
     },
     "expressions": {
@@ -47,14 +47,14 @@
                 "type": "expression",
                 "id": "117",
                 "color": "#c74440",
-                "latex": "c_x=4.06",
+                "latex": "c_x=5.44",
                 "style": "SOLID"
             },
             {
                 "type": "expression",
                 "id": "118",
                 "color": "#2d70b3",
-                "latex": "c_y=6.65",
+                "latex": "c_y=5.75",
                 "style": "SOLID"
             },
             {
@@ -82,9 +82,8 @@
                 "type": "expression",
                 "id": "121",
                 "color": "#c74440",
-                "latex": "\\left[\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right),\\left(a_x,a_y\\right)\\right]",
-                "points": false,
-                "lines": true,
+                "latex": "\\operatorname{polygon}\\left(\\left(a_x,a_y\\right),\\left(b_x,b_y\\right),\\left(c_x,c_y\\right)\\right)",
+                "fill": false,
                 "dragMode": "NONE",
                 "style": "SOLID"
             },

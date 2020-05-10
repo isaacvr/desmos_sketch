@@ -2,10 +2,10 @@
     "version": 5,
     "graph": {
         "viewport": {
-            "xmin": -12.652057546129832,
-            "ymin": -24.78789487865476,
-            "xmax": 78.39238973783756,
-            "ymax": 38.847762207016444
+            "xmin": -29.107476325718284,
+            "ymin": -71.14297986777883,
+            "xmax": 171.12276330447563,
+            "ymax": 68.8082554617872
         }
     },
     "expressions": {
@@ -21,11 +21,11 @@
                 "type": "expression",
                 "id": "163",
                 "color": "#000000",
-                "latex": "a=3.4",
+                "latex": "a=5.3",
                 "sliderHardMin": true,
                 "sliderHardMax": true,
                 "sliderMin": "0",
-                "sliderMax": "25",
+                "sliderMax": "80",
                 "style": "SOLID"
             },
             {
@@ -96,10 +96,16 @@
                 "style": "SOLID"
             },
             {
+                "type": "text",
+                "id": "174",
+                "text": "Bars of the Riemann Integration"
+            },
+            {
                 "type": "expression",
                 "id": "157",
                 "color": "#2d70b3",
                 "latex": "x=X\\left\\{y\\left(y-f\\left(X\\right)\\right)\\le0\\right\\}",
+                "hidden": true,
                 "style": "SOLID"
             },
             {
@@ -107,6 +113,7 @@
                 "id": "172",
                 "color": "#2d70b3",
                 "latex": "x=X+\\frac{\\left(b-a\\right)}{N}\\left\\{y\\left(y-f\\left(X\\right)\\right)\\le0\\right\\}",
+                "hidden": true,
                 "style": "SOLID"
             },
             {
@@ -114,6 +121,42 @@
                 "id": "158",
                 "color": "#2d70b3",
                 "latex": "y=f\\left(X_1\\right)\\left\\{\\left(x-X_1\\right)\\left(x-X_2\\right)\\le0\\right\\}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "176",
+                "text": "Actual integration"
+            },
+            {
+                "type": "expression",
+                "id": "177",
+                "color": "#2d70b3",
+                "latex": "0\\le y\\le f\\left(x\\right)\\left\\{\\left(x-a\\right)\\cdot\\left(x-b\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "178",
+                "color": "#c74440",
+                "latex": "f\\left(x\\right)\\le y\\le0\\left\\{\\left(x-a\\right)\\cdot\\left(x-b\\right)\\le0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "179",
+                "color": "#2d70b3",
+                "latex": "\\left(a,0\\right),\\left(a,f\\left(a\\right)\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "180",
+                "color": "#c74440",
+                "latex": "\\left(b,0\\right),\\left(b,f\\left(b\\right)\\right)",
+                "lines": true,
                 "style": "SOLID"
             }
         ]

@@ -1,0 +1,414 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -1.8349680831378021,
+            "ymin": -5.225958741136845,
+            "xmax": 7.827381162198506,
+            "ymax": 1.5275551914639398
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "973",
+                "text": "This sketch is intended to those who are interested on maths for animations/transitions. There are two visual transitions: From point to point and from polygon to polygon. If you want to see them in action, keep reading and you'll find where to start it :)"
+            },
+            {
+                "type": "text",
+                "id": "975",
+                "text": "First define the two points to make them draggable"
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "p_{ax}=1.39",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "924",
+                "color": "#c74440",
+                "latex": "p_{ay}=1.73",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "925",
+                "color": "#2d70b3",
+                "latex": "p_{bx}=2.9",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "926",
+                "color": "#388c46",
+                "latex": "p_{by}=2.54",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "977",
+                "text": "This is the \"vector\" representation of the points in order to simplify the math"
+            },
+            {
+                "type": "expression",
+                "id": "927",
+                "color": "#fa7e19",
+                "latex": "p_{av}=\\left[p_{ax},p_{ay}\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "928",
+                "color": "#6042a6",
+                "latex": "p_{bv}=\\left[p_{bx},p_{by}\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "929",
+                "color": "#c74440",
+                "latex": "\\left(p_{ax},p_{ay}\\right)",
+                "showLabel": true,
+                "label": "A",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "930",
+                "color": "#c74440",
+                "latex": "\\left(p_{bx},p_{by}\\right)",
+                "showLabel": true,
+                "label": "B",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "972",
+                "color": "#c74440",
+                "latex": "\\left(p_{ax},p_{ay}\\right),\\left(p_{bx},p_{by}\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "980",
+                "text": "This guy here is the animation timer, that usually goes from 0 to 1. Zero indicates the starting point and One the finish point, so all the functions used for create different ways to get from A to B, are evaluated between [0, 1] and contains the points (0,0) and (1,1). You can play it and see the magic or you can keep reading and then come here and play it. (You should play it!!!)"
+            },
+            {
+                "type": "text",
+                "id": "995",
+                "text": "IMPORTANT NOTE: In order to improve performance, play the timer and scroll down to a place where no sliders are changing. Since Desmos takes some time to update the sliders and the view, if you have changing sliders in your screen, it will divide part of the time on rendering that slider and updating it, so it can hurt the beautiful animations :)"
+            },
+            {
+                "type": "expression",
+                "id": "931",
+                "color": "#2d70b3",
+                "latex": "t_0=0",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderAnimationPeriod": 2000,
+                "sliderLoopMode": "LOOP_FORWARD",
+                "sliderMin": "0",
+                "sliderMax": "1",
+                "sliderInterval": "0.001",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "983",
+                "text": "This group of functions are some of the functions that I use but you can come along with your own version of them and it'll be fine as well."
+            },
+            {
+                "type": "expression",
+                "id": "934",
+                "color": "#6042a6",
+                "latex": "L_{inear}\\left(v_1,\\ v_2,\\ t\\right)=v_1\\cdot\\left(1-t\\right)+v_2\\cdot t",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "945",
+                "color": "#fa7e19",
+                "latex": "E_{aseIn}\\left(v_1,v_2,t\\right)=v_1\\cdot\\sin(\\left(t+1\\right)\\cdot\\frac{\\pi}{2})+v_2\\cdot\\left(1-\\sin(\\left(t+1\\right)\\cdot\\frac{\\pi}{2})\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "940",
+                "color": "#6042a6",
+                "latex": "E_{aseOut}\\left(v_1,v_2,t\\right)=v_1\\cdot\\left(1-\\sin\\left(\\frac{t\\cdot\\pi}{2}\\right)\\right)+v_2\\cdot\\sin\\left(\\frac{t\\pi}{2}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "946",
+                "color": "#6042a6",
+                "latex": "E_{aseInOut}\\left(v_1,v_2,t\\right)=v_1\\cdot\\left(1-\\frac{\\sin\\left(\\left(2t+3\\right)\\cdot\\frac{\\pi}{2}\\right)+1}{2}\\right)+v_2\\cdot\\frac{\\sin\\left(\\left(2t+3\\right)\\cdot\\frac{\\pi}{2}\\right)+1}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "941",
+                "color": "#000000",
+                "latex": "B_{ounce}\\left(v_1,v_2,t\\right)=v_1\\cdot\\left(\\frac{\\sin\\left(4\\pi t\\right)}{4\\pi t}\\cdot e^{-4t}\\right)+v_2\\cdot\\left(1-\\frac{\\sin\\left(4\\pi t\\right)}{4\\pi t}\\cdot e^{-4t}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "985",
+                "text": "The \"Interpolation\" function is used only for consistency with the next steps, but as you can see, you can use here any of the previous functions."
+            },
+            {
+                "type": "expression",
+                "id": "932",
+                "color": "#388c46",
+                "latex": "I_{nterpolation}\\left(p_1,p_2,t\\right)=B_{ounce}\\left(p_1,\\ p_2,\\ t\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "935",
+                "color": "#000000",
+                "latex": "i=I_{nterpolation}\\left(p_{av},p_{bv},t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "933",
+                "color": "#fa7e19",
+                "latex": "\\left(i\\left[1\\right],\\ i\\left[2\\right]\\right)",
+                "showLabel": true,
+                "label": "P",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "987",
+                "text": "If you want to see how the functions looks like, just show them and see what's going on under the hood."
+            },
+            {
+                "type": "expression",
+                "id": "938",
+                "color": "#c74440",
+                "latex": "L_{inear}\\left(0,1,x\\right)\\left\\{0\\le x\\le1\\right\\}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "939",
+                "color": "#c74440",
+                "latex": "E_{aseIn}\\left(0,1,x\\right)\\left\\{0\\le x\\le1\\right\\}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "947",
+                "color": "#c74440",
+                "latex": "E_{aseOut}\\left(0,1,x\\right)\\left\\{0\\le x\\le1\\right\\}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "948",
+                "color": "#c74440",
+                "latex": "E_{aseInOut}\\left(0,1,x\\right)\\left\\{0\\le x\\le1\\right\\}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "942",
+                "color": "#c74440",
+                "latex": "B_{ounce}\\left(0,1,x\\right)\\left\\{0\\le x\\le1\\right\\}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "989",
+                "text": "This group of sliders belongs to the four points of the polygon to make it draggable and to see for yourself that this is not a fake math, and all the computation is REALLY done."
+            },
+            {
+                "type": "expression",
+                "id": "961",
+                "color": "#2d70b3",
+                "latex": "P_{1x1}=1.4",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "962",
+                "color": "#388c46",
+                "latex": "P_{1x2}=0.48",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "963",
+                "color": "#fa7e19",
+                "latex": "P_{1x3}=-0.74",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "964",
+                "color": "#6042a6",
+                "latex": "P_{1x4}=-0.65",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "965",
+                "color": "#000000",
+                "latex": "P_{1y1}=-1.07",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "966",
+                "color": "#c74440",
+                "latex": "P_{1y2}=-4.42",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "967",
+                "color": "#2d70b3",
+                "latex": "P_{1y3}=-4.79",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "968",
+                "color": "#388c46",
+                "latex": "P_{1y4}=-0.75",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "991",
+                "text": "Again, There is a nicer way to handle all those numbers and is by putting them in a list. The following coordinates are for the first polygon (the one you can move as you like), the second polygon (fixed, but you can spend some time and make them draggable as well) and the interpolated polygon."
+            },
+            {
+                "type": "expression",
+                "id": "949",
+                "color": "#2d70b3",
+                "latex": "P_{1x}=\\left[P_{1x1},P_{1x2},P_{1x3},P_{1x4}\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "950",
+                "color": "#388c46",
+                "latex": "P_{1y}=\\left[P_{1y1},P_{1y2},P_{1y3},P_{1y4}\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "952",
+                "color": "#6042a6",
+                "latex": "P_{2x}=\\left[4,6,5.5,4.2\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "953",
+                "color": "#000000",
+                "latex": "P_{2y}=\\left[0,1,-2,-1.1\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "955",
+                "color": "#2d70b3",
+                "latex": "P_{3x}=I_{nterpolation}\\left(P_{1x},P_{2x},t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "956",
+                "color": "#388c46",
+                "latex": "P_{3y}=I_{nterpolation}\\left(P_{1y},P_{2y},t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "993",
+                "text": "Once you're here, there's no turning back. Now you know the secrets of the animations and how they can be done!!! Greetings!!"
+            },
+            {
+                "type": "expression",
+                "id": "954",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_{1x},P_{1y}\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "951",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_{2x},P_{2y}\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "957",
+                "color": "#388c46",
+                "latex": "\\operatorname{polygon}\\left(\\left(P_{3x},P_{3y}\\right)\\right)",
+                "fill": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "958",
+                "color": "#2d70b3",
+                "latex": "\\left(P_{1x1},P_{1y1}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "969",
+                "color": "#2d70b3",
+                "latex": "\\left(P_{1x2},P_{1y2}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "970",
+                "color": "#2d70b3",
+                "latex": "\\left(P_{1x3},P_{1y3}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "971",
+                "color": "#2d70b3",
+                "latex": "\\left(P_{1x4},P_{1y4}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "959",
+                "color": "#2d70b3",
+                "latex": "\\left(P_{2x},P_{2y}\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "960",
+                "color": "#388c46",
+                "latex": "\\left(P_{3x},P_{3y}\\right)",
+                "style": "SOLID"
+            }
+        ]
+    }
+}
