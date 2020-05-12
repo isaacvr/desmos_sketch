@@ -1,0 +1,106 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -9.349624532352516,
+            "ymin": -8.101999801771868,
+            "xmax": 10.650375467647487,
+            "ymax": 5.877031096662039
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1020",
+                "text": "An ellipse can be obtained by choosing two points (focuses) and some length."
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "f_{1x}=4",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1012",
+                "color": "#2d70b3",
+                "latex": "f_{1y}=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1013",
+                "color": "#388c46",
+                "latex": "f_{2x}=-4",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1014",
+                "color": "#fa7e19",
+                "latex": "f_{2y}=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1015",
+                "color": "#2d70b3",
+                "latex": "\\left(f_{1x},f_{1y}\\right)",
+                "showLabel": true,
+                "label": "F1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1016",
+                "color": "#2d70b3",
+                "latex": "\\left(f_{2x},f_{2y}\\right)",
+                "showLabel": true,
+                "label": "F2",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1022",
+                "text": "This is a distance function between two points."
+            },
+            {
+                "type": "expression",
+                "id": "1017",
+                "color": "#c74440",
+                "latex": "d\\left(x_1,y_1,x_2,y_2\\right)=\\sqrt{\\left(x_1-x_2\\right)^2+\\left(y_1-y_2\\right)^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1024",
+                "text": "L is the choosen length"
+            },
+            {
+                "type": "expression",
+                "id": "1018",
+                "color": "#2d70b3",
+                "latex": "L=10",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "100",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1026",
+                "text": "Every point in the ellipse have the next property: The sum of the distance between the point and the focuses remains constant and is equal to L."
+            },
+            {
+                "type": "expression",
+                "id": "1019",
+                "color": "#388c46",
+                "latex": "d\\left(x,y,f_{1x},f_{1y}\\right)+d\\left(x,y,f_{2x},f_{2y}\\right)=L",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

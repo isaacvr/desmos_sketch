@@ -1,0 +1,114 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -4.143549013875666,
+            "ymin": -2.4017550446523037,
+            "xmax": 6.122697059294148,
+            "ymax": 4.7738535087360185
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1003",
+                "text": "Having a horizontal line and a point, we can construct a parabola. For this example, the point will be (fx, fy) and the line y=y0. Point F is the focus of the parabola."
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "f_x=2.08",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "997",
+                "color": "#2d70b3",
+                "latex": "f_y=1.83",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "998",
+                "color": "#c74440",
+                "latex": "\\left(f_x,f_y\\right)",
+                "showLabel": true,
+                "label": "F",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "999",
+                "color": "#fa7e19",
+                "latex": "y_0=-0.09",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1000",
+                "color": "#c74440",
+                "latex": "y=y_0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1002",
+                "color": "#c74440",
+                "latex": "\\left(0,y_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1005",
+                "text": "All the points in the parabola have the follow property: The distance between the point and the focus, is equal to the distance between the point and the horizontal line y=y0. The distance can be computed using Pythagora's method and the distance to y=y0 is the absolute difference between y's since is an horizontal line."
+            },
+            {
+                "type": "expression",
+                "id": "1001",
+                "color": "#2d70b3",
+                "latex": "\\sqrt{\\left(x-f_x\\right)^2+\\left(y-f_y\\right)^2}=\\left|y-y_0\\right|",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1006",
+                "color": "#388c46",
+                "latex": "p\\left(x\\right)=\\frac{\\left(x-f_x\\right)^2}{2\\left(f_y-y_0\\right)}+\\frac{\\left(f_y+y_0\\right)}{2}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1008",
+                "color": "#6042a6",
+                "latex": "a_x=3.28",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1009",
+                "color": "#388c46",
+                "latex": "\\left(a_x,p\\left(a_x\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1010",
+                "color": "#388c46",
+                "latex": "\\left(a_x\\left(1-t\\right)+f_xt,\\ p\\left(a_x\\right)\\left(1-t\\right)+f_yt\\right)",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1011",
+                "color": "#388c46",
+                "latex": "x=a_x\\left\\{\\left(y-p\\left(a_x\\right)\\right)\\left(y-y_0\\right)<0\\right\\}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

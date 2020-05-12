@@ -3,10 +3,10 @@
     "graph": {
         "squareAxes": false,
         "viewport": {
-            "xmin": -12.605341019927927,
-            "ymin": -7.444113279445303,
-            "xmax": 17.214759753441456,
-            "ymax": 6.991833429526779
+            "xmin": -17.984898174150278,
+            "ymin": -11.16054630147843,
+            "xmax": 27.599022677462823,
+            "ymax": 10.906684698208597
         }
     },
     "expressions": {
@@ -90,18 +90,9 @@
             },
             {
                 "type": "expression",
-                "id": "451",
-                "color": "#c74440",
-                "latex": "t_0=\\frac{\\left[0...100\\right]}{100}",
-                "style": "SOLID"
-            },
-            {
-                "type": "expression",
                 "id": "452",
                 "color": "#000000",
-                "latex": "\\left(f\\left(d_{1x},3,t_0\\right),f\\left(d_{1y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(d_{1x},3,t\\right),f\\left(d_{1y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -109,9 +100,7 @@
                 "type": "expression",
                 "id": "463",
                 "color": "#000000",
-                "latex": "\\left(f\\left(d_{2x},3,t_0\\right),f\\left(d_{2y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(d_{2x},3,t\\right),f\\left(d_{2y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -119,9 +108,7 @@
                 "type": "expression",
                 "id": "464",
                 "color": "#000000",
-                "latex": "\\left(f\\left(d_{3x},3,t_0\\right),f\\left(d_{3y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(d_{3x},3,t\\right),f\\left(d_{3y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -129,9 +116,7 @@
                 "type": "expression",
                 "id": "465",
                 "color": "#000000",
-                "latex": "\\left(f\\left(d_{4x},3,t_0\\right),f\\left(d_{4y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(d_{4x},3,t\\right),f\\left(d_{4y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -139,9 +124,7 @@
                 "type": "expression",
                 "id": "468",
                 "color": "#000000",
-                "latex": "\\left(f\\left(d_{5x},3,t_0\\right),f\\left(d_{5y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(d_{5x},3,t\\right),f\\left(d_{5y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -149,9 +132,7 @@
                 "type": "expression",
                 "id": "453",
                 "color": "#000000",
-                "latex": "\\left(f\\left(-d_{1x},3,t_0\\right),f\\left(d_{1y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(-d_{1x},3,t\\right),f\\left(d_{1y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -159,9 +140,7 @@
                 "type": "expression",
                 "id": "469",
                 "color": "#000000",
-                "latex": "\\left(f\\left(-d_{2x},3,t_0\\right),f\\left(d_{2y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(-d_{2x},3,t\\right),f\\left(d_{2y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -169,9 +148,7 @@
                 "type": "expression",
                 "id": "470",
                 "color": "#000000",
-                "latex": "\\left(f\\left(-d_{3x},3,t_0\\right),f\\left(d_{3y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(-d_{3x},3,t\\right),f\\left(d_{3y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -179,9 +156,7 @@
                 "type": "expression",
                 "id": "471",
                 "color": "#000000",
-                "latex": "\\left(f\\left(-d_{4x},3,t_0\\right),f\\left(d_{4y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(-d_{4x},3,t\\right),f\\left(d_{4y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -189,9 +164,7 @@
                 "type": "expression",
                 "id": "472",
                 "color": "#000000",
-                "latex": "\\left(f\\left(-d_{5x},3,t_0\\right),f\\left(d_{5y},3,t_0\\right)\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "\\left(f\\left(-d_{5x},3,t\\right),f\\left(d_{5y},3,t\\right)\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             }

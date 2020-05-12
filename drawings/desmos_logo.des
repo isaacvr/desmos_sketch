@@ -1,0 +1,99 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -6.69548229841337,
+            "ymin": -5.787982800559986,
+            "xmax": 8.997816392933743,
+            "ymax": 5.180872564674681
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#388c46",
+                "latex": "\\left|x\\right|^{10}+\\left|y\\right|^{10}<=4^{10}",
+                "fillOpacity": 1,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "576",
+                "color": "#6042a6",
+                "latex": "p_1\\left(x\\right)=\\frac{x^2}{2}-3",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "578",
+                "color": "#c74440",
+                "latex": "p_2\\left(x\\right)=\\frac{x^2}{1.6}-2.6",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "579",
+                "color": "#2d70b3",
+                "latex": "s_1\\left(x\\right)=0.7\\sin\\left(1.45x+2.6\\right)-2",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "580",
+                "color": "#388c46",
+                "latex": "s_2\\left(x\\right)=s_1\\left(x\\right)+0.4",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "568",
+                "color": "#ffffff",
+                "latex": "y>=-4\\left\\{p_1\\left(x\\right)\\le y\\le p_2\\left(x\\right)\\right\\}\\left\\{\\left|x\\right|^{10}+\\left|y\\right|^{10}<=4^{10}\\right\\}",
+                "fillOpacity": 1,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "569",
+                "color": "#ffffff",
+                "latex": "y>=-4\\left\\{s_1\\left(x\\right)\\le y\\le s_2\\left(x\\right)\\right\\}\\left\\{\\left|x\\right|^{10}+\\left|y\\right|^{10}<=4^{10}\\right\\}",
+                "fillOpacity": 1,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "573",
+                "color": "#388c46",
+                "latex": "y=p_1\\left(x\\right)\\left\\{\\left|x\\right|^{10}+\\left|y\\right|^{10}<=4^{10}\\right\\}\\left\\{\\left(p_1\\left(x\\right)-s_1\\left(x\\right)\\right)\\cdot\\left(p_1\\left(x\\right)-s_2\\left(x\\right)\\right)>0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "572",
+                "color": "#388c46",
+                "latex": "y=p_2\\left(x\\right)\\left\\{\\left|x\\right|^{10}+\\left|y\\right|^{10}<=4^{10}\\right\\}\\left\\{\\left(p_2\\left(x\\right)-s_1\\left(x\\right)\\right)\\cdot\\left(p_2\\left(x\\right)-s_2\\left(x\\right)\\right)>0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "574",
+                "color": "#388c46",
+                "latex": "y=s_1\\left(x\\right)\\left\\{\\left|x\\right|^{10}+\\left|y\\right|^{10}<=4^{10}\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "575",
+                "color": "#388c46",
+                "latex": "y=s_2\\left(x\\right)\\left\\{\\left|x\\right|^{10}+\\left|y\\right|^{10}<=4^{10}\\right\\}",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

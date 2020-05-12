@@ -1,0 +1,129 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -15.498003954250855,
+            "ymin": -11.952437104083609,
+            "xmax": 21.172711471138193,
+            "ymax": 13.678616095856283
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "22",
+                "text": "This is an illustration of what a linear or non-linear transformations can do. t0 is a transition timer that you can use to see how we travel from a linear system to another linear or non-linear system. Press play to the t0 slider to enjoy the fancy animations."
+            },
+            {
+                "type": "expression",
+                "id": "15",
+                "color": "#fa7e19",
+                "latex": "t_0=0",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderAnimationPeriod": 11428.57142857143,
+                "sliderLoopMode": "LOOP_FORWARD",
+                "sliderMin": "0",
+                "sliderMax": "1",
+                "sliderInterval": "0.001",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "24",
+                "text": "To test all the transformations, you just have to change the function used. For this example we're using the function f1, but you can try any of them. PLEASE, DON'T ADD THE SLIDER TO THE LIST \"R\"."
+            },
+            {
+                "type": "expression",
+                "id": "32",
+                "color": "#6042a6",
+                "latex": "R=\\left[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,t,-t\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "6",
+                "color": "#2d70b3",
+                "latex": "f_1\\left(R,t\\right)",
+                "domain": {
+                    "min": "-10",
+                    "max": "10"
+                },
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "10",
+                "color": "#2d70b3",
+                "latex": "f_1\\left(t,R\\right)",
+                "domain": {
+                    "min": "-10",
+                    "max": "10"
+                },
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "29",
+                "color": "#2d70b3",
+                "latex": "f_1\\left(x,y\\right)=\\left(x\\left(1-t_0\\right)+2xt_0,y\\left(1-t_0\\right)-yt_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "35",
+                "color": "#2d70b3",
+                "latex": "g_1\\left(x,y\\right)=\\left(x\\cos\\left(\\pi t_0\\right)-y\\sin\\left(\\pi t_0\\right),x\\sin\\left(\\pi t_0\\right)+y\\cos\\left(\\pi t_0\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "36",
+                "color": "#388c46",
+                "latex": "h_1\\left(x,y\\right)=\\left(x\\cdot\\left(1-t_0\\right)+\\left(x+y\\right)\\cdot\\left(t_0\\right),y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "28",
+                "text": "Then... non linear :)"
+            },
+            {
+                "type": "expression",
+                "id": "graph1",
+                "color": "#2d70b3",
+                "latex": "f_2\\left(x,y\\right)=\\left(x+\\sin\\left(y\\right)t_0,\\ y+\\cos\\left(x\\right)t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "13",
+                "color": "#2d70b3",
+                "latex": "g_2\\left(x,y\\right)=\\left(x\\left(1-t_0\\right)+\\left(x^2-y^2\\right)t_0,\\ y\\left(1-t_0\\right)+\\left(xy+yx\\right)t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "16",
+                "color": "#6042a6",
+                "latex": "h_2\\left(x,y\\right)=\\left(x\\left(1-t_0\\right)+e^x\\cos\\left(y\\right)t_0,\\ y\\cdot\\left(1-t_0\\right)+e^x\\sin\\left(y\\right)t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "19",
+                "color": "#2d70b3",
+                "latex": "i_2\\left(x,y\\right)=\\left(x\\left(1-t_0\\right)+\\left(-\\cos(2x)/8y+y\\cos(2x)/2+1/2\\right)t_0,y\\left(1-t_0\\right)+\\left(-\\sin(2x)/8y+y\\sin(2x)/2\\right)t_0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "21",
+                "color": "#fa7e19",
+                "latex": "j_2\\left(x,y\\right)=\\left(x\\left(1-t_0\\right)+\\left(\\cos\\left(xy\\right)+\\sin\\left(x-y\\right)\\right)t_0,y\\left(1-t_0\\right)+\\left(\\sin\\left(xy\\right)+\\cos\\left(x-y\\right)\\right)t_0\\right)",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

@@ -2,10 +2,10 @@
     "version": 5,
     "graph": {
         "viewport": {
-            "xmin": -5.363174091473326,
-            "ymin": -3.8098530925836647,
-            "xmax": 6.950807099269811,
-            "ymax": 4.226236912450948
+            "xmin": -6.001690133263913,
+            "ymin": -4.982598538971083,
+            "xmax": 8.76847334088674,
+            "ymax": 5.341030040032501
         }
     },
     "expressions": {
@@ -22,16 +22,9 @@
             },
             {
                 "type": "expression",
-                "id": "492",
-                "color": "#fa7e19",
-                "latex": "t_0\\left(N\\right)=\\frac{\\left[0...\\operatorname{floor}\\left(40N\\right)\\right]}{\\operatorname{floor}\\left(40N\\right)}",
-                "style": "SOLID"
-            },
-            {
-                "type": "expression",
                 "id": "491",
                 "color": "#388c46",
-                "latex": "A\\left(c_x,c_y,r,a_1,a_2\\right)=\\left(c_x+r\\cdot\\cos\\left(a_1+\\left(a_2-a_1\\right)\\cdot t_0\\left(\\left|a_1-a_2\\right|\\cdot r\\right)\\right),c_y+r\\cdot\\sin\\left(a_1+\\left(a_2-a_1\\right)\\cdot t_0\\left(\\left|a_1-a_2\\right|\\cdot r\\right)\\right)\\right)",
+                "latex": "A\\left(c_x,c_y,r,a_1,a_2,t\\right)=\\left(c_x+r\\cdot\\cos\\left(a_1+\\left(a_2-a_1\\right)\\cdot t\\right),c_y+r\\cdot\\sin\\left(a_1+\\left(a_2-a_1\\right)\\cdot t\\right)\\right)",
                 "style": "SOLID"
             },
             {
@@ -58,9 +51,7 @@
                 "type": "expression",
                 "id": "496",
                 "color": "#2d70b3",
-                "latex": "A\\left(2.9478364,2.056,0.3,\\frac{3\\pi}{2},2\\pi+1.15139676725\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "A\\left(2.9478364,2.056,0.3,\\frac{3\\pi}{2},2\\pi+1.15139676725,t\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -75,9 +66,7 @@
                 "type": "expression",
                 "id": "501",
                 "color": "#2d70b3",
-                "latex": "A\\left(8.28778,0,7.16624,2.89403438775,3.47332111368\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "A\\left(8.28778,0,7.16624,2.89403438775,3.47332111368,t\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -85,9 +74,7 @@
                 "type": "expression",
                 "id": "504",
                 "color": "#2d70b3",
-                "latex": "A\\left(1.1053465,-2.438,0.42,4.2,6.53369016474\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "A\\left(1.1053465,-2.438,0.42,4.2,6.53369016474,t\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -95,9 +82,7 @@
                 "type": "expression",
                 "id": "511",
                 "color": "#2d70b3",
-                "latex": "A\\left(2.235,-1.9023,1.611,3.198,3.735\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "A\\left(2.235,-1.9023,1.611,3.198,3.735,t\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -105,9 +90,7 @@
                 "type": "expression",
                 "id": "507",
                 "color": "#2d70b3",
-                "latex": "A\\left(10.11,-1.44,9.5,2.7985,3.2\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "A\\left(10.11,-1.44,9.5,2.7985,3.2,t\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },
@@ -136,9 +119,7 @@
                 "type": "expression",
                 "id": "532",
                 "color": "#2d70b3",
-                "latex": "A\\left(-1.8,-2.546,0.30931,2.81984209919,4.80657204737\\right)",
-                "points": false,
-                "lines": true,
+                "latex": "A\\left(-1.8,-2.546,0.30931,2.81984209919,4.80657204737,t\\right)",
                 "dragMode": "NONE",
                 "style": "SOLID"
             },

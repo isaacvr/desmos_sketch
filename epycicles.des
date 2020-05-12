@@ -2,10 +2,10 @@
     "version": 5,
     "graph": {
         "viewport": {
-            "xmin": -5.390417143193684,
-            "ymin": -4.6826633591394815,
-            "xmax": 8.510913185473655,
-            "ymax": 5.033692950549372
+            "xmin": -4.348996653463968,
+            "ymin": -4.4093499233799305,
+            "xmax": 7.9649845373278785,
+            "ymax": 4.197526254060715
         }
     },
     "expressions": {
@@ -29,7 +29,7 @@
                 "type": "expression",
                 "id": "234",
                 "color": "#fa7e19",
-                "latex": "r_1=3.7",
+                "latex": "r_1=3.5",
                 "sliderPlayDirection": -1,
                 "style": "SOLID"
             },
@@ -37,7 +37,7 @@
                 "type": "expression",
                 "id": "236",
                 "color": "#000000",
-                "latex": "r_2=2.1",
+                "latex": "r_2=2.4",
                 "style": "SOLID"
             },
             {
@@ -45,6 +45,13 @@
                 "id": "237",
                 "color": "#c74440",
                 "latex": "x^2+y^2=r_1^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "996",
+                "color": "#c74440",
+                "latex": "x^2+y^2=\\left(r_2-\\left|r_1^1-r_2\\right|\\right)^2",
                 "style": "SOLID"
             },
             {
