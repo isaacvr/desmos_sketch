@@ -1,0 +1,160 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -1.3578567676267381,
+            "ymin": -3.0935057421880705,
+            "xmax": 9.55002968511619,
+            "ymax": 4.530578345787022
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "103",
+                "text": "Velocity is the rate of change of the position over time. In terms of Calculus, is the derivative of the position relative to time. If we have the velocity, all we need to do is to compute the integral of the velocity, and we'll get the position over time as well."
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#2d70b3",
+                "latex": "v\\left(t\\right)=-2\\left(\\frac{t}{2}-1\\right)^2+2",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "105",
+                "text": "A and B are our interval, and T0 is the animation timer."
+            },
+            {
+                "type": "expression",
+                "id": "90",
+                "color": "#2d70b3",
+                "latex": "a=0",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "4",
+                "sliderInterval": "0.01",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "91",
+                "color": "#388c46",
+                "latex": "b=4",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "5",
+                "sliderInterval": "0.01",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "107",
+                "text": "Press Play to see the animation. (NOTE: When desmos is running animations, it is always good to scroll the equation column in order to keep out of the screen all the \"moving\" equations. In this case, you can scroll 'till the end to get a better animation performance :) )"
+            },
+            {
+                "type": "expression",
+                "id": "98",
+                "color": "#fa7e19",
+                "latex": "t_0=0",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderLoopMode": "LOOP_FORWARD",
+                "sliderMin": "0",
+                "sliderMax": "1",
+                "sliderInterval": "0.001",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "109",
+                "text": "This guy here is an interpolation function which gives me A when t=0 and B when t=1. That way, I just forget about A and B putting everything in terms of I(t),"
+            },
+            {
+                "type": "expression",
+                "id": "100",
+                "color": "#000000",
+                "latex": "I\\left(t\\right)=a\\cdot\\left(1-t\\right)+bt",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "111",
+                "text": "The position at a given time t, is the integral from A (also I(0)) to t of the velocity."
+            },
+            {
+                "type": "expression",
+                "id": "99",
+                "color": "#6042a6",
+                "latex": "p=\\int_{I\\left(0\\right)}^{I\\left(t_0\\right)}v\\left(t\\right)dt",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "113",
+                "text": "I like to separate the graphics, taking blue for positive areas and red for negative areas. If you extend b further, you'll see it."
+            },
+            {
+                "type": "expression",
+                "id": "94",
+                "color": "#2d70b3",
+                "latex": "0\\le y\\le v\\left(x\\right)\\left\\{\\left(x-a\\right)\\left(x-b\\right)<0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "95",
+                "color": "#c74440",
+                "latex": "v\\left(x\\right)\\le y\\le0\\left\\{\\left(x-a\\right)\\left(x-b\\right)<0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "96",
+                "color": "#388c46",
+                "latex": "\\left(a,0\\right),\\left(a,v\\left(a\\right)\\right)",
+                "lines": true,
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "97",
+                "color": "#388c46",
+                "latex": "\\left(b,0\\right),\\left(b,v\\left(b\\right)\\right)",
+                "lines": true,
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "115",
+                "text": "This is a cute progress bar from A to B :)"
+            },
+            {
+                "type": "expression",
+                "id": "102",
+                "color": "#388c46",
+                "latex": "\\left(x-I\\left(0\\right)\\right)\\left(x-I\\left(t_0\\right)\\right)<0\\left\\{-1\\le y\\le-0.9\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "117",
+                "text": "... and finally, our moving object. Notice that the X coordinate of this circle is P, our position."
+            },
+            {
+                "type": "expression",
+                "id": "101",
+                "color": "#000000",
+                "latex": "\\left(x-p\\right)^2+\\left(y-0.1\\right)^2<=0.1^2",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

@@ -1,0 +1,285 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -2.007990841457936,
+            "ymin": -1.384395501999768,
+            "xmax": 4.7079845890605405,
+            "ymax": 3.3097459008172536
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "folder",
+                "id": "37",
+                "title": "Matrices",
+                "collapsed": true,
+                "memberIds": {
+                    "40": true,
+                    "42": true,
+                    "43": true,
+                    "44": true,
+                    "45": true,
+                    "47": true,
+                    "88": true,
+                    "89": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "40",
+                "text": "A matrix is a mathematical entity that represents a linear transformation. Their aspect is like a table of numbers. For example, if you want to create some random linear transformation for vectors of a 4-dimensions space to a 3-dimensions space, the matrix will be a table of dimensions 3x4. This example will create a transformation from 2D to 2D, so the order of the matrix will be 2x2."
+            },
+            {
+                "type": "expression",
+                "id": "42",
+                "color": "#6042a6",
+                "latex": "i_x=1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "43",
+                "color": "#000000",
+                "latex": "i_y=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "44",
+                "color": "#c74440",
+                "latex": "j_x=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "45",
+                "color": "#2d70b3",
+                "latex": "j_y=1",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "47",
+                "text": "The first row of the matrix will be [ ix  jx ] and the second one will be [ iy  jy ]. Notice that each column encodes the position of the basis vectors."
+            },
+            {
+                "type": "expression",
+                "id": "89",
+                "color": "#2d70b3",
+                "latex": "A\\left(x,y\\right)=\\tan^{-1}\\left(\\frac{y}{x}\\right)-\\frac{\\pi}{2}+\\frac{\\operatorname{sign}\\left(x\\right)^2-\\operatorname{sign}\\left(x\\right)}{2}\\cdot\\pi",
+                "style": "SOLID"
+            },
+            {
+                "type": "image",
+                "id": "88",
+                "image_url": "data:image/png;base64,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",
+                "name": "PiCreatures_plain.svg",
+                "height": "2\\cdot\\left|D\\right|",
+                "width": "2\\cdot D",
+                "angle": "A\\left(j_x,j_y\\right)",
+                "x": "2i_x+2j_x",
+                "y": "2i_y+2j_y"
+            },
+            {
+                "type": "folder",
+                "id": "56",
+                "title": "Determinant",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "58": true,
+                    "70": true,
+                    "71": true,
+                    "72": true,
+                    "73": true,
+                    "74": true,
+                    "75": true,
+                    "76": true,
+                    "78": true,
+                    "80": true,
+                    "86": true,
+                    "87": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "58",
+                "text": "(Before this, please turn off the grid). The determinant of a matrix describes the factor of which all the areas are scaled after the transformation. For example, if you place certain shape with area 3, and the determinant of the matrix have a value of 2, the total area of that shape after the transformation will be 6. BUT, the determinant can be negative as well. Visually, that is an inversion of the shape, like if you draw it in a piece of paper and look it for the other side of the sheet."
+            },
+            {
+                "type": "text",
+                "id": "78",
+                "text": "To compute the value of the determinant for the case of 2x2 matrices, you can compute them as ix*jy - iy*jx. That will give you the blue area that is shown in the figure. If you moved the points and the figure looks complicated, move i to (1.5; 0.5) and j to (0.5; 1.5)."
+            },
+            {
+                "type": "expression",
+                "id": "70",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,0\\right),\\left(i_x,i_y\\right),\\left(i_x+j_x,i_y+j_y\\right),\\left(j_x,j_y\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "71",
+                "color": "#000000",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,0\\right),\\left(i_x,i_y\\right),\\left(i_x,0\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "72",
+                "color": "#000000",
+                "latex": "\\operatorname{polygon}\\left(\\left(i_x+j_x,i_y+j_y\\right),\\left(j_x,j_y\\right),\\left(j_x,i_y+j_y\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "73",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,0\\right),\\left(j_x,j_y\\right),\\left(0,j_y\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "74",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(\\left(i_x+j_x,i_y+j_y\\right),\\left(i_x,i_y\\right),\\left(i_x+j_x,i_y\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "75",
+                "color": "#388c46",
+                "latex": "\\operatorname{polygon}\\left(\\left(i_x,0\\right),\\left(i_x,i_y\\right),\\left(i_x+j_x,i_y\\right),\\left(i_x+j_x,0\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "76",
+                "color": "#388c46",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,i_y+j_y\\right),\\left(0,j_y\\right),\\left(j_x,j_y\\right),\\left(j_x,i_y+j_y\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "80",
+                "text": "For those who want to see all the calculation done, here it is: The whole area have a value of (ix + jx) * (iy + jy) = ix * iy + ix * jy + jx * iy + jx * jy. The green area is equal to iy * jx, so we'll subtract it two times from the equation, so the resulting equation is:  ix * iy + ix * jy - jx * iy + jx * jy. Then, the red areas are equal to jy * jx / 2, but there are two of them so will be jx * jy. Subtracting it, leaves us with: ix * iy + ix * jy - jx * iy. Equally, the dark areas are in total ix * iy, so the resulting equation of the area we're looking for is:  ix * jy - jx * iy, and that's it."
+            },
+            {
+                "type": "expression",
+                "id": "87",
+                "color": "#c74440",
+                "latex": "D=i_xj_y-i_yj_x",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "86",
+                "color": "#000000",
+                "latex": "\\left(i_x+j_x,i_y+j_y\\right)",
+                "showLabel": true,
+                "label": "`i_x\\cdot j_y - i_y \\cdot j_x = ${D}`",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "64",
+                "title": "basis vectors",
+                "collapsed": true,
+                "memberIds": {
+                    "53": true,
+                    "54": true,
+                    "65": true,
+                    "66": true
+                }
+            },
+            {
+                "type": "expression",
+                "id": "53",
+                "color": "#388c46",
+                "latex": "\\left(i_x,i_y\\right)",
+                "showLabel": true,
+                "label": "`\\hat{i}`",
+                "labelSize": "large",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "54",
+                "color": "#c74440",
+                "latex": "\\left(j_x,j_y\\right)",
+                "showLabel": true,
+                "label": "`\\hat{j}`",
+                "labelSize": "large",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "65",
+                "color": "#388c46",
+                "latex": "\\left(0,0\\right),\\left(i_x,i_y\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "66",
+                "color": "#c74440",
+                "latex": "\\left(0,0\\right),\\left(j_x,j_y\\right)",
+                "lines": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "68",
+                "title": "Grid",
+                "collapsed": true,
+                "memberIds": {
+                    "48": true,
+                    "51": true,
+                    "52": true,
+                    "69": true
+                }
+            },
+            {
+                "type": "expression",
+                "id": "52",
+                "color": "#2d70b3",
+                "latex": "R=\\left[-10,...,10\\right]",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "48",
+                "color": "#2d70b3",
+                "latex": "\\left(Ri_x+j_xt,Ri_y+j_yt\\right)",
+                "domain": {
+                    "min": "-10",
+                    "max": "10"
+                },
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "51",
+                "color": "#2d70b3",
+                "latex": "\\left(i_xt+Rj_x,i_yt+Rj_y\\right)",
+                "domain": {
+                    "min": "-10",
+                    "max": "10"
+                },
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "69",
+                "color": "#388c46",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

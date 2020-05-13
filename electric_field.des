@@ -1,0 +1,294 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -5.341410512127348,
+            "ymin": -2.7388978779156457,
+            "xmax": 4.320938733208967,
+            "ymax": 4.014616054685138
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "227",
+                "text": "Magnetic field is one of the most interesting things I've been playing around, and It's been a real challenge to me to put that in a Desmos sketch. Here are some explanation for this drawing."
+            },
+            {
+                "type": "text",
+                "id": "229",
+                "text": "First, we need a couple charges to play with. "
+            },
+            {
+                "type": "expression",
+                "id": "259",
+                "color": "#c74440",
+                "latex": "p_{1x}=-3.34",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "260",
+                "color": "#2d70b3",
+                "latex": "p_{1y}=1.88",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "196",
+                "color": "#6042a6",
+                "latex": "p_{2x}=1.64",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "197",
+                "color": "#000000",
+                "latex": "p_{2y}=-0.01",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "194",
+                "color": "#c74440",
+                "latex": "\\left(p_{1x},p_{1y}\\right)",
+                "showLabel": true,
+                "label": "Negative",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "199",
+                "color": "#2d70b3",
+                "latex": "\\left(p_{2x},p_{2y}\\right)",
+                "showLabel": true,
+                "label": "Positive",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "251",
+                "text": "To make this more funny, you can add easily your own charges. There are three lists, one for the X's, another for the Y's and the last one for the sign of the charge: 1 if positive and -1 otherwise. As an exercise, try to add them for yourself. It's easy :) (don't forget to update N)"
+            },
+            {
+                "type": "expression",
+                "id": "252",
+                "color": "#000000",
+                "latex": "c_x=\\left[p_{1x},p_{2x}\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "253",
+                "color": "#c74440",
+                "latex": "c_y=\\left[p_{1y},p_{2y}\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "255",
+                "color": "#388c46",
+                "latex": "c=\\left[-1,1\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "254",
+                "color": "#2d70b3",
+                "latex": "N=2",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "2",
+                "sliderInterval": "1",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "231",
+                "text": "This constant is used to generate all the points of the grid. Play around with it and see how it changes the graphics. Notice that if you increase it too much, it can hurt performance."
+            },
+            {
+                "type": "expression",
+                "id": "203",
+                "color": "#000000",
+                "latex": "D=29",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "1",
+                "sliderMax": "40",
+                "sliderInterval": "1",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "233",
+                "text": "For all the points in the grid, I need them to be something like px=[0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1] and py=[0, 1, 2, 3, ..., 0, 1, 2, 3, ...] so in order to do that I took advantage of the floor function. That function rounds down every non-integer number, so dividing the range [0, ->, D^2-1] by D will give me all kind of numbers between 0 and D (all of them evenly spaced) but rounded down, they become integers. For example, for D=2 we have first [0, 1, 2, 3]. Dividing by 2 => [0, 0.5, 1, 1.5] and then flooring them => [0, 0, 1, 1] so that's it. After that I centered and scaled them. Nice :)"
+            },
+            {
+                "type": "expression",
+                "id": "198",
+                "color": "#c74440",
+                "latex": "p_x=\\frac{\\left(\\operatorname{floor}\\left(\\frac{\\left[0,...,D^2-1\\right]}{D}\\right)-\\operatorname{floor}\\left(\\frac{D}{2}\\right)\\right)}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "235",
+                "text": "For this one, the last two steps (center and scale) are the same, but the first part is based on the ciclic property of the remainder of the division between two numbers. Back to D=2, we have first [0, 1, 2, 3]. If you divide all of them and get the remainder, you'll get [0, 1, 0, 1] and that's it."
+            },
+            {
+                "type": "expression",
+                "id": "201",
+                "color": "#fa7e19",
+                "latex": "p_y=\\frac{\\left(\\operatorname{mod}\\left(\\left[0,...,D^2-1\\right],D\\right)-\\operatorname{floor}\\left(\\frac{D}{2}\\right)\\right)}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "202",
+                "color": "#6042a6",
+                "latex": "\\left(p_x,p_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "237",
+                "text": "This function returns the length of a vector given its components."
+            },
+            {
+                "type": "expression",
+                "id": "210",
+                "color": "#c74440",
+                "latex": "L\\left(v_x,v_y\\right)=\\sqrt{v_x^2+v_y^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "239",
+                "text": "Euclidean distance function"
+            },
+            {
+                "type": "expression",
+                "id": "206",
+                "color": "#388c46",
+                "latex": "d\\left(x_1,y_1,x_2,y_2\\right)=L\\left(\\left(x_1-x_2\\right),\\left(y_1-y_2\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "241",
+                "text": "Ex and Ey are the components of the electrical field for a specific point."
+            },
+            {
+                "type": "expression",
+                "id": "257",
+                "color": "#6042a6",
+                "latex": "E_x\\left(x,y\\right)=\\sum_{n=1}^N\\frac{-c\\left[n\\right]\\cdot\\left(c_x\\left[n\\right]-x\\right)}{L\\left(\\left(c_x\\left[n\\right]-x\\right),\\left(c_y\\left[n\\right]-y\\right)\\right)^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "258",
+                "color": "#000000",
+                "latex": "E_y\\left(x,y\\right)=\\sum_{n=1}^N\\frac{-c\\left[n\\right]\\cdot\\left(c_y\\left[n\\right]-y\\right)}{L\\left(\\left(c_x\\left[n\\right]-x\\right),\\left(c_y\\left[n\\right]-y\\right)\\right)^2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "243",
+                "text": "To make this more clear, its needed to scale all the vectors, so this two functions are the used to draw those vectors. Since Desmos have fixed colors for the graphics, we can't add the field strength information :("
+            },
+            {
+                "type": "expression",
+                "id": "225",
+                "color": "#fa7e19",
+                "latex": "E_{1x}\\left(x,y\\right)=\\frac{E_x\\left(x,y\\right)}{4L\\left(E_x\\left(x,y\\right),E_y\\left(x,y\\right)\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "226",
+                "color": "#6042a6",
+                "latex": "E_{1y}\\left(x,y\\right)=\\frac{E_y\\left(x,y\\right)}{4L\\left(E_x\\left(x,y\\right),E_y\\left(x,y\\right)\\right)}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "245",
+                "text": "px and py are the starting point of each vectors, but qx and qy will be the ending point and also, they makes more clear all the stuff"
+            },
+            {
+                "type": "expression",
+                "id": "219",
+                "color": "#fa7e19",
+                "latex": "q_x=p_x+E_{1x}\\left(p_x,p_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "220",
+                "color": "#6042a6",
+                "latex": "q_y=p_y+E_{1y}\\left(p_x,p_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "247",
+                "text": "To create the arrows, I need a function that takes some vector and returns the rotated version of that vector by certain angle"
+            },
+            {
+                "type": "expression",
+                "id": "182",
+                "color": "#388c46",
+                "latex": "r_x\\left(x,y,a\\right)=x\\cos\\left(a\\right)-y\\sin\\left(a\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "183",
+                "color": "#fa7e19",
+                "latex": "r_y\\left(x,y,a\\right)=x\\sin\\left(a\\right)+y\\cos\\left(a\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "249",
+                "text": "This is a parametric interpolation function. What this does is to draw a line between (x1, y1) and (x2, y2). It's done this way in order to get a more cleaner segment that its other versions (line equation) and to work nicely with lists. The next stuff is to actually draw the vectors. It's pretty dense but go ahead and take a look if you want :)"
+            },
+            {
+                "type": "expression",
+                "id": "216",
+                "color": "#c74440",
+                "latex": "M\\left(x_1,y_1,x_2,y_2,t\\right)=\\left(x_1\\left(1-t\\right)+x_2t,y_1\\left(1-t\\right)+y_2t\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "221",
+                "color": "#6042a6",
+                "latex": "M\\left(p_x,p_y,q_x,q_y,t\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "223",
+                "color": "#6042a6",
+                "latex": "M\\left(q_x,q_y,q_x-\\frac{r_x\\left(E_{1x}\\left(p_x,p_y\\right),E_{1y}\\left(p_x,p_y\\right),\\frac{\\pi}{8}\\right)}{10},q_y-\\frac{r_y\\left(E_{1x}\\left(p_x,p_y\\right),E_{1y}\\left(p_x,p_y\\right),\\frac{\\pi}{8}\\right)}{10},t\\right)",
+                "fill": false,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "224",
+                "color": "#6042a6",
+                "latex": "M\\left(q_x,q_y,q_x-\\frac{r_x\\left(E_{1x}\\left(p_x,p_y\\right),E_{1y}\\left(p_x,p_y\\right),-\\frac{\\pi}{8}\\right)}{10},q_y-\\frac{r_y\\left(E_{1x}\\left(p_x,p_y\\right),E_{1y}\\left(p_x,p_y\\right),-\\frac{\\pi}{8}\\right)}{10},t\\right)",
+                "fill": false,
+                "style": "SOLID"
+            }
+        ]
+    }
+}
