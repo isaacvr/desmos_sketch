@@ -3,9 +3,9 @@
     "graph": {
         "viewport": {
             "xmin": -15.498003954250855,
-            "ymin": -11.952437104083609,
+            "ymin": -18.69460443126765,
             "xmax": 21.172711471138193,
-            "ymax": 13.678616095856283
+            "ymax": 20.420783423040326
         }
     },
     "expressions": {
@@ -19,7 +19,7 @@
                 "type": "expression",
                 "id": "15",
                 "color": "#fa7e19",
-                "latex": "t_0=0",
+                "latex": "t_0=0.055",
                 "sliderHardMin": true,
                 "sliderHardMax": true,
                 "sliderAnimationPeriod": 11428.57142857143,

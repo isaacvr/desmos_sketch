@@ -1,0 +1,695 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -7.24313181704711,
+            "ymin": -3.2820315510506752,
+            "xmax": 25.24027008217895,
+            "ymax": 19.422292390725666
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1085",
+                "text": "LES (Linear Equations System) represents a number of relationships between some unknonwn amounts, and we call \"Solutions\" to those amounts. This is a very important object in engineering and real life because sometimes we can't measure individual values but its relationships, so in order to get them one by one, we have some results to look at before knowing if we can actually solve it or not."
+            },
+            {
+                "type": "folder",
+                "id": "1087",
+                "title": "LINEAR: What does it mean?",
+                "collapsed": true,
+                "memberIds": {
+                    "1089": true,
+                    "1090": true,
+                    "1092": true,
+                    "1093": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1089",
+                "text": "In terms of a LER, it represents literally, a LINE. for example, the difference between your age and your father's age is a constant value. If you say that your father's age is Y, your age is X and you know that the difference is about an unrealistic case of 3 years, you have the next relationship, which you can observe as a line where all the points satisfies that relationship, hence the name of Linear."
+            },
+            {
+                "type": "expression",
+                "id": "1090",
+                "color": "#c74440",
+                "latex": "y-x=3",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1092",
+                "text": "Since there are infinitely many points, you need to stablish another relationship (line) and then, you'll figure out that the solution is the point where those two lines intersects. That means that this intersection point satisfies both relationships simultaneously. For example, if your age and your father's age added together is 15, then you can observe that they cross at the point (6, 9) and that means that you are 6 years old and your father is 9 years old."
+            },
+            {
+                "type": "expression",
+                "id": "1093",
+                "color": "#2d70b3",
+                "latex": "x+y=15",
+                "sliderMax": "15",
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "1095",
+                "title": "Does it have a solution?",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1097": true,
+                    "1098": true,
+                    "1099": true,
+                    "1101": true,
+                    "1102": true,
+                    "1104": true,
+                    "1105": true,
+                    "1106": true,
+                    "1108": true,
+                    "1109": true,
+                    "1111": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1097",
+                "text": "Taking back the last relationships, we have this:"
+            },
+            {
+                "type": "expression",
+                "id": "1098",
+                "color": "#c74440",
+                "latex": "y-x=3",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1099",
+                "color": "#2d70b3",
+                "latex": "x+y=15",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1101",
+                "text": "To keep things sorted, we'll re-write the first equation as:"
+            },
+            {
+                "type": "expression",
+                "id": "1102",
+                "color": "#c74440",
+                "latex": "-x+y=3",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1104",
+                "text": "One thing that mathematicians realized was that if you take the numbers that multiplies the unknow variables, that describes a vector that is perpendicular to the line. Look it for yourself:"
+            },
+            {
+                "type": "expression",
+                "id": "1105",
+                "color": "#c74440",
+                "latex": "\\left(0,0\\right),\\left(-1,1\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1106",
+                "color": "#2d70b3",
+                "latex": "\\left(0,0\\right),\\left(1,1\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1108",
+                "text": "Now, that can help to clear things out. The notion of the \"Cross product\" can be extrapolated to 2D like this. Consider two vectors with components [ax, ay] and [bx, by]. The cross product is equal to: ax * by - ay * bx. For example, this is our \"cross product\":"
+            },
+            {
+                "type": "expression",
+                "id": "1109",
+                "color": "#6042a6",
+                "latex": "C=\\left(-1\\right)\\cdot\\left(1\\right)-\\left(1\\right)\\cdot\\left(1\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1111",
+                "text": "What kind of information we can obtain from it? Well, if two vectors are not aligned, that means that our relationships (lines) are not parallells (think about that for a moment, it's important). If they are aligned, our lines will never met at some point. In numbers, if the \"cross product\" is not zero, we have a solution. If it's zero, we have no solution or infinite solutions, so now we know if we can keep trying or not."
+            },
+            {
+                "type": "folder",
+                "id": "1113",
+                "title": "Solving it (part 1)",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1118": true,
+                    "1119": true,
+                    "1121": true,
+                    "1122": true,
+                    "1124": true,
+                    "1125": true,
+                    "1127": true,
+                    "1128": true,
+                    "1130": true,
+                    "1131": true,
+                    "1132": true,
+                    "1133": true,
+                    "1135": true,
+                    "1136": true,
+                    "1137": true,
+                    "1139": true,
+                    "1140": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1118",
+                "text": "There are a couple ways to do this. I'll be talking about 4 of them. First, the one called \"Subtitution\". We have that our first relationship is:"
+            },
+            {
+                "type": "expression",
+                "id": "1119",
+                "color": "#c74440",
+                "latex": "-x+y=3",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1121",
+                "text": "This is the same as:"
+            },
+            {
+                "type": "expression",
+                "id": "1122",
+                "color": "#c74440",
+                "latex": "y=x+3",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1124",
+                "text": "The second one was:"
+            },
+            {
+                "type": "expression",
+                "id": "1125",
+                "color": "#2d70b3",
+                "latex": "x+y=15",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1127",
+                "text": "... and its the same as:"
+            },
+            {
+                "type": "expression",
+                "id": "1128",
+                "color": "#2d70b3",
+                "latex": "y=15-x",
+                "sliderMax": "15",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1130",
+                "text": "Since Y is the same in both cases, we can equal the right side of the equation:"
+            },
+            {
+                "type": "expression",
+                "id": "1131",
+                "color": "#000000",
+                "latex": "x+3=15-x",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1132",
+                "color": "#c74440",
+                "latex": "2x=12",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1133",
+                "color": "#2d70b3",
+                "latex": "x=6",
+                "hidden": true,
+                "sliderMax": "126",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1135",
+                "text": "Great!! We have X. Then, we replace that result inside one of the two relationships and we get:"
+            },
+            {
+                "type": "expression",
+                "id": "1136",
+                "color": "#fa7e19",
+                "latex": "-6+y=3",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1137",
+                "color": "#6042a6",
+                "latex": "y=9",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1139",
+                "text": "So, we're done here. Note that the subtitution can be done for X or Y. It's the same idea."
+            },
+            {
+                "type": "expression",
+                "id": "1140",
+                "color": "#c74440",
+                "latex": "\\left(6,9\\right)",
+                "showLabel": true,
+                "label": "(6,9)",
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "1142",
+                "title": "Solving it (part 2)",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1143": true,
+                    "1144": true,
+                    "1145": true,
+                    "1147": true,
+                    "1148": true,
+                    "1150": true,
+                    "1151": true,
+                    "1152": true,
+                    "1153": true,
+                    "1155": true,
+                    "1156": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1144",
+                "text": "This procedure is almost the same as before, but we try another way. First, we need to get X or Y to be multiplied by the same number. We have that already, since our first equation is -x+y=3 and the second is x+y=15, we have Y being multiplied by 1 in both cases ( 1x + 1y = 15 and -1x + 1y = 3 ). So, we can again, rewrite both equations like this:"
+            },
+            {
+                "type": "expression",
+                "id": "1145",
+                "color": "#c74440",
+                "latex": "-x+y-3=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1143",
+                "color": "#2d70b3",
+                "latex": "x+y-15=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1147",
+                "text": "Then, they are both equal, so we have:"
+            },
+            {
+                "type": "expression",
+                "id": "1148",
+                "color": "#000000",
+                "latex": "-x+y-3=x+y-15",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1150",
+                "text": "Sice Y is THE SAME in both sides (that's the reason we want something like this) we can take it away from the equation:"
+            },
+            {
+                "type": "expression",
+                "id": "1151",
+                "color": "#2d70b3",
+                "latex": "-x-3=x-15",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1152",
+                "color": "#388c46",
+                "latex": "15-3=2x",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1153",
+                "color": "#fa7e19",
+                "latex": "x=6",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1155",
+                "text": "Now, repeat the same process as before and we'll get Y=9."
+            },
+            {
+                "type": "expression",
+                "id": "1156",
+                "color": "#c74440",
+                "latex": "\\left(6,9\\right)",
+                "showLabel": true,
+                "label": "(6,9)",
+                "dragMode": "XY",
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "1158",
+                "title": "Solving it (part 3)",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1160": true,
+                    "1162": true,
+                    "1165": true,
+                    "1167": true,
+                    "1168": true,
+                    "1170": true,
+                    "1171": true,
+                    "1173": true,
+                    "1174": true,
+                    "1175": true,
+                    "1177": true,
+                    "1178": true,
+                    "1179": true,
+                    "1180": true,
+                    "1181": true,
+                    "1182": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1160",
+                "text": "This is one of the most straightforward methods for this, but can be pretty odd for 3D+. It's called the Cramer's Rule and goes like this:"
+            },
+            {
+                "type": "text",
+                "id": "1162",
+                "text": "1- Compute the \"cross product\" as before. This is really the determinant of the matrix formed by the \"vector's components\"."
+            },
+            {
+                "type": "expression",
+                "id": "1181",
+                "color": "#6042a6",
+                "latex": "V_1=\\left[-1,1\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1182",
+                "color": "#000000",
+                "latex": "V_2=\\left[1,1\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1179",
+                "color": "#c74440",
+                "latex": "-x+y=3",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1180",
+                "color": "#2d70b3",
+                "latex": "x+y=15",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1165",
+                "color": "#6042a6",
+                "latex": "D=\\left(-1\\right)\\cdot\\left(1\\right)-\\left(1\\right)\\cdot\\left(1\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1167",
+                "text": "2- Compute the same cross product but replacing the X coordinates of the vectors by the intependent terms of each equation (3 and 15) so we have:"
+            },
+            {
+                "type": "expression",
+                "id": "1168",
+                "color": "#c74440",
+                "latex": "P_1=\\left(3\\right)\\cdot\\left(1\\right)-\\left(15\\right)\\cdot\\left(1\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1170",
+                "text": "3- Same thing as before, but now replacing the Y coordinates."
+            },
+            {
+                "type": "expression",
+                "id": "1171",
+                "color": "#388c46",
+                "latex": "P_2=\\left(-1\\right)\\cdot\\left(3\\right)-\\left(1\\right)\\cdot\\left(15\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1173",
+                "text": "4- Now, take both products and divide them by D."
+            },
+            {
+                "type": "expression",
+                "id": "1174",
+                "color": "#6042a6",
+                "latex": "\\frac{P_1}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1175",
+                "color": "#000000",
+                "latex": "\\frac{P_2}{D}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1177",
+                "text": "As you can see, this gives us the solution for all the unknowns, and we're done."
+            },
+            {
+                "type": "expression",
+                "id": "1178",
+                "color": "#c74440",
+                "latex": "\\left(\\frac{P_1}{D},\\frac{P_2}{D}\\right)",
+                "showLabel": true,
+                "label": "(6,9)",
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "1185",
+                "title": "Solving it (part 4)",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1184": true,
+                    "1187": true,
+                    "1189": true,
+                    "1191": true,
+                    "1193": true,
+                    "1194": true,
+                    "1195": true,
+                    "1196": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1184",
+                "text": "The last method I wanna share is called the Inverse Matrix method, and it will be fine if you have a little background about matrices and how to compute its inverse. If not, please take a look at the Wikipedia's article that is REALLY GOOD explanied and you only need to know how to get the inverse of a 2x2 matrix for this example."
+            },
+            {
+                "type": "text",
+                "id": "1187",
+                "text": "1- The system's matrix A, is obtained by placing all the coefficients of each unknown as the rows of that matrix. Since here I can't draw a matrix, the two rows of our example will be [-1, 1] and [1, 1]."
+            },
+            {
+                "type": "text",
+                "id": "1189",
+                "text": "2- The inverse of a 2x2 matrix can be easily obtained by swapping the elements of the main diagonal and multiplying the other values by -1, then dividing it by the \"Determinant\" or what we called previously as the \"cross product\". The resulting rows will be [ -1/2  1/2 ] and [ 1/2 1/2 ]."
+            },
+            {
+                "type": "text",
+                "id": "1191",
+                "text": "3- Multiply that matrix by our independent terms. You can get this by taking them as a row [ 3  15 ] and then \"multiply\" that row with every row of the inverse matrix. For that, you need to multiply each term and add them together. For example taking   [ 3  15 ] * [ -1/2   1/2 ] we get -3/2 + 15/2 = 6            [ 3  15 ] * [ 1/2   1/2 ] we get 3/2 + 15/2 = 9"
+            },
+            {
+                "type": "text",
+                "id": "1193",
+                "text": "There are the solutions, so we're done."
+            },
+            {
+                "type": "expression",
+                "id": "1195",
+                "color": "#c74440",
+                "latex": "-x+y=3",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1196",
+                "color": "#2d70b3",
+                "latex": "x+y=15",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1194",
+                "color": "#c74440",
+                "latex": "\\left(-\\frac{3}{2}+\\frac{15}{2},\\frac{3}{2}+\\frac{15}{2}\\right)",
+                "showLabel": true,
+                "label": "(6, 9)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1198",
+                "text": "The first two methods are easy to handle manually while the last two can be used to easily compute the solutions in a general way by using some programming language."
+            },
+            {
+                "type": "folder",
+                "id": "1200",
+                "title": "Dynamic example using 3th method",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1201": true,
+                    "1207": true,
+                    "1208": true,
+                    "1209": true,
+                    "1211": true,
+                    "1212": true,
+                    "1213": true,
+                    "1214": true,
+                    "1216": true,
+                    "1217": true,
+                    "1218": true,
+                    "1219": true
+                }
+            },
+            {
+                "type": "expression",
+                "id": "1201",
+                "color": "#c74440",
+                "latex": "a_1x+b_1y=c_1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1211",
+                "color": "#2d70b3",
+                "latex": "a_2x+b_2y=c_2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1207",
+                "color": "#6042a6",
+                "latex": "a_1=-0.5",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1208",
+                "color": "#000000",
+                "latex": "b_1=0.8",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1209",
+                "color": "#c74440",
+                "latex": "c_1=0.9",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1212",
+                "color": "#fa7e19",
+                "latex": "a_2=2",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1213",
+                "color": "#6042a6",
+                "latex": "b_2=3.4",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1214",
+                "color": "#000000",
+                "latex": "c_2=8.2",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1216",
+                "color": "#2d70b3",
+                "latex": "D_1=a_1b_2-a_2b_1",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1217",
+                "color": "#388c46",
+                "latex": "p_x=\\frac{\\left(c_1b_2-c_2b_1\\right)}{D_1}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1218",
+                "color": "#fa7e19",
+                "latex": "p_y=\\frac{\\left(a_1c_2-a_2c_1\\right)}{D_1}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1219",
+                "color": "#c74440",
+                "latex": "\\left(p_x,p_y\\right)",
+                "label": "`(${p_x},\\ \\ ${p_y})`",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

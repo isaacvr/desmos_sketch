@@ -1,0 +1,184 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -0.49891648043310277,
+            "ymin": -1.4039391570584945,
+            "xmax": 7.347732865240442,
+            "ymax": 4.080488525558847
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1061",
+                "text": "This example ilustrates how to obtain the general formula to compute the area of a trapecio."
+            },
+            {
+                "type": "expression",
+                "id": "1046",
+                "color": "#fa7e19",
+                "latex": "p_{1x}=4.79",
+                "hidden": true,
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "6",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1048",
+                "color": "#000000",
+                "latex": "p_{2x}=1.45",
+                "hidden": true,
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "6",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1",
+                "color": "#c74440",
+                "latex": "A=\\left(0,0\\right)",
+                "showLabel": true,
+                "label": "`A`",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1038",
+                "color": "#c74440",
+                "latex": "B=\\left(6,0\\right)",
+                "showLabel": true,
+                "label": "`B`",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1042",
+                "color": "#c74440",
+                "latex": "C=\\left(p_{1x},2.5\\right)",
+                "showLabel": true,
+                "label": "`C`",
+                "dragMode": "X",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1044",
+                "color": "#c74440",
+                "latex": "D=\\left(p_{2x},2.5\\right)",
+                "showLabel": true,
+                "label": "`D`",
+                "dragMode": "X",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1049",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(A,B,C,D\\right)",
+                "fill": false,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1052",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(p_{2x},0\\right),D,C,\\left(p_{1x},0\\right)\\right)",
+                "lineStyle": "DASHED",
+                "fill": false,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1064",
+                "text": "Notice that the area is the sum of the three sub-areas: (B1 * h)/2 + (2B2 * h)/2 + B3*h/2. Adding them together: ((B1 + B2 + B3) + B2) * h / 2. Notice that (B1 + B2 + B3) is the \"Big base\" and B2 is the small one. So the area is: (Big_base + Small_base) * h / 2"
+            },
+            {
+                "type": "expression",
+                "id": "1054",
+                "color": "#000000",
+                "latex": "\\left(\\frac{p_{2x}}{2},0\\right)",
+                "showLabel": true,
+                "label": "`B1`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1055",
+                "color": "#000000",
+                "latex": "\\left(\\frac{\\left(p_{1x}+p_{2x}\\right)}{2},0\\right)",
+                "showLabel": true,
+                "label": "`B2`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1056",
+                "color": "#000000",
+                "latex": "\\left(\\frac{\\left(p_{1x}+6\\right)}{2},0\\right)",
+                "showLabel": true,
+                "label": "`B3`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1058",
+                "color": "#000000",
+                "latex": "\\left(p_{2x},\\frac{2.5}{2}\\right)",
+                "showLabel": true,
+                "label": "`h`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1057",
+                "color": "#000000",
+                "latex": "\\left(\\frac{\\left(p_{1x}+p_{2x}\\right)}{2},\\frac{2.5}{2}\\right)",
+                "showLabel": true,
+                "label": "`A=B2\\cdot\\ h = \\frac{2B2\\cdot\\ h}{2}`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1059",
+                "color": "#000000",
+                "latex": "\\left(\\frac{\\left(p_{2x}\\right)}{2},\\frac{2.5}{4}\\right)",
+                "showLabel": true,
+                "label": "`A=\\frac{B1 \\cdot h}{2}`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1060",
+                "color": "#000000",
+                "latex": "\\left(\\frac{\\left(p_{1x}+6\\right)}{2},\\frac{2.5}{4}\\right)",
+                "showLabel": true,
+                "label": "`A=\\frac{B3 \\cdot h}{2}`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

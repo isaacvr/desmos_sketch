@@ -1,0 +1,41 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -7.130973873901018,
+            "ymin": -6.521328749433717,
+            "xmax": 19.950649203491672,
+            "ymax": 12.407413539496893
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1080",
+                "text": "Even-odd decomposition claims that every function can be separated as the sum of an even and an odd function. The even function is ( f(x)+f(-x) ) / 2 and the odd one is ( f(x) - f(-x) ) / 2"
+            },
+            {
+                "type": "expression",
+                "id": "1079",
+                "color": "#c74440",
+                "latex": "f\\left(x\\right)=\\cos\\left(x\\right)-\\sin\\left(x\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1081",
+                "color": "#388c46",
+                "latex": "E_{ven}\\left(x\\right)=\\frac{f\\left(x\\right)+f\\left(-x\\right)}{2}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1082",
+                "color": "#2d70b3",
+                "latex": "O_{dd}\\left(x\\right)=\\frac{f\\left(x\\right)-f\\left(-x\\right)}{2}",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

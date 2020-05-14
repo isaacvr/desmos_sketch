@@ -1,0 +1,102 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -1.3397213040703635,
+            "ymin": -1.0075128098305242,
+            "xmax": 5.796002590855498,
+            "ymax": 3.9800124306625615
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1065",
+                "text": "The area of a rectangle is, logically, A * B, where A and B are the lengths of the base and the height. But, that can also be PROOVED by using the area of a square."
+            },
+            {
+                "type": "expression",
+                "id": "1066",
+                "color": "#2d70b3",
+                "latex": "A=2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1067",
+                "color": "#388c46",
+                "latex": "B=1",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1072",
+                "text": "First, we create a square from a rectangle"
+            },
+            {
+                "type": "expression",
+                "id": "1068",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,0\\right),\\left(A,0\\right),\\left(A,B\\right),\\left(0,B\\right)\\right)",
+                "fill": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1073",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(A,0\\right),\\left(A+B,0\\right),\\left(A+B,A\\right),\\left(A,A\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1074",
+                "color": "#388c46",
+                "latex": "\\operatorname{polygon}\\left(\\left(B,A+B\\right),\\left(A+B,A+B\\right),\\left(A+B,A\\right),\\left(B,A\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1075",
+                "color": "#fa7e19",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,B\\right),\\left(B,B\\right),\\left(B,A+B\\right),\\left(0,A+B\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1076",
+                "color": "#6042a6",
+                "latex": "\\operatorname{polygon}\\left(\\left(B,B\\right),\\left(A,B\\right),\\left(A,A\\right),\\left(B,A\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1078",
+                "text": "Notice that the Big Square's area is equal to the sum of 4 times the rectangle and the little square. In terms of A and B, that is: (A + B)^2 = 4A_of_Rect + A_sq. The area of the small square is (A - B)^2, so expanding the first equation we have this: A^2 + 2AB + B^2 = 4A_of_Rect + A^2 - 2AB + B^2. Since A^2 and B^2 are in both sides of the equation, we can cancel them out so we have now 2AB = 4A_of_Rect - 2AB. That leads us to: 4A_of_Rect = 4AB and then, after divide both sides by 4, we're done."
+            },
+            {
+                "type": "expression",
+                "id": "1069",
+                "color": "#000000",
+                "latex": "\\left(\\frac{A}{2},0\\right)",
+                "showLabel": true,
+                "label": "`A=${A}`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1070",
+                "color": "#000000",
+                "latex": "\\left(0,\\frac{B}{2}\\right)",
+                "showLabel": true,
+                "label": "`B=${B}`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            }
+        ]
+    }
+}
