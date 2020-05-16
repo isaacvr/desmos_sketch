@@ -1,0 +1,346 @@
+{
+    "version": 5,
+    "graph": {
+        "squareAxes": false,
+        "viewport": {
+            "xmin": -3.709211714294505,
+            "ymin": -9.06654346858246,
+            "xmax": 3.86916968007405,
+            "ymax": 2.9571896439012146
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1378",
+                "text": "Consider this function (do not enable it yet):"
+            },
+            {
+                "type": "expression",
+                "id": "1379",
+                "color": "#2d70b3",
+                "latex": "f\\left(x\\right)=x^3+4x^2+x-6",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1381",
+                "text": "This function can be written as:"
+            },
+            {
+                "type": "expression",
+                "id": "1382",
+                "color": "#fa7e19",
+                "latex": "\\left(x-1\\right)\\left(x+2\\right)\\left(x+3\\right)",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1384",
+                "text": "Now we know that this function is zero at x = { 1, -2, -3 }. Now, the first derivative of f(x) is:"
+            },
+            {
+                "type": "expression",
+                "id": "1385",
+                "color": "#000000",
+                "latex": "g\\left(x\\right)=3x^2+8x+1",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1388",
+                "text": "Getting the zeros of the first derivative:"
+            },
+            {
+                "type": "expression",
+                "id": "1389",
+                "color": "#388c46",
+                "latex": "D=8^2-4\\cdot\\left(3\\right)\\cdot\\left(1\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1390",
+                "color": "#fa7e19",
+                "latex": "x_1=\\frac{-8+\\sqrt{D}}{2\\cdot3}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1391",
+                "color": "#6042a6",
+                "latex": "x_2=\\frac{-8-\\sqrt{D}}{2\\cdot3}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1393",
+                "text": "The first derivative is zero when the function have a local maximun/minimun. Now lets take the second derivative:"
+            },
+            {
+                "type": "expression",
+                "id": "1394",
+                "color": "#c74440",
+                "latex": "h\\left(x\\right)=6x+8",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1397",
+                "text": "This function have a single zero at:"
+            },
+            {
+                "type": "expression",
+                "id": "1398",
+                "color": "#fa7e19",
+                "latex": "x=-\\frac{8}{6}",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1418",
+                "text": "This value indicates that the function opens up to the right/left and down to the left/write. The direction of that opening will be determined next."
+            },
+            {
+                "type": "text",
+                "id": "1401",
+                "text": "Now we have 4 regions to check. They are:              \n (-infinity; -3), (-3; -2), (-2; 1) and (1; +infinity). Lets take a sample from those regions, for example [ -4, -2.5, 0, 3 ]"
+            },
+            {
+                "type": "expression",
+                "id": "1405",
+                "color": "#388c46",
+                "latex": "f\\left(-4\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1406",
+                "color": "#fa7e19",
+                "latex": "g\\left(-4\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1407",
+                "color": "#6042a6",
+                "latex": "h\\left(-4\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1404",
+                "text": "1- Region (-infinity; -3): The function is negative in this interval, is increasing (positive first derivative) and opens down (negative second derivative)."
+            },
+            {
+                "type": "expression",
+                "id": "1408",
+                "color": "#000000",
+                "latex": "f\\left(-2.5\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1409",
+                "color": "#c74440",
+                "latex": "g\\left(-2.5\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1410",
+                "color": "#2d70b3",
+                "latex": "g\\left(-2.5\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1420",
+                "text": "2- Region (-3; -2): The function is positive, it have a maximun on x = -2.535183... We determined that is a maximun because in the previous region, the function is increasing, and after this point, is decreasing. That leads to a maximun instead of a minimun. Finally, the function opens down here."
+            },
+            {
+                "type": "expression",
+                "id": "1411",
+                "color": "#388c46",
+                "latex": "f\\left(0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1412",
+                "color": "#fa7e19",
+                "latex": "g\\left(0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1413",
+                "color": "#6042a6",
+                "latex": "h\\left(0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1422",
+                "text": "3- Region (-2, 1): The function is negative, it have a minimun value at x = -0.13148 (decreasing and increasing) and the function opens down from x in (-2, -1.33333) and opens up in (-1.33333, 1). (-1.33333 is the zero of the second derivative)"
+            },
+            {
+                "type": "expression",
+                "id": "1414",
+                "color": "#000000",
+                "latex": "f\\left(3\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1415",
+                "color": "#c74440",
+                "latex": "g\\left(3\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1416",
+                "color": "#2d70b3",
+                "latex": "h\\left(3\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1424",
+                "text": "4- Region (1; +infinity): The function is positive, increasing and it opens up."
+            },
+            {
+                "type": "text",
+                "id": "1426",
+                "text": "Since the function f(x)/x goes to infinity as x approaches +-infinity, it doesn't exist a line in such way that the function approaches to it. So, you can enable the next folder to see every detail we've obtained about this function :)"
+            },
+            {
+                "type": "folder",
+                "id": "1429",
+                "title": "Function and other stuff",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1431": true,
+                    "1432": true,
+                    "1434": true,
+                    "1435": true,
+                    "1436": true,
+                    "1438": true,
+                    "1439": true,
+                    "1440": true,
+                    "1442": true,
+                    "1443": true,
+                    "1444": true,
+                    "1445": true,
+                    "1447": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1431",
+                "text": "The function have 5 regions:"
+            },
+            {
+                "type": "expression",
+                "id": "1432",
+                "color": "#2d70b3",
+                "latex": "x=\\left[-3,-2,1\\right]",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1434",
+                "text": "Three zeros:"
+            },
+            {
+                "type": "expression",
+                "id": "1435",
+                "color": "#000000",
+                "latex": "\\left(-3,0\\right)",
+                "showLabel": true,
+                "label": "Zero",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1444",
+                "color": "#000000",
+                "latex": "\\left(-2,0\\right)",
+                "showLabel": true,
+                "label": "Zero",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1445",
+                "color": "#000000",
+                "latex": "\\left(1,0\\right)",
+                "showLabel": true,
+                "label": "Zero",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1438",
+                "text": "A maximun and a minimun value:"
+            },
+            {
+                "type": "expression",
+                "id": "1439",
+                "color": "#c74440",
+                "latex": "\\left(x_1,f\\left(x_1\\right)\\right)",
+                "showLabel": true,
+                "label": "Min",
+                "pointStyle": "OPEN",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1440",
+                "color": "#c74440",
+                "latex": "\\left(x_2,f\\left(x_2\\right)\\right)",
+                "showLabel": true,
+                "label": "Max",
+                "pointStyle": "OPEN",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1442",
+                "text": "The function changes how it opens (up or down) about this point:"
+            },
+            {
+                "type": "expression",
+                "id": "1443",
+                "color": "#388c46",
+                "latex": "x=\\frac{-8}{6}",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1447",
+                "text": "Now you can reveal the function:"
+            },
+            {
+                "type": "expression",
+                "id": "1436",
+                "color": "#c74440",
+                "latex": "f\\left(x\\right)",
+                "hidden": true,
+                "style": "SOLID"
+            }
+        ]
+    }
+}

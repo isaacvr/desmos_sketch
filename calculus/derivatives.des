@@ -1,0 +1,340 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -1.0249540054489887,
+            "ymin": -0.40015859720951363,
+            "xmax": 3.6430956650366255,
+            "ymax": 2.862581896687934
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1226",
+                "text": "Derivatives are an important tool for the analysis of processes. The definition of Derivative is the \"Rate of change at a given moment\". For example, velocity is the derivative of position, since measures the rate of change of position over time. Likewise, acceleration is the derivative of velocity because it measures how velocity changes over time. To do that, we will take a function and a value called dx, that will be adjustable. "
+            },
+            {
+                "type": "folder",
+                "id": "1229",
+                "title": "Derivative as a limit",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1231": true,
+                    "1232": true,
+                    "1234": true,
+                    "1235": true,
+                    "1238": true,
+                    "1239": true,
+                    "1240": true,
+                    "1241": true,
+                    "1242": true,
+                    "1243": true,
+                    "1245": true,
+                    "1247": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1231",
+                "text": "Let's take a look to this function:"
+            },
+            {
+                "type": "expression",
+                "id": "1232",
+                "color": "#c74440",
+                "latex": "f\\left(x\\right)=x^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1235",
+                "color": "#c74440",
+                "latex": "b=1.5",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "01",
+                "sliderMax": "1.5",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1234",
+                "color": "#2d70b3",
+                "latex": "\\left(1,f\\left(1\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1241",
+                "color": "#2d70b3",
+                "latex": "\\left(b,f\\left(b\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1238",
+                "text": "Now, what we want to measure is the rate of change of the function, dy/dx, where dx is the difference between X's and for dy is the same. At this point, you maybe can notice that this is what is comminly called the \"slope\" of a line."
+            },
+            {
+                "type": "expression",
+                "id": "1239",
+                "color": "#c74440",
+                "latex": "\\left(b,f\\left(1\\right)\\right),\\left(b,f\\left(b\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1240",
+                "color": "#2d70b3",
+                "latex": "\\left(1,f\\left(1\\right)\\right),\\left(b,f\\left(1\\right)\\right)",
+                "points": false,
+                "lines": true,
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1242",
+                "color": "#c74440",
+                "latex": "m=\\frac{f\\left(b\\right)-f\\left(1\\right)}{b-1}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1243",
+                "color": "#2d70b3",
+                "latex": "y-f\\left(1\\right)=m\\left(x-1\\right)",
+                "lineStyle": "DASHED",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1245",
+                "text": "Also notice that as B approaches the point (1; 1), that line approaches to the tangent line at (1; 1). You can see as well that the slope approaches 2, EXACTLY 2. With this concept in mind, you can use the knowledge of limits to do this and I'll show you how."
+            },
+            {
+                "type": "text",
+                "id": "1247",
+                "text": "The derivative (slope in this scenario) is the limit of    ( f(x + dx) - f(x) ) / dx as dx approaches zero. since f(x) = x^2 we have that f(x + dx) can be expanded as: x^2 + 2x * dx + dx^2. Placing that result in the previous limit, we have that the derivative will be: ( 2x * dx + dx^2 ) / dx which is the same as: 2x + dx and since dx approaches zero, that limit is 2x. Notice that for this case, the slope is 2 as B approaches (1, 1). Naturally the slope at x=1 will be 2x = 2. :)"
+            },
+            {
+                "type": "folder",
+                "id": "1249",
+                "title": "Derivative geometrically (part 1)",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1251": true,
+                    "1252": true,
+                    "1254": true,
+                    "1255": true,
+                    "1256": true,
+                    "1258": true,
+                    "1259": true,
+                    "1260": true,
+                    "1261": true,
+                    "1264": true,
+                    "1265": true,
+                    "1267": true,
+                    "1268": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1251",
+                "text": "Function f(x)=x^2 can be also interpreted as the area of a square of length x, so the derivative can represent how that area changes when x is increased by a tiny dx, specifically when dx approaches zero."
+            },
+            {
+                "type": "expression",
+                "id": "1252",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,0\\right),\\left(1,0\\right),\\left(1,1\\right),\\left(0,1\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1254",
+                "color": "#388c46",
+                "latex": "d_x=0.166",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "0",
+                "sliderMax": "0.5",
+                "sliderInterval": "0.001",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1255",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,1.03\\right),\\left(1,1.03\\right),\\left(1,1.03+d_x\\right),\\left(0,1.03+d_x\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1259",
+                "color": "#2d70b3",
+                "latex": "\\left(0.5,1.05+d_x\\right)",
+                "showLabel": true,
+                "label": "`A=x\\cdot dx=${d_x}`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "labelSize": "large",
+                "labelOrientation": "above",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1256",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(1.03,0\\right),\\left(1.03+d_x,0\\right),\\left(1.03+d_x,1\\right),\\left(1.03,1\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1260",
+                "color": "#2d70b3",
+                "latex": "\\left(1.05+d_x,0.5\\right)",
+                "showLabel": true,
+                "label": "`A=x\\cdot dx=${d_x}`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "labelSize": "large",
+                "labelOrientation": "right",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1258",
+                "color": "#388c46",
+                "latex": "\\operatorname{polygon}\\left(\\left(1.03,1.03\\right),\\left(1.03+d_x,1.03\\right),\\left(1.03+d_x,1.03+d_x\\right),\\left(1.03,1.03+d_x\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1261",
+                "color": "#388c46",
+                "latex": "\\left(1.05+d_x,1.05+d_x\\right)",
+                "showLabel": true,
+                "label": "`A=dx^2`",
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "labelSize": "large",
+                "labelOrientation": "right",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1264",
+                "text": "The total increment is dy = x*dx + x*dx + dx^2      = 2x * dx + dx^2. We want to know the rate of change of that amount as dx approaches zero so by a general rule we can ignore all the terms dx^2 or another power of dx greater than 2 because they will approach zero so fast that they doesn't give any value to our result, so dy = 2x * dx and   dy / dx = 2x "
+            },
+            {
+                "type": "expression",
+                "id": "1265",
+                "color": "#c74440",
+                "latex": "A_{rea1}=1^2+2\\cdot\\left(1\\right)\\cdot d_x+d_x^2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1267",
+                "color": "#388c46",
+                "latex": "d_y=\\frac{A_{rea1}-1^2}{d_x}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1268",
+                "text": "Try to do the same exercise for the function f(x)=x^3. You should find that dy/dx = 3x^2."
+            },
+            {
+                "type": "folder",
+                "id": "1270",
+                "title": "Derivative geometrically (part 2)",
+                "hidden": true,
+                "collapsed": true,
+                "memberIds": {
+                    "1271": true,
+                    "1273": true,
+                    "1275": true,
+                    "1276": true,
+                    "1277": true,
+                    "1278": true,
+                    "1279": true,
+                    "1281": true,
+                    "1283": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1273",
+                "text": "Now we have a function that is a bit more complex. "
+            },
+            {
+                "type": "expression",
+                "id": "1271",
+                "color": "#6042a6",
+                "latex": "g\\left(x\\right)=\\frac{1}{x}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1275",
+                "text": "If we change g(x) by y, then we can notice that this function can be writen as x * y = 1. That means that the area of the rectangle of sides X and Y is constant. Awesome!!"
+            },
+            {
+                "type": "expression",
+                "id": "1276",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,0\\right),\\left(1,0\\right),\\left(1,1\\right),\\left(0,1\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1277",
+                "color": "#388c46",
+                "latex": "d_{x1}=1.182",
+                "sliderHardMin": true,
+                "sliderHardMax": true,
+                "sliderMin": "1",
+                "sliderMax": "2",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1278",
+                "color": "#c74440",
+                "latex": "\\left(d_{x1},g\\left(d_{x1}\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1279",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(\\left(0,0\\right),\\left(d_{x1},0\\right),\\left(d_{x1},g\\left(d_{x1}\\right)\\right),\\left(0,g\\left(d_{x1}\\right)\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1281",
+                "text": "Notice that as X increases, Y decreases. In that way we know that the rate of change will be negative."
+            },
+            {
+                "type": "text",
+                "id": "1283",
+                "text": "dy = g(x + dx) - g(x) = 1/(x + dx) - 1/x                    \n     = -dx / (x^2 + x * dx). Now, what we want to know is dy/dx, so dy/dx = -1 / (x^2 + x * dx) and since we know that dx wil be closer and closer to zero, we can ignore the term x * dx, so we have that dy/dx = -1 / (x^2)."
+            },
+            {
+                "type": "text",
+                "id": "1285",
+                "text": "One of the greatest uses of the derivatives are called Differential Equations. As the name indicates, they are equations who involves derivatives. They are very hard to solve, so instead of solving it we can show them directly computing all the values numerically for a certain dx very small instead of solving it analitically. Like Steven Strogatz said: \"Since Newton, mankind has come to realize that the laws of physics are always expressed in the language of differential equations.\""
+            }
+        ]
+    }
+}
