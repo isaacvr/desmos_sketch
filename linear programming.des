@@ -1,0 +1,302 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -378.52092977470625,
+            "ymin": -231.5578537568215,
+            "xmax": 1292.7333114246787,
+            "ymax": 936.5678800863791
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "1448",
+                "text": "Linear programming allows us to do some optimizations to specific problems. For example, consider this problem:"
+            },
+            {
+                "type": "text",
+                "id": "1452",
+                "text": "A dealer goes to the market to buy oranges with $500. There are two kind of oranges. Type A have a cost of $0.5 / Kg and type B $0.8 / Kg. We know that he can take into his car at most 700 Kg, and also that he wants to sale oranges of type A    $0.58 / Kg and type B $0.9 / Kg. How many Kg of each type he can take to maximize his profits?"
+            },
+            {
+                "type": "folder",
+                "id": "1547",
+                "title": "Graphic description",
+                "memberIds": {
+                    "1549": true,
+                    "1550": true,
+                    "1552": true,
+                    "1553": true,
+                    "1555": true,
+                    "1556": true,
+                    "1558": true,
+                    "1559": true,
+                    "1560": true,
+                    "1562": true,
+                    "1563": true,
+                    "1565": true,
+                    "1566": true,
+                    "1571": true,
+                    "1572": true,
+                    "1573": true,
+                    "1574": true,
+                    "1575": true,
+                    "1577": true,
+                    "1578": true,
+                    "1580": true,
+                    "1581": true,
+                    "1582": true,
+                    "1583": true,
+                    "1587": true,
+                    "1589": true,
+                    "1591": true,
+                    "1593": true,
+                    "1595": true,
+                    "1596": true,
+                    "1597": true,
+                    "1598": true,
+                    "1599": true,
+                    "1601": true,
+                    "1603": true
+                }
+            },
+            {
+                "type": "text",
+                "id": "1549",
+                "text": "Let X be the amount of Kg of type A, and Y of type B. We have that we can not exceed 700 Kg, so we have:"
+            },
+            {
+                "type": "expression",
+                "id": "1550",
+                "color": "#388c46",
+                "latex": "x+y\\le700",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1552",
+                "text": "We also have certain amount of money, so we have:"
+            },
+            {
+                "type": "expression",
+                "id": "1553",
+                "color": "#6042a6",
+                "latex": "0.5x+0.8y\\le500",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1555",
+                "text": "This is the same as:"
+            },
+            {
+                "type": "expression",
+                "id": "1556",
+                "color": "#c74440",
+                "latex": "5x+8y\\le5000",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1558",
+                "text": "Also, X and Y must be positive, so we have:"
+            },
+            {
+                "type": "expression",
+                "id": "1559",
+                "color": "#388c46",
+                "latex": "x\\ge0",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1560",
+                "color": "#fa7e19",
+                "latex": "y\\ge0",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1562",
+                "text": "The total profit function is:"
+            },
+            {
+                "type": "expression",
+                "id": "1563",
+                "color": "#000000",
+                "latex": "P_{rofit}=\\left(0.58-0.5\\right)x+\\left(0.9-0.8\\right)y",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1565",
+                "text": "Which is the same as:"
+            },
+            {
+                "type": "expression",
+                "id": "1566",
+                "color": "#2d70b3",
+                "latex": "P\\left(x,y\\right)=0.08x+0.1y",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1571",
+                "text": "Let's draw our limits based on the equations:"
+            },
+            {
+                "type": "expression",
+                "id": "1572",
+                "color": "#c74440",
+                "latex": "x+y=700",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1573",
+                "color": "#388c46",
+                "latex": "5x+8y=5000",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1574",
+                "color": "#2d70b3",
+                "latex": "x=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1575",
+                "color": "#fa7e19",
+                "latex": "y=0",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1577",
+                "text": "Now, the interest region:"
+            },
+            {
+                "type": "expression",
+                "id": "1578",
+                "color": "#2d70b3",
+                "latex": "x+y\\le700\\left\\{5x+8y\\le5000\\right\\}\\left\\{x\\ge0\\right\\}\\left\\{y\\ge0\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1589",
+                "text": "Since we want to maximize/minimize some amount, that amount can be represented as a line. The constrains also are lines, so we can deduce that not only the solution is inside the interest region but also in the border of that region. Lets look at those borders:"
+            },
+            {
+                "type": "text",
+                "id": "1591",
+                "text": "First one is the origin (0,0). Next one is when the line y = 0 intersects x + y = 700 at (700; 0). Third point is the intersection of x + y = 700 and           \n5x + 8y = 5000 at (200; 500) and finally, the point where that last equation intersects the line x = 0 at (0; 625)."
+            },
+            {
+                "type": "expression",
+                "id": "1593",
+                "color": "#000000",
+                "latex": "\\left(\\left[0,\\ 700,\\ 200,\\ 0\\right],\\ \\left[0,\\ 0,\\ 500,\\ 625\\right]\\right)",
+                "showLabel": true,
+                "pointStyle": "CROSS",
+                "dragMode": "NONE",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1595",
+                "text": "Now let's see where our function have a maximun:"
+            },
+            {
+                "type": "expression",
+                "id": "1596",
+                "color": "#2d70b3",
+                "latex": "P\\left(0,0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1597",
+                "color": "#388c46",
+                "latex": "P\\left(700,0\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1598",
+                "color": "#fa7e19",
+                "latex": "P\\left(200,500\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1599",
+                "color": "#6042a6",
+                "latex": "P\\left(0,625\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1601",
+                "text": "The point is (200; 500) and that's the answer. You can use the next interactive point to check it for yourself"
+            },
+            {
+                "type": "expression",
+                "id": "1583",
+                "color": "#fa7e19",
+                "latex": "v=P\\left(p_x,p_y\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1580",
+                "color": "#000000",
+                "latex": "p=\\left(p_x,p_y\\right)",
+                "showLabel": true,
+                "label": "`${v}`",
+                "labelSize": "large",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1581",
+                "color": "#2d70b3",
+                "latex": "p_x=183",
+                "hidden": true,
+                "sliderMax": "462",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "1582",
+                "color": "#388c46",
+                "latex": "p_y=218",
+                "hidden": true,
+                "sliderMax": "713",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "1603",
+                "text": "Let's draw our function then (enable the equation and see):"
+            },
+            {
+                "type": "expression",
+                "id": "1587",
+                "color": "#000000",
+                "latex": "0.08x+0.1y=66",
+                "hidden": true,
+                "style": "SOLID"
+            }
+        ]
+    }
+}
