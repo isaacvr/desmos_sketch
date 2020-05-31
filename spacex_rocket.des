@@ -1,0 +1,328 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -5.329819972006634,
+            "ymin": -5.294122396977401,
+            "xmax": 9.95648680409929,
+            "ymax": 5.390265340362284
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "folder",
+                "id": "64",
+                "title": "Base",
+                "collapsed": true,
+                "memberIds": {
+                    "57": true,
+                    "58": true,
+                    "59": true,
+                    "61": true,
+                    "62": true,
+                    "81": true,
+                    "103": true
+                }
+            },
+            {
+                "type": "expression",
+                "id": "103",
+                "color": "#2d70b3",
+                "latex": "\\left|x\\right|\\le4\\left\\{\\left|y\\right|\\le5\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "57",
+                "color": "#000000",
+                "latex": "x=\\left[-0.686,-0.564,-0.063\\right]\\left\\{-3.5\\le y\\le4\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "81",
+                "color": "#000000",
+                "latex": "y_s=\\left[-3.5,-3,...4\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "58",
+                "color": "#000000",
+                "latex": "y=y_s\\left\\{-0.564\\le x\\le-0.063\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "59",
+                "color": "#000000",
+                "latex": "y=-0.7\\left(x+0.564\\right)+y_s\\left\\{-0.686\\le x\\le-0.564\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "62",
+                "color": "#000000",
+                "latex": "y=-1\\left(x+0.063\\right)+y_s\\left\\{-0.564\\le x\\le-0.063\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "61",
+                "color": "#000000",
+                "latex": "y=\\frac{4.5-4}{0.686-0.564}\\left(x+0.686\\right)+4\\left\\{-0.686\\le x\\le-0.564\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "67",
+                "title": "Rocket",
+                "collapsed": true,
+                "memberIds": {
+                    "71": true,
+                    "93": true,
+                    "94": true,
+                    "99": true,
+                    "100": true,
+                    "101": true,
+                    "102": true
+                }
+            },
+            {
+                "type": "expression",
+                "id": "71",
+                "color": "#000000",
+                "latex": "y=-20.67867\\left(x-0.54\\right)+3.996\\left\\{0.54\\le x\\le0.874344\\right\\}",
+                "sliderMin": "-20.67867",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "93",
+                "color": "#000000",
+                "latex": "-4.8139578x^2+1.59507x+4.538044\\left\\{-0.1745\\le x\\le0.54\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "94",
+                "color": "#000000",
+                "latex": "\\frac{\\left(x-0.12\\right)^2}{0.43^2}+\\frac{\\left(y-\\left[3.67\\right]\\right)^2}{0.23^2}=1\\left\\{-0.063\\le x\\le0.559\\right\\}\\left\\{y\\ge3.67\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "99",
+                "color": "#000000",
+                "latex": "\\frac{\\left(x-0.12\\right)^2}{0.43^2}+\\frac{\\left(y-\\left[3.794\\right]\\right)^2}{0.23^2}=1\\left\\{-0.063\\le x\\le0.559\\right\\}\\left\\{y\\ge3.8\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "100",
+                "color": "#000000",
+                "latex": "y=-3.5\\left\\{-0.063\\le x\\le1\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "101",
+                "color": "#000000",
+                "latex": "\\frac{\\left(x-0.26\\right)^2}{0.145^2}+\\frac{\\left(y+3.5\\right)^2}{0.586^2}=1\\left\\{y\\ge-3.5\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "102",
+                "color": "#000000",
+                "latex": "\\frac{\\left(x-0.863\\right)^2}{0.1^2}+\\frac{\\left(y+3.5\\right)^2}{0.586^2}=1\\left\\{y\\ge-3.5\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "105",
+                "title": "Flag USA",
+                "collapsed": true,
+                "memberIds": {
+                    "106": true,
+                    "122": true,
+                    "123": true,
+                    "124": true,
+                    "127": true,
+                    "129": true,
+                    "130": true
+                }
+            },
+            {
+                "type": "expression",
+                "id": "106",
+                "color": "#000000",
+                "latex": "\\frac{\\left(x-0.29\\right)^2}{0.204^2}+\\frac{\\left(y-2.593\\right)^2}{0.09^2}=1\\left\\{0.21\\le x\\le0.48\\right\\}\\left\\{y\\ge2.593\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "122",
+                "color": "#000000",
+                "latex": "\\frac{\\left(x-0.29\\right)^2}{0.204^2}+\\frac{\\left(y-2.427\\right)^2}{0.09^2}=1\\left\\{0.21\\le x\\le0.48\\right\\}\\left\\{y\\ge2.427\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "123",
+                "color": "#000000",
+                "latex": "x=0.21\\left\\{2.51\\le y\\le2.676\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "124",
+                "color": "#000000",
+                "latex": "x=0.48\\left\\{2.46\\le y\\le2.626\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "127",
+                "color": "#c74440",
+                "latex": "2.5955\\ge y\\ge\\sqrt{0.09^2\\left(1-\\frac{\\left(x-0.29\\right)^2}{0.204^2}\\right)}+2.427\\left\\{0.21\\le x\\le0.48\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "129",
+                "color": "#c74440",
+                "latex": "2.5955\\le y\\le\\sqrt{0.09^2\\left(1-\\frac{\\left(x-0.29\\right)^2}{0.204^2}\\right)}+2.593\\left\\{0.345\\le x\\le0.48\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "130",
+                "color": "#2d70b3",
+                "latex": "2.5955\\le y\\le\\sqrt{0.09^2\\left(1-\\frac{\\left(x-0.29\\right)^2}{0.204^2}\\right)}+2.593\\left\\{0.21\\le x\\le0.345\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "folder",
+                "id": "132",
+                "title": "SPACEX",
+                "collapsed": true,
+                "memberIds": {
+                    "142": true,
+                    "143": true,
+                    "144": true,
+                    "146": true,
+                    "147": true,
+                    "148": true,
+                    "149": true,
+                    "150": true,
+                    "151": true,
+                    "152": true,
+                    "153": true,
+                    "154": true,
+                    "155": true,
+                    "156": true
+                }
+            },
+            {
+                "type": "expression",
+                "id": "142",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(0.609,-0.6096\\right),\\left(0.406,-0.6037\\right),\\left(0.404,-0.69\\right),\\left(0.581,-0.7117\\right),\\left(0.5795,-0.7464\\right),\\left(0.402,-0.738\\right),\\left(0.401,-0.7603\\right),\\left(0.62,-0.7776\\right),\\left(0.615,-0.6845\\right),\\left(0.44,-0.666\\right),\\left(0.4414,-0.633\\right),\\left(0.609,-0.6394\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "143",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(0.41,-0.935\\right),\\left(0.4115,-1.1023\\right),\\left(0.461,-1.1036\\right),\\left(0.452,-0.976\\right),\\left(0.5857,-0.97\\right),\\left(0.586,-1.01\\right),\\left(0.4541,-1.00573\\right),\\left(0.4556,-1.0303\\right),\\left(0.617,-1.0313\\right),\\left(0.6153,-0.946\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "144",
+                "color": "#2d70b3",
+                "latex": "\\max\\left(-1.32516\\left(x-0.5176\\right)-1.3144,-1.46\\right)\\le y\\le-1.32516\\left(x-0.5176\\right)-1.263\\left\\{0.5176\\le x\\le0.6563\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "146",
+                "color": "#2d70b3",
+                "latex": "-1.42\\le y\\le-1.39\\left\\{0.44\\le x\\le0.61\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "148",
+                "color": "#2d70b3",
+                "latex": "-1.645\\le y\\le-1.61\\left\\{0.44\\le x\\le0.66\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "147",
+                "color": "#2d70b3",
+                "latex": "-1.8\\le y\\le-1.767\\left\\{0.44\\le x\\le0.66\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "149",
+                "color": "#2d70b3",
+                "latex": "0.44\\le x\\le0.48\\left\\{-1.8\\le y\\le-1.61\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "150",
+                "color": "#2d70b3",
+                "latex": "-2.005\\le y\\le-1.972\\left\\{0.44\\le x\\le0.66\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "153",
+                "color": "#2d70b3",
+                "latex": "-2.065\\le y\\le-2.032\\left\\{0.44\\le x\\le0.60\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "152",
+                "color": "#2d70b3",
+                "latex": "-2.165\\le y\\le-2.132\\left\\{0.44\\le x\\le0.66\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "154",
+                "color": "#2d70b3",
+                "latex": "0.44\\le x\\le0.48\\left\\{-2.165\\le y\\le-2.032\\right\\}",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "151",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(0.4486,-2.3476\\right),\\left(0.5235,-2.4026\\right),\\left(0.562,-2.3732\\right),\\left(0.5067,-2.338\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "155",
+                "color": "#2d70b3",
+                "latex": "\\operatorname{polygon}\\left(\\left(0.595,-2.454\\right),\\left(0.6666,-2.518\\right),\\left(0.729,-2.516\\right),\\left(0.626,-2.428\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "156",
+                "color": "#2d70b3",
+                "latex": "y\\le-1.1\\left(x-0.886\\right)^2-2.2866\\left\\{-1.1\\left(x-0.976\\right)^2-2.2677\\le y\\right\\}\\left\\{y\\ge-2.526\\right\\}",
+                "style": "SOLID"
+            }
+        ]
+    }
+}

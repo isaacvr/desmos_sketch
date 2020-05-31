@@ -1,0 +1,128 @@
+{
+    "version": 5,
+    "graph": {
+        "viewport": {
+            "xmin": -28.104294166949664,
+            "ymin": -46.83141929885306,
+            "xmax": 74.67635139971645,
+            "ymax": 25.007271708017345
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "text",
+                "id": "42",
+                "text": "Fibonacci's Spiral is a graphic construct based on the Fibonacci's Numbers (1, 1, 2, 3, 5, 8) where every number is the sum of the two after it. We first create a square of length 1. Then another with length 1 and placed next to the last one to the right. Then another one with length 2 at the top, then another with length 3 at the left and on and on."
+            },
+            {
+                "type": "text",
+                "id": "44",
+                "text": "This is the formula for every Fibonacci's number"
+            },
+            {
+                "type": "expression",
+                "id": "graph1",
+                "color": "#2d70b3",
+                "latex": "f\\left(n\\right)=\\frac{1}{\\sqrt{5}}\\left(\\frac{1+\\sqrt{5}}{2}\\right)^n-\\frac{1}{\\sqrt{5}}\\left(\\frac{1-\\sqrt{5}}{2}\\right)^n",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "46",
+                "text": "This is a helper function that gives us the sequence: 1, 1, -1, -1, 1, 1, -1, -1, .... and it's used to get the coordinates to draw the squares."
+            },
+            {
+                "type": "expression",
+                "id": "14",
+                "color": "#388c46",
+                "latex": "s\\left(n\\right)=\\cos\\left(\\frac{n\\pi}{2}\\right)+\\cos\\left(\\frac{\\left(n-1\\right)\\pi}{2}\\right)",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "49",
+                "text": "X and Y coordinates of the anchor point of every square."
+            },
+            {
+                "type": "expression",
+                "id": "17",
+                "color": "#000000",
+                "latex": "r_x\\left(N\\right)=\\sum_{n=1}^Nf\\left(n\\right)\\cdot s\\left(n-1\\right)",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "19",
+                "color": "#2d70b3",
+                "latex": "r_y\\left(N\\right)=1+\\sum_{n=1}^Nf\\left(n\\right)\\cdot s\\left(n-2\\right)",
+                "hidden": true,
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "51",
+                "text": "A range with the squares to be drawn."
+            },
+            {
+                "type": "expression",
+                "id": "24",
+                "color": "#c74440",
+                "latex": "k=\\left[0,...,9\\right]",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "53",
+                "text": "Since we haven't nested lists here, I defined every side of the squares in terms of parametric functions."
+            },
+            {
+                "type": "expression",
+                "id": "27",
+                "color": "#000000",
+                "latex": "\\left(r_x\\left(k\\right)+s\\left(k\\right)f\\left(k+1\\right)\\left(1-t\\right),\\ r_y\\left(k\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "31",
+                "color": "#000000",
+                "latex": "\\left(r_x\\left(k\\right)+s\\left(k\\right)f\\left(k+1\\right),r_y\\left(k\\right)+s\\left(k-1\\right)f\\left(k+1\\right)t\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "32",
+                "color": "#000000",
+                "latex": "\\left(r_x\\left(k\\right)+s\\left(k\\right)f\\left(k+1\\right)\\left(1-t\\right),r_y\\left(k\\right)+s\\left(k-1\\right)f\\left(k+1\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "expression",
+                "id": "33",
+                "color": "#000000",
+                "latex": "\\left(r_x\\left(k\\right),r_y\\left(k\\right)+s\\left(k-1\\right)f\\left(k+1\\right)\\left(1-t\\right)\\right)",
+                "style": "SOLID"
+            },
+            {
+                "type": "text",
+                "id": "55",
+                "text": "Then, the spiral :)"
+            },
+            {
+                "type": "expression",
+                "id": "37",
+                "color": "#2d70b3",
+                "latex": "\\left(r_x\\left(k\\right)+s\\left(k\\right)f\\left(k+1\\right)\\cdot\\frac{\\left(-1\\right)^k+1}{2}+f\\left(k+1\\right)\\cos\\left(\\left(k+2\\right)\\cdot\\frac{\\pi}{2}+t\\right),r_y\\left(k\\right)+s\\left(k-1\\right)f\\left(k+1\\right)\\cdot\\frac{\\left(-1\\right)^{\\left(k+1\\right)}+1}{2}+f\\left(k+1\\right)\\sin\\left(\\left(k+2\\right)\\cdot\\frac{\\pi}{2}+t\\right)\\right)",
+                "domain": {
+                    "min": "0",
+                    "max": "\\frac{\\pi}{2}"
+                },
+                "style": "SOLID"
+            }
+        ]
+    }
+}
